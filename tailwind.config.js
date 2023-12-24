@@ -13,9 +13,9 @@ module.exports = {
 
     colors: {
       'primary': '#2659D9',
-      'mono-primary': '#E204D',
+      'mono-primary': '#0E204D',
       'mono-secondary': '#FBFBF9',
-      'purple': '#7e5bef',
+      'pale-20': '#7e5bef',
       'pink': '#ff49db',
       'orange': '#ff7849',
       'green': '#13ce66',
