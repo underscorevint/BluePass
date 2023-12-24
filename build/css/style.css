@@ -862,14 +862,14 @@ video {
   border-color: #E204D;
 }
 
-.bg-primary {
-  --tw-bg-opacity: 1;
-  background-color: rgb(38 89 217 / var(--tw-bg-opacity));
-}
-
 .bg-mono-secondary {
   --tw-bg-opacity: 1;
   background-color: rgb(251 251 249 / var(--tw-bg-opacity));
+}
+
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 89 217 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-tr {
