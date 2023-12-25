@@ -729,12 +729,12 @@ video {
   height: 2rem;
 }
 
-.h-svh {
-  height: 100svh;
-}
-
 .h-lvh {
   height: 100lvh;
+}
+
+.h-svh {
+  height: 100svh;
 }
 
 .min-h-screen {
@@ -909,6 +909,22 @@ video {
 
 .bg-gradient-to-tr {
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+}
+
+.bg-\[url\(\'\.\/img\/pattern-primary\.jpg\'\)\] {
+  background-image: url('./img/pattern-primary.jpg');
+}
+
+.bg-\[url\(\'\/img\/pattern-primary\.jpg\'\)\] {
+  background-image: url('/img/pattern-primary.jpg');
+}
+
+.bg-\[url\(\'\.\.\/img\/pattern-primary\.jpg\'\)\] {
+  background-image: url('../img/pattern-primary.jpg');
+}
+
+.bg-\[url\(\'\.\.\/img\/pattern_primary\.jpg\'\)\] {
+  background-image: url('../img/pattern_primary.jpg');
 }
 
 .from-\[\#ff80b5\] {
