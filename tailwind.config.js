@@ -16,7 +16,7 @@ module.exports = {
       'mono-primary': '#0E204D',
       'mono-secondary': '#FBFBF9',
       'pale-20': '#7e5bef',
-      'pink': '#ff49db',
+      'link': '#0000EE',
       'orange': '#ff7849',
       'green': '#13ce66',
       'yellow': '#ffc82c',
