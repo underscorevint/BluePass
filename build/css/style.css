@@ -799,6 +799,10 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -930,12 +934,20 @@ video {
   background-color: rgb(38 89 217 / var(--tw-bg-opacity));
 }
 
+.bg-\[url\(\'\.\.\/ima\/pattern_primary\.jpg\'\)\] {
+  background-image: url('../ima/pattern_primary.jpg');
+}
+
 .bg-\[url\(\'\.\.\/img\/pattern_primary\.jpg\'\)\] {
   background-image: url('../img/pattern_primary.jpg');
 }
 
 .bg-gradient-to-tr {
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+}
+
+.bg-\[url\(\'\.\.\/img\/bluepass_title\.jpg\'\)\] {
+  background-image: url('../img/bluepass_title.jpg');
 }
 
 .from-\[\#ff80b5\] {
@@ -1113,10 +1125,6 @@ video {
 
 .opacity-30 {
   opacity: 0.3;
-}
-
-.outline {
-  outline-style: solid;
 }
 
 .ring-1 {
