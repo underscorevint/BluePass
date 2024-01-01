@@ -1,6 +1,8 @@
 /** @type {import('tailwind').Config} */
 module.exports = {
   content: ["./build/*.{html,js}", ],
+
+  darkMode: 'class',
   
   theme: {
 
@@ -15,7 +17,9 @@ module.exports = {
       'primary': '#2659D9',
       'mono-primary': '#0E204D',
       'mono-secondary': '#FBFBF9',
-      'pale-20': '#7e5bef',
+      'pale': '#F6F5F0',      
+      'pale-70': '#C6C09F',
+      'pale-90': '#ECEADF',      
       'link': '#0000EE',
       'orange': '#ff7849',
       'green': '#13ce66',
