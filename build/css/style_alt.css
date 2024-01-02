@@ -4,12 +4,56 @@
   animation-iteration-count: infinite;
 }
 
+#hero-image-waves-md {
+  animation-duration: 3s;
+  animation-name: waves-md-animation;
+  animation-iteration-count: infinite;
+}
+
+#hero-image-waves-sm {
+  animation-duration: 3s;
+  animation-name: waves-sm-animation;
+  animation-iteration-count: infinite;
+}
+
 @keyframes waves-lg-animation {
   from {
     left: 0;
   }
 
+  50% {
+    left: -10px;
+  }
+
   to {
-    left: -10;
+    left: 0px;
+  }
+}
+
+@keyframes waves-md-animation {
+  from {
+    left: 0;
+  }
+
+  50% {
+    left: -5px;
+  }
+
+  to {
+    left: 0px;
+  }
+}
+
+@keyframes waves-sm-animation {
+  from {
+    left: 0;
+  }
+
+  50% {
+    left: -2px;
+  }
+
+  to {
+    left: 0px;
   }
 }
