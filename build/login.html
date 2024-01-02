@@ -14,9 +14,11 @@
 
     <section class="text-left w-full inline-grid grid-cols-2 h-lvh">
 
+        <!--Left Collumn-->
+
         <div class="w-auto bg-mono-primary h-svh flex justify-center bg-[url('../img/pattern_primary.jpg')] bg-cover py-40">
 
-            <div class="text-left w-80 space-y-8">
+            <div class="text-left w-80 flex-col space-y-8">
 
                 <img class="w-12" src="./img/mark-sign.svg" />
             
@@ -27,21 +29,31 @@
             </div>
 
         </div>
+
+        <!--/Left Collumn-->
     
     
         <div class="w-auto py-20">
 
             <div class="m-auto content-center w-144">
-            
-                <div>
-                    <h3 class="text-2xl font-bold">Login</h3>
-                </div>
 
-                <div class="text-right text-base">
-                    <a href="create_account.html" class="text-link">Create account</a>
-                </div>
+                <!--/Header-->
 
-                <div class="bg-mono-primary h-1"></div>
+                <div class="flex flex-row">
+
+                    <div class="basis-1/2">
+                        <h3 class="text-2xl font-bold">Login</h3>
+                    </div>
+    
+                    <div class="text-right text-base basis-1/2">
+                        <a href="create_account.html" class="text-link text-base">Create account</a>
+                    </div>
+
+                </div>
+                
+                <!--/Header-->
+
+                <div class="bg-mono-primary h-1 my-4 mb-6"></div>
 
                 <div class="flex flex-col">
         
@@ -65,12 +77,16 @@
 
                     <div class="flex flex-row">
 
-                        <div>
-                          <button>Submit</button>
+                        <div class="basis-1/2">
+
+                          <button class="bg-primary text-mono-secondary font-bold text-base px-4 py-2 w-52">Submit</button>
+
                         </div>
               
-                        <div>
-                          <a hre="">Register</a>
+                        <div class="basis-1/2 text-right">
+
+                          <a href="reset_password.html" class="text-link text-base">Reset password</a>
+
                         </div>
               
                       </div>
