@@ -75,12 +75,12 @@
     </div>
 
 
-    <nav class="flex items-center justify-between p-4 lg:px-8" aria-label="Global">
+    <nav class="flex items-center justify-between px-4 lg:px-6" aria-label="Global">
 
       <div class="flex lg:flex-1">
         <a href="#" class="-m-1.5 p-1.5">
           <span class="sr-only">BluePass</span>
-          <img class="h-8 w-auto hover:text-primary" src="./img/mark.svg?color=text-mono-secondary&shade=600" alt="">
+          <img class="h-auto w-40 hover:text-primary" src="./img/mark.svg?color=text-mono-secondary&shade=600" alt="">
         </a>
       </div>
 
@@ -94,7 +94,7 @@
       </div>
 
       <div class="hidden lg:flex lg:gap-x-12">
-        <img class="h-21 w-auto" src="./img/uae_gov_mark.svg?color=text-mono-secondary&shade=600" alt="">
+        <img class="h-auto w-48" src="./img/uae_gov_mark.svg?color=text-mono-secondary&shade=600" alt="">
       </div>
 
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -218,7 +218,7 @@
 
 <div class="w-full bg-mono-secondary grid grid-cols-4">
   
-  <div class="text-center px-6 py-16">
+  <div class="text-center px-6 py-16 border-r">
 
     <img src="./img/partners_icon.svg" class="h-12 m-auto"/>
     <p class=" text-mono-primary text-center text-5xl font-bold">110+</p>
@@ -226,7 +226,7 @@
 
   </div>
 
-  <div class="text-center px-6 py-16">
+  <div class="text-center px-6 py-16 border-r">
     
     <img src="./img/partners_vessels_icon.svg" class="h-12 m-auto"/>
     <p class=" text-mono-primary text-center text-5xl font-bold">250+</p>
@@ -234,7 +234,7 @@
   
   </div>
 
-  <div class="text-center px-6 py-16">
+  <div class="text-center px-6 py-16 border-r">
     
     <img src="./img/strategic_partners_icon.svg"  class="h-12 m-auto" />
     <p class=" text-mono-primary text-center text-5xl font-bold">5</p>
@@ -320,32 +320,20 @@
   
   <h3 class="text-mono-primary text-xl font-bold">News</h3>
 
-</div>
-
-<!-- /News section-->
-
-
-
-<!-- Memberships section -->
-
-<div class="p-6" >
-
-  <div class="bg-mono-primary h-1 my-6"></div>
-  
   <div class="grid grid-cols-3 gap-6">
 
-    <div class="w-72">
-
-      <h3 class="text-mono-primary text-xl font-bold">Memberships</h3>
-
-    </div>
+    <div class="w-72"></div>
 
     <div>
       
+      <p class="text-lg font-bold">Social Media</p>
+
+      <div class="bg-mono-primary h-[2px] my-4"></div>
+
       <div class="flex flex-col">
         <p class="text-sm">Your name</p>
         <div class="h-2"></div>
-        <input class="text-base px-4 py-2"/>
+ 
       </div>
 
       <div class="h-4"></div>
@@ -363,11 +351,71 @@
 
     <div>
       
+      <p class="text-lg font-bold">Press</p>
+
+      <div class="bg-mono-primary h-[2px] my-4"></div>
+      
+      <div class="h-4"></div>
+
       <div class="flex flex-col">
-        <p class="text-sm">Subject</p>
+        <p class="text-sm">Message</p>
         <div class="h-2"></div>
-        <input class="text-base px-4 py-2"/>
+        <textarea class="text-base px-4 py-2"></textarea>
       </div>
+
+      <button>Submit</button>
+    
+    </div>
+
+  </div>
+
+</div>
+
+<!-- /News section-->
+
+
+
+<!-- Memberships section -->
+
+<div class="p-6" >
+
+  <div class="bg-mono-primary h-1 my-6"></div>
+
+  <h3 class="text-mono-primary text-xl font-bold">Memberships</h3>
+  
+  <div class="grid grid-cols-3 gap-6">
+
+    <div class="w-72"></div>
+
+    <div>
+      
+      <p>Social Media</p>
+
+      <div class="bg-mono-primary h-[2px] my-4"></div>
+
+      <div class="flex flex-col">
+        <p class="text-sm">Your name</p>
+        <div class="h-2"></div>
+ 
+      </div>
+
+      <div class="h-4"></div>
+      
+      <div class="flex flex-col">
+
+        <p class="text-sm">Email</p>
+        <div class="h-2"></div>
+        <input class="text-base px-4 py-2" />
+
+      </div>
+
+    </div>
+
+
+    <div>
+      
+
+
 
       <div class="h-4"></div>
 
@@ -483,7 +531,7 @@
     
     <div class="h-20"></div>
 
-    <div class="flex flex-row">
+    <div class="grid grid-cols-2">
 
       <div class="basis-1/2">
 
@@ -494,7 +542,7 @@
       
       </div>
       <!-- ... -->
-      <div class="basis-1/2">
+      <div class="justify-self-end">
         
         <img class="h-21 w-auto" src="./img/uae_gov_mark.svg?color=text-mono-secondary&shade=600" alt="">
         
