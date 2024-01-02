@@ -671,6 +671,16 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.-mx-6 {
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+}
+
+.mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -693,6 +703,14 @@ video {
 
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mr-6 {
+  margin-right: 1.5rem;
+}
+
+.mr-4 {
+  margin-right: 1rem;
 }
 
 .block {
@@ -875,6 +893,10 @@ video {
   flex: none;
 }
 
+.flex-1 {
+  flex: 1 1 0%;
+}
+
 .basis-1\/2 {
   flex-basis: 50%;
 }
@@ -925,6 +947,10 @@ video {
   align-items: center;
 }
 
+.justify-end {
+  justify-content: flex-end;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -948,6 +974,11 @@ video {
 
 .gap-y-6 {
   row-gap: 1.5rem;
+}
+
+.gap-x-12 {
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
 }
 
 .space-x-3 > :not([hidden]) ~ :not([hidden]) {
@@ -1098,6 +1129,14 @@ video {
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
 }
 
+.bg-\[url\(\'\.\.\/img\/hero-image-top-right\.jpg\'\)\] {
+  background-image: url('../img/hero-image-top-right.jpg');
+}
+
+.bg-\[url\(\'\.\.\/img\/bluepass_bg\.jpg\'\)\] {
+  background-image: url('../img/bluepass_bg.jpg');
+}
+
 .from-\[\#ff80b5\] {
   --tw-gradient-from: #ff80b5 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(255 128 181 / 0) var(--tw-gradient-to-position);
@@ -1122,6 +1161,10 @@ video {
 
 .bg-bottom {
   background-position: bottom;
+}
+
+.bg-right-top {
+  background-position: right top;
 }
 
 .bg-no-repeat {
@@ -1568,6 +1611,14 @@ video {
     display: none;
   }
 
+  .lg\:w-\[960\] {
+    width: 960;
+  }
+
+  .lg\:w-\[960px\] {
+    width: 960px;
+  }
+
   .lg\:flex-1 {
     flex: 1 1 0%;
   }
@@ -1595,9 +1646,26 @@ video {
     padding-top: 14rem;
     padding-bottom: 14rem;
   }
+
+  .lg\:py-48 {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
 }
 
 @media (min-width: 1440px) {
+  .xl\:w-\[800\] {
+    width: 800;
+  }
+
+  .xl\:w-\[900\] {
+    width: 900;
+  }
+
+  .xl\:w-\[960px\] {
+    width: 960px;
+  }
+
   .xl\:leading-tight {
     line-height: 110%;
   }
