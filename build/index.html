@@ -78,10 +78,12 @@
     <nav class="flex items-center justify-between px-4 lg:px-6" aria-label="Global">
 
       <div class="flex lg:flex-1">
-        <a href="#" class="-m-1.5 p-1.5">
+
+        <a href="#">
           <span class="sr-only">BluePass</span>
           <img class="h-auto w-40 hover:text-primary" src="./img/mark.svg?color=text-mono-secondary&shade=600" alt="">
         </a>
+      
       </div>
 
       <div class="flex lg:hidden">
@@ -143,7 +145,7 @@
     </div>
   </header>
 
-  <div class="relative h-svh bg-[url('../img/hero-image.jpg')] bg-contain bg-no-repeat">
+  <div class="relative h-svh bg-[url('../img/hero-image.jpg')] bg-cover bg-bottom bg-no-repeat">
   
     <div class="relative isolate px-6 pt-14 lg:px-8 ">
 
@@ -171,7 +173,7 @@
 
              <div class="mt-10 flex items-left justify-left gap-x-6">
 
-               <a href="#" class="bg-primary px-24 py-2.5 text-sm font-semibold text-mono-secondary hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
+               <button class="bg-primary px-24 py-2.5 text-base font-semibold text-mono-secondary hover:bg-primary-40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</button>
               
               <!--
                 <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span aria-hidden="true">→</span></a>
@@ -203,10 +205,12 @@
   
 <!-- BluePass section -->
 
-  <div class="flex bg-pale h-[60rem] justify-center bg-[url('../img/bluepass_title.jpg')] bg-contain bg-no-repeat bg-center" >
+  <div class="flex bg-pale h-[60rem] justify-center bg-[url('../img/bluepass_title.jpg')] bg-cover bg-no-repeat bg-center" >
     
     <div class="">
-      <!--<img src="./img/ship_1.png" />-->
+
+      <img src="./img/ship-a.png" />
+      
       <!--<img src="./img/splash_alpha.png" />-->
     </div>
 
@@ -303,9 +307,30 @@
 
 <!-- Banner section -->
 
-<div class="flex bg-mono-primary h-[10rem] justify-center bg-[url('../img/pattern_primary.jpg')] bg-cover" >
-  
+<div class="bg-mono-primary bg-[url('../img/pattern_primary.jpg')] bg-cover py-32 px-6" >
 
+  <div class="grid grid-cols-2">
+  
+    <div class="flex flex-col space-y-10">
+      
+      
+
+        <img class="w-12 h-auto" src="./img/mark-sign.svg" />
+        <div><p class="text-secondary text-4xl font-bold p-0">Hundreds</p>
+        <p class="text-mono-secondary text-3xl p-0">of services and offers</p></div>
+        <button class="text-mono-secondary bg-primary font-semibold py-2.5 px-4 w-40 text-base">Join Us</button>
+
+      
+    
+    </div>
+
+    <div class="justify-self-end">
+
+      <img src="./img/services_banner-illo.png" class="w-auto h-96" />
+
+    </div>
+
+  </div>
 
 </div>
 
@@ -326,7 +351,7 @@
 
     <div>
       
-      <p class="text-lg font-bold">Social Media</p>
+      <p class="text-mono-primary text-base font-semibold">Social Media</p>
 
       <div class="bg-mono-primary h-[2px] my-4"></div>
 
@@ -349,22 +374,81 @@
     </div>
 
 
-    <div>
+    <div class="flex flex-col y-space-6">
       
-      <p class="text-lg font-bold">Press</p>
+      <p class="text-mono-primary text-base font-semibold">Press</p>
 
       <div class="bg-mono-primary h-[2px] my-4"></div>
       
       <div class="h-4"></div>
 
-      <div class="flex flex-col">
-        <p class="text-sm">Message</p>
-        <div class="h-2"></div>
-        <textarea class="text-base px-4 py-2"></textarea>
-      </div>
+      <!--Press Article block -->
+      <div class="flex flex-col space-y-4">
 
-      <button>Submit</button>
-    
+        <!--Article Image-->
+        <div class="bg-pale-70 h-48 bg-[url('../img/hero-image.jpg')] bg-contain bg-center bg-no-repeat"></div>
+        <!--/Article Image-->
+
+        <p class="text-mono-primary text-base font-semibold">UAE launches ‘Blue Pass’ project to bolster maritime business cluster</p>
+        
+        <div class="flex flex-row">
+
+          <div class="flex-auto"><a href="" class="text-link">www.seatrade-maritime.com/</a></div>
+
+          <div class="flex-none text-sm text-right">12/12/2023</div>
+          
+
+        </div>
+
+      </div>
+      <!--/Press Article block -->
+
+      <div class="h-4"></div>
+
+      <!--Press Article block -->
+      <div class="flex flex-col space-y-4">
+
+        <!--Article Image-->
+        <div class="bg-pale-70 h-48 bg-[url('../img/hero-image.jpg')] bg-contain bg-center bg-no-repeat"></div>
+        <!--/Article Image-->
+
+        <p class="text-mono-primary text-base font-semibold">MOEI signs partnership with six key industry entities for ‘Blue Pass’ project</p>
+        
+        <div class="flex flex-row">
+
+          <div class="flex-auto"><a href="" class="text-link">www.focus.hidubai.com</a></div>
+
+          <div class="flex-none text-sm text-right">12/12/2023</div>
+          
+
+        </div>
+
+      </div>
+      <!--/Press Article block -->
+
+      <div class="h-4"></div>
+
+      <!--Press Article block -->
+      <div class="flex flex-col space-y-4">
+
+        <!--Article Image-->
+        <div class="bg-pale-70 h-48 bg-[url('../img/hero-image.jpg')] bg-contain bg-center bg-no-repeat"></div>
+        <!--/Article Image-->
+
+        <p class="text-mono-primary text-base font-semibold">Blue Pass Partnership: Enhancing the UAE Maritime Sector</p>
+        
+        <div class="flex flex-row">
+
+          <div class="flex-auto"><a href="" class="text-link">www.7emirates.co</a></div>
+
+          <div class="flex-none text-sm text-right">12/12/2023</div>
+          
+
+        </div>
+
+      </div>
+      <!--/Press Article block -->
+
     </div>
 
   </div>
@@ -383,50 +467,40 @@
 
   <h3 class="text-mono-primary text-xl font-bold">Memberships</h3>
   
-  <div class="grid grid-cols-3 gap-6">
+  <div class="grid grid-cols-2 gap-6">
 
     <div class="w-72"></div>
 
-    <div>
+    <div class="min-w-full">
+
+      <p class="text-base font-semibold">Basic</p>
       
-      <p>Social Media</p>
+      <!-- Membership block -->
+      <div class="grid grid-cols-2">
 
-      <div class="bg-mono-primary h-[2px] my-4"></div>
+        <div class="flex flex-row">
 
-      <div class="flex flex-col">
-        <p class="text-sm">Your name</p>
-        <div class="h-2"></div>
- 
+          
+
+
+
+        </div>
+
+        <div class="flex flex-col space-y-4">
+        
+          <p class="text-base font-normal">Exclusive offers and discounted services from our strategic partners and marine service providers.</p>
+
+          <p class="text-base font-normal">Access to maritime education and training</p>
+
+          <p class="text-base font-normal">Promotion value</p>
+
+          <p class="text-base font-normal">Participation in maritime events and workshops</p>
+          
+        </div>
+
       </div>
+      <!-- /Membership block -->
 
-      <div class="h-4"></div>
-      
-      <div class="flex flex-col">
-
-        <p class="text-sm">Email</p>
-        <div class="h-2"></div>
-        <input class="text-base px-4 py-2" />
-
-      </div>
-
-    </div>
-
-
-    <div>
-      
-
-
-
-      <div class="h-4"></div>
-
-      <div class="flex flex-col">
-        <p class="text-sm">Message</p>
-        <div class="h-2"></div>
-        <textarea class="text-base px-4 py-2"></textarea>
-      </div>
-
-      <button>Submit</button>
-    
     </div>
 
   </div>
@@ -523,7 +597,7 @@
 
         <div class="h-6"></div>
  
-        <button>Submit</button>
+        <button class="text-mono-secondary bg-primary hover:bg-primary-40 font-semibold py-2 px-4 w-40 text-sm">Submit</button>
       
       </div>
 
@@ -533,15 +607,15 @@
 
     <div class="grid grid-cols-2">
 
-      <div class="basis-1/2">
+      <div class="self-end">
 
-        <a href="#" class="-m-1.5 p-1.5">
+        <a href="#">
           <span class="sr-only">BluePass</span>
           <img class="h-8 w-auto hover:text-primary" src="./img/mark.svg?color=text-mono-secondary&shade=600" alt="">
         </a>
       
       </div>
-      <!-- ... -->
+      
       <div class="justify-self-end">
         
         <img class="h-21 w-auto" src="./img/uae_gov_mark.svg?color=text-mono-secondary&shade=600" alt="">

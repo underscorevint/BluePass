@@ -15,11 +15,15 @@ module.exports = {
 
     colors: {
       'primary': '#2659D9',
+      'primary-40': '#1E47AE',
+      'primary-70': '#6692FF',
+      'primary-60': '#517AE1',
       'mono-primary': '#0E204D',
       'mono-secondary': '#FBFBF9',
       'pale': '#F6F5F0',      
       'pale-70': '#C6C09F',
-      'pale-90': '#ECEADF',      
+      'pale-90': '#ECEADF',
+      'secondary': '#E54D4D',      
       'link': '#0000EE',
       'orange': '#ff7849',
       'green': '#13ce66',
