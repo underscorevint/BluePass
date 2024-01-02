@@ -1,0 +1,15 @@
+#hero-image-waves-lg {
+  animation-duration: 3s;
+  animation-name: waves-lg-animation;
+  animation-iteration-count: infinite;
+}
+
+@keyframes waves-lg-animation {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: -10;
+  }
+}

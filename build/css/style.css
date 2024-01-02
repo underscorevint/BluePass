@@ -610,6 +610,106 @@ video {
   top: calc(100% - 13rem);
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.bottom-6 {
+  bottom: 1.5rem;
+}
+
+.bottom-8 {
+  bottom: 2rem;
+}
+
+.bottom-20 {
+  bottom: 5rem;
+}
+
+.bottom-12 {
+  bottom: 3rem;
+}
+
+.bottom-14 {
+  bottom: 3.5rem;
+}
+
+.bottom-24 {
+  bottom: 6rem;
+}
+
+.bottom-2 {
+  bottom: 0.5rem;
+}
+
+.bottom-10 {
+  bottom: 2.5rem;
+}
+
+.bottom-16 {
+  bottom: 4rem;
+}
+
+.bottom-\[64px\] {
+  bottom: 64px;
+}
+
+.bottom-\[48px\] {
+  bottom: 48px;
+}
+
+.bottom-\[32px\] {
+  bottom: 32px;
+}
+
+.bottom-\[40px\] {
+  bottom: 40px;
+}
+
+.right-20 {
+  right: 5rem;
+}
+
+.right-32 {
+  right: 8rem;
+}
+
+.bottom-\[56px\] {
+  bottom: 56px;
+}
+
+.right-40 {
+  right: 10rem;
+}
+
+.left-1\/4 {
+  left: 25%;
+}
+
+.right-1\/4 {
+  right: 25%;
+}
+
+.left-\[10\%\] {
+  left: 10%;
+}
+
+.right-\[15\%\] {
+  right: 15%;
+}
+
+.bottom-\[80px\] {
+  bottom: 80px;
+}
+
+.left-\[15\%\] {
+  left: 15%;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -813,6 +913,14 @@ video {
   height: 12rem;
 }
 
+.h-\[120px\] {
+  height: 120px;
+}
+
+.h-\[24px\] {
+  height: 24px;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -871,6 +979,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[640px\] {
+  width: 640px;
 }
 
 .min-w-full {
@@ -1113,6 +1225,11 @@ video {
   background-color: rgb(38 89 217 / var(--tw-bg-opacity));
 }
 
+.bg-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 77 77 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'\.\.\/img\/bluepass_title\.jpg\'\)\] {
   background-image: url('../img/bluepass_title.jpg');
 }
@@ -1135,6 +1252,30 @@ video {
 
 .bg-\[url\(\'\.\.\/img\/bluepass_bg\.jpg\'\)\] {
   background-image: url('../img/bluepass_bg.jpg');
+}
+
+.bg-\[url\(\'\.\.\/img\/hero-image-wave-1\.jpg\'\)\] {
+  background-image: url('../img/hero-image-wave-1.jpg');
+}
+
+.bg-\[url\(\'\.\.\/img\/hero-image-waves-lg\.jpg\'\)\] {
+  background-image: url('../img/hero-image-waves-lg.jpg');
+}
+
+.bg-\[url\(\'\.\.\/img\/hero-image-waves-lg\.png\'\)\] {
+  background-image: url('../img/hero-image-waves-lg.png');
+}
+
+.bg-\[url\(\'\.\.\/img\/hero-image-top-right\.png\'\)\] {
+  background-image: url('../img/hero-image-top-right.png');
+}
+
+.bg-\[url\(\'\.\.\/img\/hero-image-waves-md\.jpg\'\)\] {
+  background-image: url('../img/hero-image-waves-md.jpg');
+}
+
+.bg-\[url\(\'\.\.\/img\/hero-image-waves-sm\.jpg\'\)\] {
+  background-image: url('../img/hero-image-waves-sm.jpg');
 }
 
 .from-\[\#ff80b5\] {
@@ -1169,6 +1310,10 @@ video {
 
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.bg-repeat-x {
+  background-repeat: repeat-x;
 }
 
 .p-0 {
@@ -1619,6 +1764,10 @@ video {
     width: 960px;
   }
 
+  .lg\:w-\[1024px\] {
+    width: 1024px;
+  }
+
   .lg\:flex-1 {
     flex: 1 1 0%;
   }
@@ -1650,6 +1799,21 @@ video {
   .lg\:py-48 {
     padding-top: 12rem;
     padding-bottom: 12rem;
+  }
+
+  .lg\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .lg\:py-36 {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+  }
+
+  .lg\:py-40 {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
 }
 
