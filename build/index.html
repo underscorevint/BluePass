@@ -439,7 +439,7 @@
         <div class="flex flex-col space-y-2">
 
           <p class="text-sm">Your name</p>
-          <input class="text-base px-4 py-2"/>
+          <input class="text-base px-4 py-2" placeholder="Enter your name"/>
 
         </div>
 
@@ -448,7 +448,7 @@
         <div class="flex flex-col space-y-2">
 
           <p class="text-sm">Email</p>
-          <input class="text-base px-4 py-2" />
+          <input type="text" class="text-base px-4 py-2 placeholder:font-normal" placeholder="i.e. johndow@domain.com"/>
 
         </div>
 
@@ -460,21 +460,20 @@
         <div class="flex flex-col space-y-2">
 
           <p class="text-sm">Subject</p>
-          <div class="h-2"></div>
+          <input class="text-base px-4 py-2" placeholder="Subject"/>
 
-          <input class="text-base px-4 py-2"/>
         </div>
 
-        <div class="h-4"></div>
+        <div class="h-6"></div>
 
         <div class="flex flex-col space-y-2">
 
           <p class="text-sm">Message</p>
-          <textarea class="text-base px-4 py-2"></textarea>
+          <textarea class="text-base px-4 py-2" placeholder="Your message"></textarea>
 
         </div>
 
-        <div class="h-4"></div>
+        <div class="h-6"></div>
  
         <button>Submit</button>
       
@@ -484,9 +483,9 @@
     
     <div class="h-20"></div>
 
-    <div class="grid grid-cols-2 gap-4">
+    <div class="flex flex-row">
 
-      <div>
+      <div class="basis-1/2">
 
         <a href="#" class="-m-1.5 p-1.5">
           <span class="sr-only">BluePass</span>
@@ -495,7 +494,7 @@
       
       </div>
       <!-- ... -->
-      <div class="justify-end">
+      <div class="basis-1/2">
         
         <img class="h-21 w-auto" src="./img/uae_gov_mark.svg?color=text-mono-secondary&shade=600" alt="">
         
