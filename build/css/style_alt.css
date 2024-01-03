@@ -16,13 +16,60 @@
   animation-iteration-count: infinite;
 }
 
+
+#partners_1{
+  animation-duration: 12s;
+  animation-name: partners-1-animation;
+  animation-iteration-count: infinite;
+  background-position: center;
+  background-size: cover;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+#partners_2{
+  animation-duration: 12s;
+  animation-name: partners-2-animation;
+  animation-iteration-count: infinite;
+  background-position: center;
+  background-size: cover;
+  animation-timing-function: ease-in-out;
+}
+
+#partners_3{
+  animation-duration: 12s;
+  animation-name: partners-3-animation;
+  animation-iteration-count: infinite;
+  background-position: center;
+  background-size: cover;
+  animation-timing-function: ease-in-out;
+}
+
+#partners_4{
+  animation-duration: 12s;
+  animation-name: partners-4-animation;
+  animation-iteration-count: infinite;
+  background-position: center;
+  background-size: cover;
+  animation-timing-function: ease-in-out;
+}
+
+#ship-a{
+  animation-duration: 12s;
+  animation-name: ship-a-animation;
+  animation-iteration-count: infinite;
+  background-position: center;
+  background-size: cover;
+  animation-timing-function: ease-in-out;
+}
+
 @keyframes waves-lg-animation {
   from {
     left: 0;
   }
 
   50% {
-    left: -10px;
+    left: -12px;
   }
 
   to {
@@ -36,7 +83,7 @@
   }
 
   50% {
-    left: -5px;
+    left: -6px;
   }
 
   to {
@@ -55,5 +102,84 @@
 
   to {
     left: 0px;
+  }
+}
+
+@keyframes partners-1-animation {
+  0% {
+    background-image: url('../img/partner-11.jpg');
+  }
+
+  25% {
+    background-image: url('../img/partner-12.jpg');
+  }
+
+  75% {
+    background-image: url('../img/partner-13.jpg');
+  }
+ 
+  100% {
+    background-image: url('../img/partner-11.jpg');
+  }
+}
+
+
+@keyframes partners-2-animation {
+  0% {
+    background-image: url('../img/partner-21.jpg');
+  }
+
+  50% {
+    background-image: url('../img/partner-22.jpg');
+  }
+
+  100% {
+    background-image: url('../img/partner-23.jpg');
+  }
+}
+
+@keyframes partners-3-animation {
+  0% {
+    background-image: url('../img/partner-31.jpg');
+  }
+
+  50% {
+    background-image: url('../img/partner-32.jpg');
+  }
+
+  100% {
+    background-image: url('../img/partner-33.jpg');
+  }
+}
+
+@keyframes partners-4-animation {
+  0% {
+    background-image: url('../img/partner-41.jpg');
+  }
+
+  50% {
+    background-image: url('../img/partner-42.jpg');
+  }
+
+  100% {
+    background-image: url('../img/partner-43.jpg');
+  }
+}
+
+
+@keyframes ship-a-animation {
+  from {
+    left: 100%;
+    opacity: 1;
+  }
+
+  90% {
+    left: 10%;
+    opacity: 1;
+  }
+
+  to {
+    left: -25%;
+    opacity: 0;
   }
 }
