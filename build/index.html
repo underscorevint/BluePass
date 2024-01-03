@@ -11,25 +11,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;500;700&display=swap" rel="stylesheet">
 
-  <script src="build/scripts.js"></script>
+  <!-- jQuery Is Required  -->
+  <script src="../node_modules/jquery/dist/jquery.min.js" type="text/javascript"></script>
+
+  <script src="script.js" type="text/javascript"></script>
+
+  <script>document.documentElement.classList.add('js')</script>
+
 
 </head>
-
-<!--
-<body>
-  
-</body>
-</html>
-<!doctype html>
-
-<html>
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/dist/output.css" rel="stylesheet">
-</head>-->
-
 
 <body class="min-h-screen bg-pale dark:bg-mono-primary">
 
@@ -46,7 +36,7 @@
     <nav class="flex items-center justify-between px-4 px-6" aria-label="Global">
 
       <div class="flex">
-        <button type="button" class="mr-4 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+        <button id="menu-icon" type="button" class="mr-4 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
           <span class="sr-only">Open main menu</span>
           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -77,16 +67,20 @@
     
     <!-- Mobile menu, show/hide based on menu open state. -->
     
-    <div class="hidden" role="dialog" aria-modal="true">
+    <div id="navmenu" class="hidden" role="dialog" aria-modal="true" >
       <!-- Background backdrop, show/hide based on slide-over state. -->
-      <div class="fixed inset-0 z-50"></div>
-      <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+      
+      <div id="menu-overlay" class="fixed inset-0 z-50"></div>
+
+      <div class="fixed inset-y-0 left-0 z-50 w-full overflow-y-auto bg-mono-secondary bg-[url('../img/pattern_secondary.jpg')] bg-left-top bg-contain bg-no-repeat px-10 py-12 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
         <div class="flex items-center justify-between">
+          
           <a href="#" class="-m-1.5 p-1.5">
             <span class="sr-only">BluePass</span>
-            <img class="h-8 w-auto hover:fill-primary" src="./img/mark.svg?color=text-mono-secondary&shade=600" alt="">
+            <img class="h-8 w-auto hover:fill-primary" src="./img/mark-sign.svg?color=text-mono-secondary&shade=600" alt="">
           </a>
-          <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+
+          <button id="close-menu-icon" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
             <span class="sr-only">Close menu</span>
             <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -95,11 +89,27 @@
         </div>
 
         <div class="mt-6 flow-root">
-          <div class="-my-6 divide-y divide-gray-500/10">
 
-            <div class="space-y-2 py-6">
 
-              <img class="h-6 w-auto hover:bg-primary" src="./img/mark.svg?color=text-mono-secondary&shade=600" alt="">
+
+            <div class="flex flex-col space-y-2 py-6 divide-y">
+
+              <a hre="" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary">Home</a>
+
+              <a hre="" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary">About Us</a>
+ 
+              <a hre="" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary">Services</a>
+
+              <a hre="" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary">Partners</a>
+
+              <a hre="" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary">News</a>
+
+              <a hre="" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary">Memberships</a>
+
+              <a hre="" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary">Discounts</a>
+
+              <a hre="" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary">FAQ</a>
+            
 
             </div>
 
@@ -109,7 +119,7 @@
               <button type="button" class="bg-transparent text-mono-primary border border-mono-primary hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" onClick="window.open('login_main.html','_self'); return false;">Login</button>
               
             </div>
-          </div>
+
         </div>
       </div>
     </div>
@@ -118,7 +128,7 @@
 
   </header>
 
-  <div class="relative h-svh bg-[url('../img/hero-image-top-right.png')] bg-contain bg-right-top bg-no-repeat">
+  <div class="relative h-svh bg-[url('../img/hero-image-top-right.png')] bg-contain bg-right-top bg-no-repeat overflow-hidden">
 
     <div id="hero-image-waves-sm" class="absolute bottom-[64px] left-0 w-[101%] h-6 bg-[url('../img/hero-image-waves-sm.jpg')] bg-center bg-repeat-x" ></div>
 
@@ -184,14 +194,35 @@
 
 
 
-
-
-  
 <!-- BluePass section -->
 
-  <div id="bluepass" class="relative bg-pale h-[60rem] justify-center bg-[url('../img/bluepass_bg.jpg')] bg-contain bg-no-repeat bg-center overflow-hidden" onscroll="BluePassScroll()">
+  <div id="blue-pass" class="relative bg-pale h-[60rem] justify-center bg-[url('../img/bluepass_bg.jpg')] bg-contain bg-no-repeat bg-center overflow-hidden">
     
-    <div id="ship-a" class="absolute left-[100%] h-[60rem] w-full bg-[url('../img/ship-a.png')] bg-cover bg-no-repeat bg-left">
+    <div id="ship-0" class="vessel absolute left-[100%] h-[60rem] w-[133.313rem] bg-[url('../img/ship-a.png')] bg-cover bg-no-repeat bg-left">
+
+      <!--<img src="./img/ship-a.png" class="h-[60rem]" />-->
+      
+    </div>
+
+    <div id="ship-1" class="vessel absolute right-[100%] h-[60rem] w-[133.313rem] bg-[url('../img/ship-b.png')] bg-cover bg-no-repeat bg-left">
+
+      <!--<img src="./img/ship-a.png" class="h-[60rem]" />-->
+      
+    </div>
+
+    <div id="ship-2" class="vessel absolute left-[100%] h-[60rem] w-[133.313rem] bg-[url('../img/ship-c.png')] bg-cover bg-no-repeat bg-left">
+
+      <!--<img src="./img/ship-a.png" class="h-[60rem]" />-->
+      
+    </div>
+
+    <div id="ship-3" class="vessel absolute right-[100%] h-[60rem] w-[133.313rem] bg-[url('../img/ship-d.png')] bg-cover bg-no-repeat bg-left">
+
+      <!--<img src="./img/ship-a.png" class="h-[60rem]" />-->
+      
+    </div>
+
+    <div id="ship-4" class="vessel absolute left-[100%] h-[60rem] w-[133.313rem] bg-[url('../img/ship-e.png')] bg-cover bg-no-repeat bg-left">
 
       <!--<img src="./img/ship-a.png" class="h-[60rem]" />-->
       
@@ -201,11 +232,13 @@
 
 <!-- /BluePass section -->
 
+
+
 <!-- Counters section -->
 
-<div class="w-full bg-mono-secondary grid grid-cols-4">
+<div class="w-full bg-mono-secondary grid grid-cols-4 py-10">
   
-  <div class="text-center px-6 py-16 border-r">
+  <div class="text-center px-6 py-6 border-r">
 
     <img src="./img/partners_icon.svg" class="h-12 m-auto"/>
     <p class=" text-mono-primary text-center text-5xl font-bold">110+</p>
@@ -213,7 +246,7 @@
 
   </div>
 
-  <div class="text-center px-6 py-16 border-r">
+  <div class="text-center px-6 py-6 border-r">
     
     <img src="./img/partners_vessels_icon.svg" class="h-12 m-auto"/>
     <p class=" text-mono-primary text-center text-5xl font-bold">250+</p>
@@ -221,7 +254,7 @@
   
   </div>
 
-  <div class="text-center px-6 py-16 border-r">
+  <div class="text-center px-6 py-6 border-r">
     
     <img src="./img/strategic_partners_icon.svg"  class="h-12 m-auto" />
     <p class=" text-mono-primary text-center text-5xl font-bold">5</p>
@@ -229,7 +262,7 @@
   
   </div>
 
-  <div class="text-center px-6 py-16">
+  <div class="text-center px-6 py-6">
     
     <img src="./img/services_icon.svg" class="h-12 m-auto"/>
     <p class=" text-mono-primary text-center text-5xl font-bold">110+</p>
@@ -260,15 +293,159 @@
 
   <h3 class="text-mono-primary text-xl font-bold">Services</h3>
 
-  <div>
-    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">Badge</span>
-    <span class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10">Badge</span>
-    <span class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">Badge</span>
-    <span class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">Badge</span>
-    <span class="inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Badge</span>
-    <span class="inline-flex items-center rounded-md bg-indigo-50 px-2 py-1 text-xs font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/10">Badge</span>
-    <span class="inline-flex items-center rounded-md bg-purple-50 px-2 py-1 text-xs font-medium text-purple-700 ring-1 ring-inset ring-purple-700/10">Badge</span>
-    <span class="inline-flex items-center rounded-md bg-pink-50 px-2 py-1 text-xs font-medium text-pink-700 ring-1 ring-inset ring-pink-700/10">Badge</span>
+  <div class="h-6"></div>
+
+  <div class="flex flex-row gap-6 space-y-6">
+
+    <div class="flex-none w-72"></div>
+    
+    <div class="flex-1">
+
+      <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">Badge</span>
+      <span class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10">Badge</span>
+      <span class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">Badge</span>
+      <span class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">Badge</span>
+      <span class="inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Badge</span>
+      <span class="inline-flex items-center rounded-md bg-indigo-50 px-2 py-1 text-xs font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/10">Badge</span>
+      <span class="inline-flex items-center rounded-md bg-purple-50 px-2 py-1 text-xs font-medium text-purple-700 ring-1 ring-inset ring-purple-700/10">Badge</span>
+      <span class="inline-flex items-center rounded-md bg-pink-50 px-2 py-1 text-xs font-medium text-pink-700 ring-1 ring-inset ring-pink-700/10">Badge</span>
+
+    </div>
+
+  </div>
+  
+
+  <div class="h-6"></div>
+
+
+  <div class="flex flex-row gap-6">
+
+    <div class="w-72 xl:w-144 flex-none"></div>
+
+    <div class="flex-1 flex-col">
+      
+      <p class="text-mono-primary text-base font-semibold">Services</p>
+
+      <div class="bg-mono-primary h-[2px] my-4"></div>
+
+      <div class="divide-y">
+
+        <div class="flex flex-col">
+ 
+          <a href="" class="text-lg font-semibold py-4">Service Name</a>
+ 
+       </div>
+      
+        <div class="flex flex-col">
+
+          <a href="" class="text-lg font-semibold py-4">Service Name</a>
+
+        </div>
+
+        <div class="flex flex-col">
+
+          <a href="" class="text-lg font-semibold py-4">Service Name</a>
+
+        </div>
+
+        <div class="flex flex-col">
+
+          <a href="" class="text-lg font-semibold py-4">Service Name</a>
+
+        </div>
+
+        <div class="flex flex-col">
+
+          <a href="" class="text-lg font-semibold py-4">Service Name</a>
+
+        </div>
+
+        <div class="flex flex-col">
+
+          <a href="" class="text-lg font-semibold py-4">Service Name</a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="flex-1 flex-col space-y-6">
+
+      <p class="text-mono-primary text-base font-semibold">Partners</p>
+
+      <div class="bg-mono-primary h-[2px] my-4"></div>
+      
+      <!--Press Article block -->
+      <div class="flex flex-col space-y-4">
+
+        <!--Article Image-->
+        <div class="bg-pale-70 h-48 bg-[url('../img/hero-image.jpg')] bg-contain bg-center bg-no-repeat"></div>
+        <!--/Article Image-->
+
+        <p class="text-mono-primary text-base font-semibold">UAE launches ‘Blue Pass’ project to bolster maritime business cluster</p>
+        
+        <div class="flex flex-row">
+
+          <div class="flex-auto"><a href="" class="text-link">www.seatrade-maritime.com/</a></div>
+
+          <div class="flex-none text-sm text-right">12/12/2023</div>
+          
+
+        </div>
+
+      </div>
+      <!--/Press Article block -->
+
+      
+
+      <!--Press Article block -->
+      <div class="flex flex-col space-y-4">
+
+        <!--Article Image-->
+        <div class="bg-pale-70 h-48 bg-[url('../img/hero-image.jpg')] bg-contain bg-center bg-no-repeat"></div>
+        <!--/Article Image-->
+
+        <p class="text-mono-primary text-base font-semibold">MOEI signs partnership with six key industry entities for ‘Blue Pass’ project</p>
+        
+        <div class="flex flex-row">
+
+          <div class="flex-auto"><a href="" class="text-link">www.focus.hidubai.com</a></div>
+
+          <div class="flex-none text-sm text-right">12/12/2023</div>
+          
+
+        </div>
+
+      </div>
+      <!--/Press Article block -->
+
+      <div class="h-[1px] bg-mono-primary"></div>
+
+      <!--Press Article block -->
+      <div class="flex flex-col space-y-4">
+
+        <!--Article Image-->
+        <div class="bg-pale-70 h-48 bg-[url('../img/hero-image.jpg')] bg-contain bg-center bg-no-repeat"></div>
+        <!--/Article Image-->
+
+        <p class="text-mono-primary text-base font-semibold">Blue Pass Partnership: Enhancing the UAE Maritime Sector</p>
+        
+        <div class="flex flex-row">
+
+          <div class="flex-auto"><a href="" class="text-link">www.7emirates.co</a></div>
+
+          <div class="flex-none text-sm text-right">12/12/2023</div>
+          
+
+        </div>
+
+      </div>
+      <!--/Press Article block -->
+
+    </div>
+
   </div>
 
 </div>
@@ -329,7 +506,7 @@
 
 <!-- Banner section -->
 
-<div class="bg-mono-primary bg-[url('../img/pattern_primary.jpg')] bg-cover py-32 px-6" >
+<div class="bg-mono-primary bg-[url('../img/pattern_primary.jpg')] bg-cover py-10 px-6" >
 
   <div class="grid grid-cols-2">
   
@@ -363,17 +540,19 @@
 
 <!-- News section -->
 
-<div class="p-6 py-32">
+<section class="p-6 py-24">
 
   <div class="bg-mono-primary h-1 mb-6"></div>
   
   <h3 class="text-mono-primary text-xl font-bold">News</h3>
 
-  <div class="grid grid-cols-3 gap-6">
+  <div class="h-6"></div>
 
-    <div class="w-72"></div>
+  <div class="flex flex-row gap-6">
 
-    <div>
+    <div class="w-72 xl:w-144 flex-none"></div>
+
+    <div class="flex-1 flex-col space-y-6">
       
       <p class="text-mono-primary text-base font-semibold">Social Media</p>
 
@@ -398,8 +577,8 @@
     </div>
 
 
-    <div class="flex flex-col space-y-6">
-      
+    <div class="flex-1 flex-col space-y-6">
+
       <p class="text-mono-primary text-base font-semibold">Press</p>
 
       <div class="bg-mono-primary h-[2px] my-4"></div>
@@ -475,7 +654,7 @@
 
   </div>
 
-</div>
+</section>
 
 <!-- /News section-->
 
@@ -483,44 +662,166 @@
 
 <!-- Memberships section -->
 
-<div class="p-6" >
+<section class="p-6" >
 
   <div class="bg-mono-primary h-1 my-6"></div>
 
   <h3 class="text-mono-primary text-xl font-bold">Memberships</h3>
+
+  <div class="h-6"></div>
   
-  <div class="grid grid-cols-2 gap-6">
+  <div class="flex flex-row gap-6">
 
-    <div class="w-72"></div>
+    <div class="w-72 xl:w-144 flex-none"></div>
 
-    <div class="min-w-full">
+    <div class="flex-1 flex-col space-y-6 divide-y">
 
-      <p class="text-base font-semibold">Basic</p>
       
       <!-- Membership block -->
-      <div class="grid grid-cols-2">
 
-        <div class="flex flex-row">
+      <div>
 
+        <p class="text-base font-semibold py-6">Basic</p>
+
+        <div class="flex flex-row gap-6">
+
+          <div class="basis-1/2 flex flex-col space-y-6">
+
+            <p class="text-base">Unlock the following services upon singing in</p>
+
+            <img src="./img/basic-plan.png" class="w-24"/>
+
+            <div class="flex flex-col space-y-6">
+
+              <div class="font-semibold flex-auto text-primary text-base">$1000/mnt</div>
+              <div class="flex-none"><button class="bg-transparent border border-mono-primary text-mono-primary text-sm px-8 py-1.5">Subscribe</button></div>
+
+            </div>
+
+          </div>
+
+          <div class="flex-1 flex-col space-y-4">
           
+            <div class="flex flex-row space-x-4">
+              <img src="./img/round-tick.png" class="h-6 my-1" /><p class="text-base font-normal">Exclusive offers and discounted services from our strategic partners and marine service providers.</p>
+            </div>
 
+            <div class="flex flex-row space-x-4">
+              <img src="./img/round-tick.png" class="h-6 my-1" /><p class="text-base font-normal">Access to maritime education and training</p>
+            </div>
 
+            <div class="flex flex-row space-x-4">
+              <img src="./img/round-tick.png" class="h-6 my-1" /><p class="text-base font-normal">Promotion value</p>
+            </div>
 
-        </div>
+            <div class="flex flex-row space-x-4">
+              <img src="./img/round-tick.png" class="h-6 my-1" /><p class="text-base font-normal">Participation in maritime events and workshops</p>
+            </div>
 
-        <div class="flex flex-col space-y-4">
-        
-          <p class="text-base font-normal">Exclusive offers and discounted services from our strategic partners and marine service providers.</p>
+          </div>
 
-          <p class="text-base font-normal">Access to maritime education and training</p>
-
-          <p class="text-base font-normal">Promotion value</p>
-
-          <p class="text-base font-normal">Participation in maritime events and workshops</p>
-          
         </div>
 
       </div>
+
+      <!-- /Membership block -->
+
+      <!-- Membership block -->
+      
+      <div>
+
+        <p class="text-base font-semibold py-6">Gold</p>
+    
+        <div class="flex flex-row gap-6">
+
+          <div class="flex-1 flex-col space-y-6">
+      
+           <p class="text-base">Unlock the following services upon singing in</p>
+      
+           <img src="./img/plan-placeholder.png" class="w-24"/>
+      
+           <div class="flex flex-col space-y-6">
+      
+              <div class="font-semibold flex-auto text-primary text-base">$1000/mnt</div>
+              <div class="flex-none"><button class="bg-transparent border border-mono-primary text-mono-primary text-sm px-8 py-1.5">Subscribe</button></div>
+      
+            </div>
+      
+          </div>
+      
+          <div class="flex-1 flex-col space-y-4">
+              
+              <div class="flex flex-row space-x-4">
+                <img src="./img/round-tick.png" class="h-6 my-2" /><p class="text-base font-normal">Additional discounts and offers compared basic membership</p>
+              </div>
+      
+              <div class="flex flex-row space-x-4">
+                <img src="./img/round-tick.png" class="h-6 my-2" /><p class="text-base font-normal">Primarily approval and facilitation of parts and harbour services</p>
+              </div>
+      
+              <div class="flex flex-row space-x-4">
+                <img src="./img/round-tick.png" class="h-6 my-2" /><p class="text-base font-normal">Discounts and incentives at UAE Parts and Zones</p>
+              </div>
+      
+              <div class="flex flex-row space-x-4">
+                <img src="./img/round-tick.png" class="h-6 my-2" /><p class="text-base font-normal">Free extension on 72-hour seaman visas</p>
+              </div>
+      
+           </div>
+      
+        </div>
+
+      </div>
+
+      <!-- /Membership block -->
+
+
+            
+            
+      <!-- Membership block -->
+
+      <div>
+
+        <p class="text-base font-semibold py-6">Platinum</p>
+        
+        <div class="flex flex-row gap-6">
+
+          <div class="flex-1 flex-col space-y-6">
+
+            <p class="text-base">Enjoy the basic benefits in additional to:</p>
+
+            <img src="./img/plan-placeholder.png" class="w-24"/>
+
+            <div class="flex flex-col space-y-6">
+
+              <div class="text-primary font-semibold flex-1 text-base">$5000 / mnt</div>
+              <div class="flex-none"><button class="bg-transparent border border-mono-primary text-mono-primary text-sm px-8 py-1.5">Subscribe</button></div>
+
+            </div>
+
+          </div>
+
+          <div class="flex-1 flex-col space-y-4">
+          
+
+            <div class="flex flex-row space-x-2">
+              <img src="./img/round-tick.png" class="h-6 my-2" /><p class="text-base font-normal">Further discounts and offers available exclusively for platinum members.</p>
+            </div>
+
+            <div class="flex flex-row space-x-2">
+              <img src="./img/round-tick.png" class="h-6 my-2" /><p class="text-base font-normal">Golden visa for seniors, directors and investors</p>
+            </div>
+
+            <div class="flex flex-row space-x-2">
+              <img src="./img/round-tick.png" class="h-6 my-2" /><p class="text-base font-normal">Participation in maritime events and workshops</p>
+            </div>
+
+
+          </div>
+
+        </div>
+
+       </div>
       <!-- /Membership block -->
 
     </div>
@@ -529,7 +830,7 @@
   
   <div class="h-20"></div>
 
-</div>
+</section>
 
 <!-- /Memberships section-->
 
@@ -570,15 +871,15 @@
 
   <footer class="bg-pale-90 px-4 pt-20 pb-12">
 
-    <div class="grid grid-cols-3 gap-6">
+    <div class="flex flex-row gap-6">
 
-      <div class="w-72">
+      <div class="flex-none w-72 flex-col">
 
         <h3 class="text-mono-primary text-xl font-bold">Contact Us</h3>
 
       </div>
 
-      <div>
+      <div class="flex-1 flex-col space-y-6">
         
         <div class="flex flex-col space-y-2">
 
@@ -599,7 +900,7 @@
       </div>
 
 
-      <div>
+      <div class="flex-1 flex-col space-y-6">
         
         <div class="flex flex-col space-y-2">
 
@@ -658,9 +959,7 @@
 
 
 
-
-
-
+<script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
 
 </body>
 </html>

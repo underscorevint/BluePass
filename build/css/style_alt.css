@@ -33,7 +33,7 @@
   animation-iteration-count: infinite;
   background-position: center;
   background-size: cover;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: linear;
 }
 
 #partners_3{
@@ -42,7 +42,7 @@
   animation-iteration-count: infinite;
   background-position: center;
   background-size: cover;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: linear;
 }
 
 #partners_4{
@@ -54,13 +54,46 @@
   animation-timing-function: ease-in-out;
 }
 
-#ship-a{
+#ship-0.animated{
   animation-duration: 12s;
-  animation-name: ship-a-animation;
+  animation-name: ship-left-animation;
+  animation-iteration-count: infinite;
+  background-size: cover;
+  animation-timing-function: linear;
+}
+
+#ship-1.animated{
+  animation-duration: 12s;
+  animation-name: ship-right-animation;
+  animation-iteration-count: infinite;
+
+  background-size: cover;
+  animation-timing-function: linear;
+}
+
+#ship-2.animated{
+  animation-duration: 12s;
+  animation-name: ship-left-animation;
+  animation-iteration-count: infinite;
+  background-size: cover;
+  animation-timing-function: linear;
+}
+
+#ship-3.animated{
+  animation-duration: 12s;
+  animation-name: ship-right-animation;
+  animation-iteration-count: infinite;
+  background-size: cover;
+  animation-timing-function: linear;
+}
+
+#ship-4.animated{
+  animation-duration: 12s;
+  animation-name: ship-left-animation;
   animation-iteration-count: infinite;
   background-position: center;
   background-size: cover;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: linear;
 }
 
 @keyframes waves-lg-animation {
@@ -167,8 +200,8 @@
 }
 
 
-@keyframes ship-a-animation {
-  from {
+@keyframes ship-left-animation {
+  0% {
     left: 100%;
     opacity: 1;
   }
@@ -178,8 +211,25 @@
     opacity: 1;
   }
 
-  to {
+  100% {
     left: -25%;
+    opacity: 0;
+  }
+}
+
+@keyframes ship-right-animation {
+  0% {
+    right: 100%;
+    opacity: 1;
+  }
+
+  90% {
+    right: 10%;
+    opacity: 1;
+  }
+
+  100% {
+    right: -25%;
     opacity: 0;
   }
 }

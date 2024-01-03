@@ -1,9 +1,24 @@
 /** @type {import('tailwind').Config} */
 module.exports = {
-  content: ["./build/*.{html,js}", ],
+
+  content: {
+    relative: true,
+    files: ["./build/*.{html,js}", ],
+    transform: (content) => content.replace(/taos:/g, ''),
+    },
+
+    safelist: [
+      '!duration-[0ms]',
+      '!delay-[0ms]',
+      'html.js :where([class*="taos:"]:not(.taos-init))'
+    ],
+
+ // plugins: [ require('taos/plugin.js') ],
 
   darkMode: 'class',
   
+
+
   theme: {
 
     screens: {
