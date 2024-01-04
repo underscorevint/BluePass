@@ -20,11 +20,13 @@ $(document).ready(function () {
         window.open('login.html','_self'); return false;
       });
 
-      setTimeout(PartnersAnimation(),2000);
+      PartnersAnimation();
 
-      setTimeout(BluePassAnimation(),12000);
+      BluePassAnimation();
 
-      var interval = self.setInterval(function(){PartnersAnimation()},2000);
+      var interval = self.setInterval(function(){PartnersAnimation()},12000);
+
+      var interval = self.setInterval(function(){BluePassAnimation()},40000);
 
     });
 
@@ -102,38 +104,18 @@ function PartnersAnimation() {
   
   $('.partners-logo').each(function(i, element){
     
-    var row = $(element);
+ var row = $(this);
 
-
-    if ( row.is( ".activated" ) ) {
-  
-      setTimeout(function() {
-
-        //      row.toggleClass("hidden").delay(4000).next().toggleClass("hidden");
-              
-        
-        
-        row.toggleClass("activated").delay(2000).queue(function(next){
-              
-               next();
-             });
-        
-          //    row.removeClass("hidden").delay(2000).queue(function(next){
-        
-            //       next();
-         //     });
-        
-         }, 2000*i);
-  
-      return false;
-    }
+     setTimeout(function() {
 
 
 
+        row.removeClass("hidden").delay(4000).queue(function(next){
+            row.addClass("hidden");
+           next();
+      });
 
- row.removeClass('activated')
-
- //row.removeClass("hidden");
+    }, 4000*i);
 
 
 
