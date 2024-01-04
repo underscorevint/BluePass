@@ -20,6 +20,10 @@ $(document).ready(function () {
         window.open('login.html','_self'); return false;
       });
 
+      $('.create-account-btn').on( "click", function() {
+        window.open('create_account.html','_self'); return false;
+      });
+
       PartnersAnimation();
 
       BluePassAnimation();
