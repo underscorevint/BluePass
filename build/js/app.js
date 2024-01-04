@@ -20,12 +20,13 @@ $(document).ready(function () {
         window.open('login.html','_self'); return false;
       });
 
-      BluePassAnimation();
+      setTimeout(PartnersAnimation(),2000);
 
-      PartnersAnimation();
+      setTimeout(BluePassAnimation(),12000);
 
+      var interval = self.setInterval(function(){PartnersAnimation()},2000);
 
-
+    });
 
 
 
@@ -71,7 +72,7 @@ $(document).ready(function () {
 
  //    });
 //
-}); 
+ 
 
 function BluePassAnimation(){
 
@@ -90,8 +91,6 @@ function BluePassAnimation(){
 
     }, 8000*i);
 
-   // row.delay(8000).removeClass("animated");
-   //setTimeout(BluePassAnimation(),40000);
 
   });
 
@@ -101,23 +100,46 @@ function BluePassAnimation(){
 
 function PartnersAnimation() {
   
-  var partner1images=["./img/partner-11.jpg", "./img/partner-12.jpg", "./img/partner-13.jpg"];
-
-  for(i=0;i<partner1images.lenght;i++){
+  $('.partners-logo').each(function(i, element){
     
+    var row = $(element);
 
-    alert(partner1images[i]);
 
-    setTimeout(function() {
+    if ( row.is( ".activated" ) ) {
+  
+      setTimeout(function() {
 
-      alert('!');
+        //      row.toggleClass("hidden").delay(4000).next().toggleClass("hidden");
+              
+        
+        
+        row.toggleClass("activated").delay(2000).queue(function(next){
+              
+               next();
+             });
+        
+          //    row.removeClass("hidden").delay(2000).queue(function(next){
+        
+            //       next();
+         //     });
+        
+         }, 2000*i);
+  
+      return false;
+    }
 
-      $('#partners_1').attr("src", partner1images[i]);
-    
 
-  }, 200*i);  
+
+
+ row.removeClass('activated')
+
+ //row.removeClass("hidden");
+
+
+
+  }); 
+
 }
-
 
 
 
@@ -136,7 +158,7 @@ function PartnersAnimation() {
   }
 
 
-}
+
 
 //function reveal() {
 //    var reveals = document.querySelectorAll("#blue-pass");
