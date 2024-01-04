@@ -642,6 +642,14 @@ video {
   top: calc(100% - 13rem);
 }
 
+.top-1\/2 {
+  top: 50%;
+}
+
+.left-\[32rem\] {
+  left: 32rem;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -923,6 +931,18 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[20rem\] {
+  width: 20rem;
+}
+
+.w-\[100rem\] {
+  width: 100rem;
+}
+
+.w-\[40rem\] {
+  width: 40rem;
 }
 
 .max-w-full {
@@ -1379,6 +1399,11 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .pb-12 {
