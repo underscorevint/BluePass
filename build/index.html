@@ -1104,9 +1104,16 @@
   
       <div class="flex flex-col space-y-2">
   
-        <p class="text-sm text-mono-secondary">Contact Details(Adress, Phone, email)</p>
-        <input type="text" name="Contacts" id="contacts" class="text-base px-4 py-2 placeholder:text-gray-400" placeholder="Enter contact details"/>                        
-  
+        <p class="text-sm text-mono-secondary">Contact Details</p>
+
+        <select class="appearance-auto">
+          <option>Adress</option>
+          <option>Phone</option>
+          <option>email</option>
+        </select>
+
+        <input type="text" name="Contacts" id="contacts" class="border border-mono-primary text-base px-4 py-2 placeholder:text-gray-400" placeholder="Enter contact details"/>                        
+
       </div>
   
   
@@ -1146,29 +1153,29 @@
   
       <div class="flex flex-col space-y-2">
   
-        <p class="text-sm text-mono-secondary">Name</p>
-        <input type="text" name="Email" id="Email" class="text-base px-4 py-2 placeholder:text-gray-400" placeholder="i.e johndow@domain.com"/>                        
+        <p class="text-sm text-mono-secondary">Vessel Name</p>
+        <input type="text" name="vessel-name" id="vessel-name" class="text-base px-4 py-2 placeholder:text-gray-400" placeholder="Enter vessel name"/>                        
   
       </div>
   
       <div class="flex flex-col space-y-2">
   
         <p class="text-sm text-mono-secondary">IMO number</p>
-        <input type="text" name="Email" id="Email" class="text-base px-4 py-2 placeholder:text-gray-400" placeholder="i.e johndow@domain.com"/>                        
+        <input type="text" name="imo-number" id="imo-number" class="text-base px-4 py-2 placeholder:text-gray-400" placeholder="Enter IMO number"/>                        
   
       </div>
   
       <div class="flex flex-col space-y-2">
   
         <p class="text-sm text-mono-secondary">Captain Name</p>
-        <input type="text" name="Email" id="Email" class="text-base px-4 py-2 placeholder:text-gray-400" placeholder="i.e johndow@domain.com"/>                        
+        <input type="text" name="captain-name" id="captain-name" class="text-base px-4 py-2 placeholder:text-gray-400" placeholder="Enter captain full name"/>                        
   
       </div>
   
       <div class="flex flex-col space-y-2">
   
         <p class="text-sm text-mono-secondary">Cheff Engineer</p>
-        <input type="text" name="Email" id="Email" class="text-base px-4 py-2 placeholder:text-gray-400" placeholder="i.e johndow@domain.com"/>                        
+        <input type="text" name="cheff-engineer-name" id="cheff-engineer-name" class="text-base px-4 py-2 placeholder:text-gray-400" placeholder="Enter cheff engineer full name"/>                        
   
       </div>
   
@@ -1304,14 +1311,14 @@
         <div class="flex flex-col space-y-2">
 
           <p class="text-sm">Your name</p>
-          <input class="text-base px-4 py-2" placeholder="Enter your name"/>
+          <input class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder="Enter your name"/>
 
         </div>
         
         <div class="flex flex-col space-y-2">
 
           <p class="text-sm">Email</p>
-          <input type="text" class="text-base px-4 py-2 placeholder:font-normal" placeholder="i.e. johndow@domain.com"/>
+          <input type="text" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder="i.e. johndow@domain.com"/>
 
         </div>
 
@@ -1323,14 +1330,14 @@
         <div class="flex flex-col space-y-2">
 
           <p class="text-sm">Subject</p>
-          <input class="text-base px-4 py-2" placeholder="Subject"/>
+          <input class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder="Subject"/>
 
         </div>
 
         <div class="flex flex-col space-y-2">
 
           <p class="text-sm">Message</p>
-          <textarea class="text-base px-4 py-2" placeholder="Your message"></textarea>
+          <textarea class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder="Your message"></textarea>
 
         </div>
 

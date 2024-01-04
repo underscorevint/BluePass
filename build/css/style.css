@@ -618,6 +618,10 @@ video {
   left: 30%;
 }
 
+.left-\[32rem\] {
+  left: 32rem;
+}
+
 .left-\[calc\(50\%\+3rem\)\] {
   left: calc(50% + 3rem);
 }
@@ -638,16 +642,12 @@ video {
   top: 0px;
 }
 
-.top-\[calc\(100\%-13rem\)\] {
-  top: calc(100% - 13rem);
-}
-
 .top-1\/2 {
   top: 50%;
 }
 
-.left-\[32rem\] {
-  left: 32rem;
+.top-\[calc\(100\%-13rem\)\] {
+  top: calc(100% - 13rem);
 }
 
 .isolate {
@@ -694,6 +694,11 @@ video {
   margin: auto;
 }
 
+.-my-20 {
+  margin-top: -5rem;
+  margin-bottom: -5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -727,11 +732,6 @@ video {
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
-}
-
-.-my-20 {
-  margin-top: -5rem;
-  margin-bottom: -5rem;
 }
 
 .mb-2 {
@@ -826,6 +826,10 @@ video {
   height: 5rem;
 }
 
+.h-24 {
+  height: 6rem;
+}
+
 .h-32 {
   height: 8rem;
 }
@@ -878,6 +882,10 @@ video {
   height: 100svh;
 }
 
+.h-40 {
+  height: 10rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -926,6 +934,10 @@ video {
   width: 36.125rem;
 }
 
+.w-\[40rem\] {
+  width: 40rem;
+}
+
 .w-\[60rem\] {
   width: 60rem;
 }
@@ -936,18 +948,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[20rem\] {
-  width: 20rem;
-}
-
-.w-\[100rem\] {
-  width: 100rem;
-}
-
-.w-\[40rem\] {
-  width: 40rem;
 }
 
 .max-w-full {
@@ -964,10 +964,6 @@ video {
 
 .flex-none {
   flex: none;
-}
-
-.basis-1 {
-  flex-basis: 0.25rem;
 }
 
 .basis-1\/2 {
@@ -990,6 +986,12 @@ video {
 
 .transform-gpu {
   transform: translate3d(var(--tw-translate-x), var(--tw-translate-y), 0) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.appearance-auto {
+  -webkit-appearance: auto;
+     -moz-appearance: auto;
+          appearance: auto;
 }
 
 .grid-cols-2 {
@@ -1156,6 +1158,11 @@ video {
   border-style: none;
 }
 
+.border-gray {
+  --tw-border-opacity: 1;
+  border-color: rgb(132 146 166 / var(--tw-border-opacity));
+}
+
 .border-mono-primary {
   --tw-border-opacity: 1;
   border-color: rgb(14 32 77 / var(--tw-border-opacity));
@@ -1194,11 +1201,6 @@ video {
 .bg-primary {
   --tw-bg-opacity: 1;
   background-color: rgb(38 89 217 / var(--tw-bg-opacity));
-}
-
-.bg-primary-40 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 71 174 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\.\/img\/bluepass_bg\.jpg\'\)\] {
@@ -1321,6 +1323,11 @@ video {
   padding-right: 2.5rem;
 }
 
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 .px-24 {
   padding-left: 6rem;
   padding-right: 6rem;
@@ -1381,11 +1388,6 @@ video {
   padding-bottom: 5rem;
 }
 
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1404,11 +1406,6 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
 }
 
 .pb-12 {
@@ -1598,6 +1595,21 @@ video {
   font-weight: 400;
 }
 
+.placeholder\:text-gray::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(132 146 166 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-gray::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(132 146 166 / var(--tw-text-opacity));
+}
+
+.hover\:border-primary:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(38 89 217 / var(--tw-border-opacity));
+}
+
 .hover\:bg-mono-secondary:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(251 251 249 / var(--tw-bg-opacity));
@@ -1622,6 +1634,11 @@ video {
   color: rgb(38 89 217 / var(--tw-text-opacity));
 }
 
+.hover\:text-mono-secondary:hover {
+  --tw-text-opacity: 1;
+  color: rgb(251 251 249 / var(--tw-text-opacity));
+}
+
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
@@ -1629,6 +1646,11 @@ video {
 .hover\:grayscale-0:hover {
   --tw-grayscale: grayscale(0);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.focus\:border-primary:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(38 89 217 / var(--tw-border-opacity));
 }
 
 .focus\:outline-none:focus {
@@ -1650,6 +1672,11 @@ video {
 
 .focus\:ring-inset:focus {
   --tw-ring-inset: inset;
+}
+
+.focus\:ring-primary:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(38 89 217 / var(--tw-ring-opacity));
 }
 
 .focus-visible\:outline:focus-visible {

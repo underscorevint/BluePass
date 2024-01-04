@@ -48,6 +48,10 @@ module.exports = {
       'gray-light': '#d3dce6',
     },
 
+
+    //text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary
+
+
     fontFamily: {
       "Alexandria": ['Alexandria', 'sans-serif'],
       sans: ['Alexandria', 'sans-serif'],
