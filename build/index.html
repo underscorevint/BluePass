@@ -60,24 +60,25 @@
 
       <div class="flex flex-1 justify-end">
         <!--<button type="button" class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">Login</button>-->
-        <button type="button" class="bg-transparent text-mono-primary border border-mono-primary hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" onClick="window.open('login_main.html','_self'); return false;">Login</button>
+        <button type="button" class="login-btn bg-transparent text-mono-primary border border-mono-primary hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Login</button>
       </div>
       
     </nav>
     
-    <!-- Mobile menu, show/hide based on menu open state. -->
+    <!-- Nav menu, show/hide based on menu open state. -->
     
     <div id="navmenu" class="hidden" role="dialog" aria-modal="true" >
       <!-- Background backdrop, show/hide based on slide-over state. -->
       
       <div id="menu-overlay" class="fixed inset-0 z-50"></div>
 
-      <div class="fixed inset-y-0 left-0 z-50 w-full overflow-y-auto bg-mono-secondary bg-[url('../img/pattern_secondary.jpg')] bg-left-top bg-contain bg-no-repeat px-10 py-12 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-        <div class="flex items-center justify-between">
+      <div class="fixed inset-y-0 left-0 z-50 h-svh w-[32rem] overflow-y-auto bg-mono-secondary px-10 py-10 ">
+        
+        <div class="flex items-center justify-between mx-auto">
           
           <a href="#" class="-m-1.5 p-1.5">
             <span class="sr-only">BluePass</span>
-            <img class="h-8 w-auto hover:fill-primary" src="./img/mark-sign.svg?color=text-mono-secondary&shade=600" alt="">
+            <img class="h-6 w-auto hover:fill-primary" src="./img/mark-sign.svg?color=text-mono-secondary&shade=600" alt="">
           </a>
 
           <button id="close-menu-icon" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
@@ -94,7 +95,7 @@
 
             <div class="flex flex-col space-y-2 py-6 divide-y">
 
-              <a hre="" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary">Home</a>
+              <a hre="#" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary">Home</a>
 
               <a hre="" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary">About Us</a>
  
@@ -102,22 +103,17 @@
 
               <a hre="" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary">Partners</a>
 
+              <a hre="" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary">Discounts</a>
+
               <a hre="" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary">News</a>
 
               <a hre="" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary">Memberships</a>
 
-              <a hre="" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary">Discounts</a>
-
               <a hre="" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary">FAQ</a>
+
+              <a hre="" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary">Registration</a>
             
 
-            </div>
-
-            <div class="py-6">
-
-              <!--<button type="button" class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">Login</button>-->
-              <button type="button" class="bg-transparent text-mono-primary border border-mono-primary hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" onClick="window.open('login_main.html','_self'); return false;">Login</button>
-              
             </div>
 
         </div>
@@ -128,6 +124,8 @@
 
   </header>
 
+
+  <!-- Hero Image -->
   <div class="relative h-svh bg-[url('../img/hero-image-top-right.png')] bg-contain bg-right-top bg-no-repeat overflow-hidden">
 
     <div id="hero-image-waves-sm" class="absolute bottom-[64px] left-0 w-[101%] h-6 bg-[url('../img/hero-image-waves-sm.jpg')] bg-center bg-repeat-x" ></div>
@@ -148,7 +146,7 @@
         <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
       </div>
        -->
-      <div class="w-full sm:py-48 lg:py-40 xl:my-auto">
+      <div class="w-full sm:py-48 lg:py-40 xl:py-60">
 
       <!--
         <div class="hidden sm:mb-8 sm:flex sm:justify-center">
@@ -167,7 +165,7 @@
 
              <div class="mt-10 flex items-left justify-left gap-x-6">
 
-               <button class="bg-primary px-24 py-2.5 text-base font-semibold text-mono-secondary hover:bg-primary-40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" onClick="window.open('create_account.html','_self'); return false;">Get started</button>
+               <button class="login-btn bg-primary px-24 py-2.5 text-base font-semibold text-mono-secondary hover:bg-primary-40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</button>
               
               <!--
                 <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span aria-hidden="true">→</span></a>
@@ -276,7 +274,7 @@
 
 <!-- Screenshot section -->
 
-  <div class="flex bg-mono-primary h-[60rem] justify-center bg-[url('../img/pattern_primary.jpg')] bg-cover" >
+  <div class="hidden flex bg-mono-primary h-[60rem] justify-center bg-[url('../img/pattern_primary.jpg')] bg-cover" >
   
     <img src="./img/webapp_preview.png" class="object-contain" />
 
@@ -287,9 +285,7 @@
 
 <!-- Services section -->
 
-<div class="p-6 py-32" >
-  
-  <div class="bg-mono-primary h-1 mb-6"></div>
+<section class="p-6 py-20">
 
   <h3 class="text-mono-primary text-xl font-bold">Services</h3>
 
@@ -297,7 +293,7 @@
 
   <div class="flex flex-row gap-6 space-y-6">
 
-    <div class="w-72 xl:w-144 flex-none"></div>
+    <div class="block sm:w-0 md:w-56 xl:w-144 flex-none"></div>
     
     <div class="flex-1 flex-row space-y-1">
 
@@ -325,7 +321,7 @@
 
   <div class="flex flex-row gap-6">
 
-    <div class="w-72 xl:w-144 flex-none"></div>
+    <div class="block sm:w-0 md:w-56 xl:w-144 flex-none"></div>
 
     <div class="flex-1 flex-col space-y-6">
       
@@ -436,7 +432,7 @@
 
   </div>
 
-</div>
+</section>
 
 <!-- /Services section-->
 
@@ -557,7 +553,7 @@
 
   <div class="flex flex-row gap-6">
 
-    <div class="w-72 xl:w-144 flex-none"></div>
+    <div class="block sm:w-0 md:w-56 xl:w-144 flex-none"></div>
 
     <div class="flex-1 flex-col space-y-6">
       
@@ -592,7 +588,11 @@
       <div class="flex flex-col space-y-4">
 
         <!--Article Image-->
-        <div class="bg-pale-70 h-48 bg-[url('../img/hero-image.jpg')] bg-contain bg-center bg-no-repeat"></div>
+        <div class="bg-pale-70 h-auto">
+
+          <img src="./img/image-placeholder.jpg" class="object-contain" />
+
+        </div>
         <!--/Article Image-->
 
         <p class="text-mono-primary text-base font-semibold">UAE launches ‘Blue Pass’ project to bolster maritime business cluster</p>
@@ -615,7 +615,12 @@
       <div class="flex flex-col space-y-4">
 
         <!--Article Image-->
-        <div class="bg-pale-70 h-48 bg-[url('../img/hero-image.jpg')] bg-contain bg-center bg-no-repeat"></div>
+        <div class="bg-pale-70 h-auto">
+          
+          <img src="./img/article-focus.jpg" class="object-contain" />
+        
+        </div>
+        
         <!--/Article Image-->
 
         <p class="text-mono-primary text-base font-semibold">MOEI signs partnership with six key industry entities for ‘Blue Pass’ project</p>
@@ -638,7 +643,11 @@
       <div class="flex flex-col space-y-4">
 
         <!--Article Image-->
-        <div class="bg-pale-70 h-48 bg-[url('../img/hero-image.jpg')] bg-contain bg-center bg-no-repeat"></div>
+        <div class="bg-pale-70 h-auto">
+
+          <img src="./img/article-emirates.jpg" class="object-contain" />
+
+        </div>
         <!--/Article Image-->
 
         <p class="text-mono-primary text-base font-semibold">Blue Pass Partnership: Enhancing the UAE Maritime Sector</p>
@@ -677,7 +686,7 @@
   
   <div class="flex flex-row gap-6">
 
-    <div class="w-72 xl:w-144 flex-none"></div>
+    <div class="block sm:w-0 md:w-56 xl:w-144 flex-none"></div>
 
     <div class="flex-1 flex-col space-y-6 divide-y">
 
@@ -833,24 +842,9 @@
 
   </div>
   
-  <div class="h-20"></div>
-
 </section>
 
 <!-- /Memberships section-->
-
-
-<!-- Discounts section -->
-
-<div class="p-6" >
-  
-  <div class="bg-mono-primary h-1 my-6"></div>
-
-  <h3 class="text-mono-primary text-xl font-bold">Discounts</h3>
-
-</div>
-
-<!-- /Discounts section-->
 
 
 <!-- FAQ section -->
@@ -858,12 +852,62 @@
 <div class="p-6" >
   
   <div class="bg-mono-primary h-1 my-6"></div>
-  
+
   <h3 class="text-mono-primary text-xl font-bold">FAQ</h3>
 
 </div>
 
 <!-- /FAQ section-->
+
+
+<!-- /Registration section -->
+
+<div class="p-6 bg-primary-40 py-20" >
+  
+
+  <div class="flex flex-col space-y-6 w-[30rem] mx-auto">
+
+    <!--Header-->
+
+    <div class="w-full flex flex-row content-center">
+            
+      <div class="flex-auto">
+          <h3 class="text-2xl font-bold text-mono-secondary">Registration</h3>
+      </div>
+
+      <div class="flex-none text-right text-base pt-4">
+       <!--   <a href="login.html" class="text-link text-sm text-normal underline">Login</a>-->
+      </div>
+
+    </div>
+
+    <!--/Header-->
+
+    
+
+    <div class="flex flex-col space-y-2">
+
+      <p class="text-sm text-mono-secondary">Your name</p>
+      <input type="text" name="Name" id="Name" class="text-base px-4 py-2 placeholder:text-gray-400" placeholder="Enter your name"/>
+
+    </div>
+
+    <div class="flex flex-col space-y-2">
+
+      <p class="text-sm text-mono-secondary">Email</p>
+      <input type="text" name="Email" id="Email" class="text-base px-4 py-2 placeholder:text-gray-400" placeholder="i.e johndow@domain.com"/>
+      <!--
+      <input type="text" name="price" id="price" class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="0.00">
+    -->                   
+                        
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- /Registration section-->
 
 
 <!--
@@ -878,7 +922,9 @@
 
     <div class="flex flex-row gap-6">
 
-      <div class="flex-none w-72 flex-col">
+      <div class="block sm:w-0 md:w-56 xl:w-144 flex-none">
+
+        
 
         <h3 class="text-mono-primary text-xl font-bold">Contact Us</h3>
 

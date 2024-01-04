@@ -18,7 +18,7 @@
 
 
 #ship-0.animated{
-  animation-duration: 12s;
+  animation-duration: 8s;
   animation-name: ship-left-animation;
   animation-iteration-count: infinite;
   background-size: cover;
@@ -26,7 +26,7 @@
 }
 
 #ship-1.animated{
-  animation-duration: 12s;
+  animation-duration: 8s;
   animation-name: ship-right-animation;
   animation-iteration-count: infinite;
 
@@ -35,7 +35,7 @@
 }
 
 #ship-2.animated{
-  animation-duration: 12s;
+  animation-duration: 8s;
   animation-name: ship-left-animation;
   animation-iteration-count: infinite;
   background-size: cover;
@@ -43,7 +43,7 @@
 }
 
 #ship-3.animated{
-  animation-duration: 12s;
+  animation-duration: 8s;
   animation-name: ship-right-animation;
   animation-iteration-count: infinite;
   background-size: cover;
@@ -51,7 +51,7 @@
 }
 
 #ship-4.animated{
-  animation-duration: 12s;
+  animation-duration: 8s;
   animation-name: ship-left-animation;
   animation-iteration-count: infinite;
   background-position: center;
