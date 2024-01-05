@@ -38,8 +38,12 @@ $(document).ready(function () {
 
       $('#ship-owner-registration').on( "click", function() {
 
-        $(this).addClass('activated');
-        $('#partner-registration').removeClass('activated');
+        
+        $(this).removeClass('bg-pale-90').addClass('bg-primary');
+        $(this).removeClass('text-mono-primary').addClass('text-mono-secondary');
+        
+
+        $('#partner-registration').removeClass('bg-mono-primary');
 
         $('#partner-registration-form').addClass('hidden')
         $('#ship-owner-registration-form').removeClass('hidden');
