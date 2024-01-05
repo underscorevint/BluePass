@@ -29,9 +29,15 @@ $(document).ready(function () {
         $(this).toggleClass('bg-primary');$(this).toggleClass('text-mono-secondary');
       });
       
+
       $('.back-btn').on( "click", function() {
-        e.preventDefault();
+        //e.preventDefault();
         window.history.back();
+      });
+
+
+      $('.nav-menu-item.external').on( "click", function() {
+        $( '#navmenu' ).addClass('hidden');
       });
       
 
@@ -39,7 +45,6 @@ $(document).ready(function () {
       $('#ship-owner-registration').on( "click", function() {
 
         
-
         $(this).addClass('activated');
         $('#partner-registration').removeClass('bg-mono-primary');
 
@@ -47,6 +52,7 @@ $(document).ready(function () {
         $('#ship-owner-registration-form').removeClass('hidden');
 
       });
+
 
       $('#partner-registration').on( "click", function() {
 
