@@ -1,3 +1,17 @@
+input[type='text'] {
+  border-color:theme('colors.primary');
+  padding: theme('spacing.6');
+  border-width: theme(borderWidth.2);
+}
+
+#ship-owner-registration.activated{
+ background-color: theme('backgroundColor.primary');
+}
+
+#service-provider-registration{
+  background-color: theme('backgroundColor.primary');
+}
+
 #hero-image-waves-lg {
   animation-duration: 3s;
   animation-name: waves-lg-animation;

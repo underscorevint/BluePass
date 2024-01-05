@@ -5,18 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BluePass Create account</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_alt.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
+<!-- jQuery Is Required  -->
+<script src="./js/jquery.min.js" type="text/javascript"></script>
+
+<script src="./js/app.js" type="text/javascript"></script>
+
+
 <body class="bg-pale">
 
-    <section class="text-left w-full inline-grid grid-cols-2 h-lvh">
+
+    <div class="text-left w-full inline-grid grid-cols-2 h-lvh">
   
         <!--Left Collumn-->
 
-        <div class="w-auto bg-mono-primary h-svh flex justify-center bg-[url('../img/pattern_primary.jpg')] bg-cover">
+        <div class="w-auto bg-mono-primary flex justify-center bg-[url('../img/pattern_primary.jpg')] bg-cover">
 
             <div class="mx-auto text-left w-96 flex-col space-y-8 mt-24 xl:mt-32">
 
@@ -34,16 +42,16 @@
 
         <!--Right Collumn-->
 
-        <div class="w-auto">
+        <div class="flex-1">
 
-            <div class="m-auto content-center w-128 mt-24 xl:mt-32">
+            <div class="m-auto content-center w-128 my-24 xl:my-32">
 
                 <!--Header-->
 
                 <div class="w-full flex flex-row content-center">
             
                     <div class="flex-auto">
-                        <h3 class="text-2xl font-bold text-mono-primary">Create account</h3>
+                        <h3 class="text-2xl font-bold text-mono-primary">Create an account</h3>
                     </div>
     
                     <div class="flex-none text-right text-base pt-4">
@@ -58,33 +66,56 @@
                 <div class="bg-mono-primary h-1 my-4"></div>
 
 
+                <div class="h-6"></div>
 
-                <div class="flex flex-row">
 
-                    <div id="ship-owner-registration" class="flex-1 h-24">
+                <div class="flex flex-row gap-6">
 
-                        Ship Owner/ Operator
+                    <div id="ship-owner-registration" class="flex-1 h-40 px-6 py-6 text-center bg-pale-90 ">
+
+
+                        <div class="flex-1 flex-col space-y-2">
+
+                            <img src="./img/plan-placeholder.png" class="h-12 mx-auto" />
+
+                            <p class="text-base">Ship Owner/ Operator</p>
+
+                        </div>
+
 
                     </div>
 
-                    <div id="service-provider-registration" class="flex-1 h-24">
 
-                        Service Provider
+                    <div id="service-provider-registration" class="flex-1 h-40 px-6 py-6 text-center bg-pale-90">
+
+
+                        <div class="flex-1 flex-col space-y-2">
+
+                            <img src="./img/plan-placeholder.png" class="h-12 mx-auto" />
+
+                            <p class="text-base">Service<br/>Provider</p>
+
+                        </div>
+                        
 
                     </div>
+
 
                 </div>
 
 
-                <div class="flex flex-col">
+                <div class="h-10"></div>
 
+                
+                <!--Ship Owner Registration-->
 
-                    <!--Ship Owner Registration-->
+                <div class="flex flex-col hidden" id="ship-owner-registration-form">
+
 
                     <div class="flex flex-col space-y-2">
 
                         <p class="text-sm">Your name</p>
-                        <input type="text" name="Name" id="Name" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray" placeholder="Enter your name"/>
+                        <input type="text" name="Name" id="Name" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray focus:border-primary" placeholder="Enter your name"/>
   
                     </div>
               
@@ -127,9 +158,94 @@
               
                     </div>
 
-                    <!--Ship Owne Registation-->
-            
                 </div>
+                
+                
+                <!--/Ship Owner Registation-->
+
+
+                <!--Service Provider Registation-->
+
+
+                <div id="service-provider-registration-form" class="hidden">
+
+
+
+                    <!--Main user Details-->
+                
+                    <div class="flex-1 flex-col space-y-6">
+
+                        <h3 class="text-mono-primary text-lg font-semibold">Company Main User</h3>
+                    
+                    
+                        <div class="flex flex-col space-y-2">
+                    
+                            <label class="text-sm text-mono-primary">Ship particulars (Including IMO number)</label>
+                            <input type="text" name="ship-particulars" id="ship-particulars" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder="Ship particulars (Including IMO number)"/>                        
+                    
+                        </div>
+                    
+                        <div class="flex flex-col space-y-2">
+                    
+                            <p class="text-sm text-mono-primary">User Name (email)</p>
+                            <input type="text" name="user-name-email" id="user-name-email" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder="i.e johndow@domain.com"/>                        
+                    
+                        </div>
+                    
+                        <div class="flex flex-col space-y-2">
+                    
+                            <p class="text-sm text-mono-primary">Full Name</p>
+                            <input type="text" name="main-user-full-name" id="main-user-full-name" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder="Main user full name"/>                        
+                    
+                        </div>
+                    
+                        <div class="flex flex-col space-y-2">
+                    
+                            <label class="text-sm text-mono-primary">Phone</label>
+                            <input type="text" name="main-user-phone-number" id="Email" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder="Phone number"/>                        
+                    
+                        </div>
+
+                    </div>
+                
+                    <!--/Main User Details-->
+                
+                    <div class="h-10"></div>
+                
+                    <!--Password-->
+                
+                
+                    <div class="flex-1 flex-col space-y-6">
+                
+                        <h3 class="text-mono-primary text-lg font-semibold">Password</h3>
+                
+                
+                        <div class="flex flex-col space-y-2">
+                
+                            <p class="text-sm text-mono-primary">Password</p>
+                            <input type="text" name="Password" id="Password" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder="●●●●●●●●●●●●"/>                        
+                
+                        </div>
+                
+                        <div class="flex flex-col space-y-2">
+                
+                            <p class="text-sm text-mono-primary">Repeat password</p>
+                            <input type="password" name="repeat-password" id="repeat-password" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder="●●●●●●●●●●●●"/>                        
+                
+                        </div>
+                
+                    </div>
+                
+                
+                    <!--/Password-->
+                
+                
+                </div>
+                
+                
+                
+                <!--/Service Provider Registation-->
+
 
             </div>
 
@@ -137,7 +253,7 @@
 
         <!--/Right Collumn-->
 
-    </section>
+    </div>
 
 </body>
 

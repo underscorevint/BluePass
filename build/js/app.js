@@ -24,6 +24,31 @@ $(document).ready(function () {
         window.open('create_account.html','_self'); return false;
       });
 
+
+      $('#ship-owner-registration').on( "click", function() {
+
+        $(this).addClass('activated');
+        $('#service-provider-registration').removeClass('activated');
+
+        $('#ship-owner-registration-form').addClass('hidden')
+        $('#service-provider-registration-form').removeClass('hidden');
+
+      });
+
+      $('#service-provider-registration').on( "click", function() {
+
+        $(this).addClass('activated');
+        $('#ship-owner-registration').removeClass('activated');
+
+        $('#service-provider-registration-form').addClass('hidden');
+        $('#ship-owner-registration-form').removeClass('hidden');
+        
+      });
+
+
+      
+
+
       PartnersAnimation();
 
       BluePassAnimation();
