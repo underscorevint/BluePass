@@ -1776,6 +1776,10 @@ video {
   outline-offset: 2px;
 }
 
+.active\:border-2:active {
+  border-width: 2px;
+}
+
 @media (min-width: 480px) {
   .sm\:-top-80 {
     top: -20rem;

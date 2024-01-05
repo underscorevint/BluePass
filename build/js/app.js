@@ -39,10 +39,8 @@ $(document).ready(function () {
       $('#ship-owner-registration').on( "click", function() {
 
         
-        $(this).removeClass('bg-pale-90').addClass('bg-primary');
-        $(this).removeClass('text-mono-primary').addClass('text-mono-secondary');
-        
 
+        $(this).addClass('activated');
         $('#partner-registration').removeClass('bg-mono-primary');
 
         $('#partner-registration-form').addClass('hidden')
