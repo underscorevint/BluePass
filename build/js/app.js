@@ -28,20 +28,20 @@ $(document).ready(function () {
       $('#ship-owner-registration').on( "click", function() {
 
         $(this).addClass('activated');
-        $('#service-provider-registration').removeClass('activated');
+        $('#partner-registration').removeClass('activated');
 
-        $('#ship-owner-registration-form').addClass('hidden')
-        $('#service-provider-registration-form').removeClass('hidden');
+        $('#partner-registration-form').addClass('hidden')
+        $('#ship-owner-registration-form').removeClass('hidden');
 
       });
 
-      $('#service-provider-registration').on( "click", function() {
+      $('#partner-registration').on( "click", function() {
 
         $(this).addClass('activated');
         $('#ship-owner-registration').removeClass('activated');
 
-        $('#service-provider-registration-form').addClass('hidden');
-        $('#ship-owner-registration-form').removeClass('hidden');
+        $('#ship-owner-registration-form').addClass('hidden');
+        $('#partner-registration-form').removeClass('hidden');
         
       });
 

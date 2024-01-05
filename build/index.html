@@ -1099,7 +1099,7 @@
   
   <a name="faq-section"></a>
 
-  <div class="flex flex-col space-y-6 w-[60rem] mx-auto">
+  <div class="flex flex-col space-y-6 w-[40rem] mx-auto">
 
     <!--Header-->
 
@@ -1119,8 +1119,16 @@
     <div class="h-6"></div>
 
     <!--/Header-->
+    
 
     <div class="flex flex-row space-x-20">
+
+
+
+
+
+
+
 
     <!-- Left Col-->
 
@@ -1132,19 +1140,18 @@
 
       <div class="flex flex-col space-y-2">
 
-        <p class="text-sm text-mono-secondary">Ship Owner Company Name</p>
-        <input type="text" name="Company Name" id="shipowner-company" class="text-base px-4 py-2 placeholder:text-gray-400" placeholder="Enter ship owner company name"/>
+        <p class="text-sm text-mono-secondary">Company Name</p>
+        <input type="text" name="partner-company-name" id="partner-company-name" class="text-base px-4 py-2 placeholder:text-gray-400" placeholder="Enter your legal company name"/>
   
       </div>
-  
   
       <div class="flex flex-col space-y-2">
-  
-        <p class="text-sm text-mono-secondary">Email</p>
-        <input type="text" name="Email" id="Email" class="text-base px-4 py-2 placeholder:text-gray-400" placeholder="i.e johndow@domain.com"/>                        
+
+        <p class="text-sm text-mono-secondary">Logo</p>
+        <input type="text" name="partner-company-name" id="partner-company-name" class="text-base px-4 py-2 placeholder:text-gray-400" placeholder="Enter your legal company name"/>
   
       </div>
-  
+
   
       <div class="flex flex-col space-y-2">
   
@@ -1163,8 +1170,8 @@
   
       <div class="flex flex-col space-y-2">
   
-        <p class="text-sm text-mono-secondary">Procurement contact (optional)</p>
-        <input type="text" name="procurement-contact" id="procurement-contact" class="text-base px-4 py-2 placeholder:text-gray-400" placeholder="Enter procurement contact"/>                        
+        <p class="text-sm text-mono-secondary">Trading License</p>
+        <input type="text" name="trading-licence" id="trading-licence" class="text-base px-4 py-2 placeholder:text-gray-400" placeholder="Enter trading licence"/>                        
   
       </div>
   
@@ -1182,66 +1189,7 @@
   
       </div>
 
-      <!--/Company Details-->
 
-    </div>
-    <!--/Left Col-->
-
-    <!--Right Col-->
-    <div class="flex-1 flex-col space-y-6">
-
-      <!--Vessel Details-->
-
-      <h3 class="text-mono-secondary text-lg font-semibold">Vessels/Assets</h3>
-
-  
-      <div class="flex flex-col space-y-2">
-  
-        <p class="text-sm text-mono-secondary">Vessel Name</p>
-        <input type="text" name="vessel-name" id="vessel-name" class="text-base px-4 py-2 placeholder:text-gray-400" placeholder="Enter vessel name"/>                        
-  
-      </div>
-  
-      <div class="flex flex-col space-y-2">
-  
-        <p class="text-sm text-mono-secondary">IMO number</p>
-        <input type="text" name="imo-number" id="imo-number" class="text-base px-4 py-2 placeholder:text-gray-400" placeholder="Enter IMO number"/>                        
-  
-      </div>
-  
-      <div class="flex flex-col space-y-2">
-  
-        <p class="text-sm text-mono-secondary">Captain Name</p>
-        <input type="text" name="captain-name" id="captain-name" class="text-base px-4 py-2 placeholder:text-gray-400" placeholder="Enter captain full name"/>                        
-  
-      </div>
-  
-      <div class="flex flex-col space-y-2">
-  
-        <p class="text-sm text-mono-secondary">Cheff Engineer</p>
-        <input type="text" name="cheff-engineer-name" id="cheff-engineer-name" class="text-base px-4 py-2 placeholder:text-gray-400" placeholder="Enter cheff engineer full name"/>                        
-  
-      </div>
-  
-  
-      <!--/Vessel details-->
-
-
-    </div>
-    <!--/Right Col-->
-
-    </div>
-
-
-    <div class="h-10"></div>
-
-    
-    <div class="flex flex-row space-x-20">
-
-      <!-- Left Col-->
-  
-      <div class="flex-1 flex-col space-y-6">
-  
         <!--Main user Details-->
   
         <h3 class="text-mono-secondary text-lg font-semibold">Company Main User</h3>
@@ -1249,21 +1197,21 @@
     
         <div class="flex flex-col space-y-2">
     
-          <p class="text-sm text-mono-secondary">Ship particulars (Including IMO number)</p>
-          <input type="text" name="Email" id="Email" class="text-base px-4 py-2 placeholder:text-gray-400" placeholder="i.e johndow@domain.com"/>                        
+          <p class="text-sm text-mono-secondary">User name - email</p>
+          <input type="text" name="user-name-email" id="user-name-email" class="text-base px-4 py-2 placeholder:text-gray-400" placeholder="i.e johndow@domain.com"/>                        
     
         </div>
     
         <div class="flex flex-col space-y-2">
     
-          <p class="text-sm text-mono-secondary">User Name (email)</p>
-          <input type="text" name="Email" id="Email" class="text-base px-4 py-2 placeholder:text-gray-400" placeholder="i.e johndow@domain.com"/>                        
+          <p class="text-sm text-mono-secondary">Full name</p>
+          <input type="text" name="main-user-full-name" id="main-user-full-name" class="text-base px-4 py-2 placeholder:text-gray-400" placeholder="Enter full name"/>                        
     
         </div>
     
         <div class="flex flex-col space-y-2">
     
-          <p class="text-sm text-mono-secondary">Full Name</p>
+          <p class="text-sm text-mono-secondary">Password</p>
           <input type="text" name="Email" id="Email" class="text-base px-4 py-2 placeholder:text-gray-400" placeholder="i.e johndow@domain.com"/>                        
     
         </div>
@@ -1276,42 +1224,19 @@
         </div>
   
         <!--/Main User Details-->
-  
-      </div>
-      <!--/Left Col-->
-  
-      <!--Right Col-->
-      <div class="flex-1 flex-col space-y-6">
 
-        
-  
-        <!--Password-->
-  
-        <h3 class="text-mono-secondary text-lg font-semibold">Password</h3>
-  
-    
-        <div class="flex flex-col space-y-2">
+      <!--/Company Details-->
 
-          <p class="text-sm text-mono-secondary">Password</p>
-          <input type="text" name="Password" id="Password" class="text-base px-4 py-2 placeholder:text-gray-400" placeholder="●●●●●●●●●●●●"/>                        
-    
-        </div>
-    
-        <div class="flex flex-col space-y-2">
-    
-          <p class="text-sm text-mono-secondary">Repeat password</p>
-          <input type="password" name="repeat-password" id="repeat-password" class="text-base px-4 py-2 placeholder:text-gray-400" placeholder="●●●●●●●●●●●●"/>                        
-    
-        </div>
-    
-  
-        <!--/Password-->
-  
-  
-      </div>
-      <!--/Right Col-->
-  
-      </div>
+
+
+    </div>
+
+
+    <div class="h-10"></div>
+
+
+    </div>
+
 
       <div class="h-30"></div>
 
