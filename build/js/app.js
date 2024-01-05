@@ -25,6 +25,17 @@ $(document).ready(function () {
       });
 
 
+      $('.active-tag').on( "click", function() {
+        $(this).toggleClass('bg-primary');$(this).toggleClass('text-mono-secondary');
+      });
+      
+      $('.back-btn').on( "click", function() {
+        e.preventDefault();
+        window.history.back();
+      });
+      
+
+
       $('#ship-owner-registration').on( "click", function() {
 
         $(this).addClass('activated');

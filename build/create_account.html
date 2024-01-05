@@ -24,9 +24,9 @@
   
         <!--Left Collumn-->
 
-        <div class="w-auto bg-mono-primary flex justify-center bg-[url('../img/pattern_primary.jpg')] bg-cover">
+        <div class="w-auto bg-mono-primary flex justify-center bg-[url('../img/pattern_primary.jpg')] bg-left-top bg-cover">
 
-            <div class="mx-auto text-left w-96 flex-col space-y-8 mt-24 xl:mt-32">
+            <div class="fixed mx-auto text-left w-96 flex-col space-y-8 mt-24 xl:mt-32">
 
                 <img class="w-12" src="./img/mark-sign.svg" />
             
@@ -44,7 +44,11 @@
 
         <div class="flex-1">
 
-            <div class="m-auto content-center w-128 my-24 xl:my-32">
+            <div class="m-auto content-center w-128 my-24 xl:my-24">
+
+                <button class="back-btn">
+                    <img src="./img/back-icon.svg" class="h-6 hover:fill-primary"/>
+                </button>
 
                 <!--Header-->
 
@@ -159,7 +163,7 @@
 
                         <div class="basis-1/2">
 
-                          <button class="bg-primary hover:bg-primary-40 text-mono-secondary font-bold text-base px-10 py-2.5">Submit</button>
+                          <button class="bg-primary hover:bg-primary-40 text-mono-secondary font-bold text-base px-10 py-2.5 shadow-sm hover:shadow-md">Submit</button>
 
                         </div>
               
@@ -206,13 +210,13 @@
 
                         <p class="text-sm text-mono-primary">Contact Details</p>
 
-                        <select class="appearance-auto">
-                            <option>Adress</option>
+                        <select class="border border-mono-primary text-base px-4 py-2 border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary">
+                            <option>Address</option>
                             <option>Phone</option>
-                            <option>email</option>
+                            <option>Email</option>
                         </select>
 
-                        <input type="text" name="Contacts" id="contacts" class="border border-mono-primary text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder="Enter contact details"/>                        
+                        <input type="text" name="Contacts" id="contacts" class="border border-mono-primary text-base px-4 py-2 border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder="Enter contact details"/>                        
 
                     </div>
 
@@ -349,7 +353,24 @@
                 
                 
                     <!--/Password-->
-                
+
+                    <div class="h-12"></div>
+
+
+                    <div class="flex flex-row">
+
+                        <div class="basis-1/2">
+
+                          <button class="bg-primary hover:bg-primary-40 text-mono-secondary font-bold text-base px-10 py-2.5 shadow-sm hover:shadow-md">Submit</button>
+
+                        </div>
+              
+                        <div class="basis-1/2">
+           
+
+                        </div>
+              
+                    </div>
                 
                 </div>
                 
