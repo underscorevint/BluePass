@@ -1161,6 +1161,10 @@ video {
   justify-self: end;
 }
 
+.justify-self-center {
+  justify-self: center;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1869,6 +1873,10 @@ video {
     width: 640px;
   }
 
+  .md\:justify-self-end {
+    justify-self: end;
+  }
+
   .md\:text-left {
     text-align: left;
   }
@@ -1881,6 +1889,10 @@ video {
 @media (min-width: 976px) {
   .lg\:w-\[960px\] {
     width: 960px;
+  }
+
+  .lg\:justify-self-center {
+    justify-self: center;
   }
 
   .lg\:py-12 {
@@ -1910,6 +1922,10 @@ video {
 
   .xl\:w-144 {
     width: 36rem;
+  }
+
+  .xl\:justify-self-center {
+    justify-self: center;
   }
 
   .xl\:py-60 {

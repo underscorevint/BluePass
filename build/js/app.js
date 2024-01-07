@@ -134,8 +134,8 @@ function BluePassAnimation(){
 
 
 
-        row.toggleClass("animated").delay(8000).queue(function(next){
-            row.toggleClass("animated");
+      $('.vessel').removeClass("animated").queue(function(next){
+          row.addClass("animated");
            next();
       });
 
