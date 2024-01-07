@@ -714,11 +714,6 @@ video {
   margin-bottom: 0.25rem;
 }
 
-.my-10 {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-}
-
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -1062,12 +1057,6 @@ video {
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-x-20 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(5rem * var(--tw-space-x-reverse));
-  margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -1205,11 +1194,6 @@ video {
 .bg-primary {
   --tw-bg-opacity: 1;
   background-color: rgb(38 89 217 / var(--tw-bg-opacity));
-}
-
-.bg-primary-60 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(81 122 225 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\.\/img\/bluepass_bg\.jpg\'\)\] {
