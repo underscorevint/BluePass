@@ -127,7 +127,10 @@
                 
                 <!--Partner Registration-->
 
-                <div class="flex flex-col hidden space-y-6" id="partner-registration-form">
+                <div class="registration-form flex flex-col hidden space-y-6" id="partner-registration-form">
+
+
+                    <h3 class="text-mono-primary text-base font-semibold">Partner's Company Details</h3>
 
 
                     <div class="flex flex-col space-y-2">
@@ -168,7 +171,13 @@
                       <input type="password" name="partner-password" id="partner-password" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray focus:border-primary" placeholder="●●●●●●●●●●●●"/>
             
                     </div>
-                    
+
+                    <div class="flex flex-col space-y-2">
+            
+                        <p class="text-sm">Repeat password</p>
+                        <input type="password" name="partner-repeat-password" id="repeat-partner-password" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray focus:border-primary" placeholder="●●●●●●●●●●●●"/>
+              
+                    </div>
 
                     <div class="h-12"></div>
 
@@ -177,7 +186,7 @@
 
                         <div class="basis-1/2">
 
-                          <button class="bg-primary hover:bg-primary-40 text-mono-secondary font-bold text-base px-10 py-2.5 shadow-sm hover:shadow-md">Submit</button>
+                          <button class="bg-primary hover:bg-primary-40 text-mono-secondary font-bold text-base px-10 py-2.5 shadow-sm hover:shadow-md">Register</button>
 
                         </div>
               
@@ -197,12 +206,12 @@
                 <!--Ship Owner Registation-->
 
 
-                <div id="ship-owner-registration-form" class="hidden space-y-6">
+                <div id="ship-owner-registration-form" class="registration-form hidden space-y-6">
 
 
                     <!--Company Details-->
 
-                    <h3 class="text-mono-primary text-base font-semibold">Company Details</h3>
+                    <h3 class="text-mono-primary text-base font-semibold">Ship Owner's Company Details</h3>
 
                     <div class="flex flex-col space-y-2">
 
@@ -375,7 +384,7 @@
 
                         <div class="basis-1/2">
 
-                          <button class="bg-primary hover:bg-primary-40 text-mono-secondary font-bold text-base px-10 py-2.5 shadow-sm hover:shadow-md">Submit</button>
+                          <button class="bg-primary hover:bg-primary-40 text-mono-secondary font-bold text-base px-10 py-2.5 shadow-sm hover:shadow-md">Register</button>
 
                         </div>
               
@@ -391,6 +400,209 @@
                 
                 
                 <!--/Ship Owner Registation-->
+
+                <!--Service Provider Registration-->
+
+                <div id="service-provider-registration-form" class="registration-form hidden space-y-6">
+
+
+                    <!--Company Details-->
+
+                    <h3 class="text-mono-primary text-base font-semibold">Service Provider's Company Details</h3>
+
+                    <div class="flex flex-col space-y-2">
+
+                    <p class="text-sm text-mono-primary">Company Name</p>
+                    <input type="text" name="partner-company-name" id="partner-company-name" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder="Enter your legal company name"/>
+                
+                    </div>
+                
+                    <div class="flex flex-col space-y-2">
+
+                    <p class="text-sm text-mono-primary">Logo</p>
+                    <input type="text" name="partner-company-name" id="partner-company-name" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder="Enter your legal company name"/>
+                
+                    </div>
+
+                
+                    <div class="flex flex-col space-y-2">
+                
+                    <p class="text-sm text-mono-primary">Contact Details</p>
+
+                    <select class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary">
+                        <option>Adress</option>
+                        <option>Phone</option>
+                        <option>Email</option>
+                    </select>
+
+                    <input type="text" name="Contacts" id="contacts" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder="Enter contact details"/>                        
+
+                    </div>
+                
+                
+                    <div class="flex flex-col space-y-2">
+                
+                    <p class="text-sm text-mono-primary">Trading License</p>
+                    <input type="text" name="trading-licence" id="trading-licence" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder="Enter trading licence"/>                        
+                
+                    </div>
+                
+                    <div class="flex flex-col space-y-2">
+                
+                    <label class="text-sm text-mono-primary">Credentials</label>
+                    <select class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary">
+                        <option>ISO</option>
+                        <option>ICV</option>
+                        <option>DOC</option>
+                        <option>ADNOC</option>
+                        <option>NOC</option>
+                        <option>other certification</option>
+                    </select>
+                    <input type="text" name="Email" id="Email" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder="Enter your certifications"/>                        
+                
+                    </div>
+                
+                    <div class="flex flex-col space-y-2">
+                
+                    <label class="text-sm text-mono-primary">Company size</label>
+
+                    <select type="text" name="dpa" id="dpa" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary">
+
+                        <option><10</option>
+                        <option>10-50</option>
+                        <option>50-100</option>
+                        <option>500+</option>
+                        
+                    </select>                      
+                
+                    </div>
+
+                    <div class="flex flex-col space-y-2">
+                
+                    <label class="text-sm text-mono-primary">Coverage</label>
+                    <input type="text" name="dpa" id="dpa" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder="Enter DPA"/>                        
+                
+                    </div>
+
+                    <!--/Company Details-->
+
+                    <div class="h-4"></div>
+
+                    <!--Main user Details-->
+            
+                    <h3 class="text-mono-primary text-base font-semibold">Company Main User</h3>
+                
+                
+                    <div class="flex flex-col space-y-2">
+                
+                    <p class="text-sm text-mono-primary">User name - email</p>
+                    <input type="text" name="user-name-email" id="user-name-email" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder="i.e johndow@domain.com"/>                        
+                
+                    </div>
+                
+                    <div class="flex flex-col space-y-2">
+                
+                        <p class="text-sm text-mono-primary">Full name</p>
+                        <input type="text" name="main-user-full-name" id="main-user-full-name" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder="Enter full name"/>                        
+                
+                    </div>
+
+                    <div class="flex flex-col space-y-2">
+                
+                        <p class="text-sm text-mono-primary">Phone</p>
+                        <input type="text" name="Email" id="Email" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder="Enter your phone number"/>                        
+                    
+                    </div>
+                
+                    <div class="flex flex-col space-y-2">
+                
+                        <p class="text-sm text-mono-primary">Password</p>
+                        <input type="password" name="service-provider-password" id="service-provider-password" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder="i.e johndow@domain.com"/>                        
+                
+                    </div>
+
+
+                    <div class="flex flex-col space-y-2">
+              
+                        <p class="text-sm">Repeat password</p>
+                        <input type="password" name="repeat-service-provider-password" id="repeat-service-provider-password" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray focus:border-primary" placeholder="●●●●●●●●●●●●"/>
+              
+                    </div>
+                
+
+            
+                    <!--/Main User Details-->
+
+                    <div class="h-4"></div>
+
+                    <!--Profile Details-->
+            
+                    <h3 class="text-mono-primary text-base font-semibold">Profile</h3>
+                
+                
+                    <div class="flex flex-col space-y-2">
+                
+                        <p class="text-sm text-mono-primary">Agent</p>
+                        <input type="text" name="user-name-email" id="user-name-email" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder="i.e johndow@domain.com"/>                        
+                
+                    </div>
+                
+                    <div class="flex flex-col space-y-2">
+                
+                    <label class="text-sm text-mono-primary">Service categories</label>
+                    
+                    <div class="space-y-1">
+
+                        <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-base font-medium text-gray-600 ring-1 ring-inset ring-mono-primary">Marine Agency</span>
+                        <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-base font-medium text-red-700 ring-1 ring-inset ring-mono-primary">Transportation & Logistics</span>
+                        <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-base font-medium text-yellow-800 ring-1 ring-inset ring-mono-primary">Firefight Equipment</span>
+                        <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-base font-medium text-green-700 ring-1 ring-inset ring-mono-primary">Life saving appliances</span>
+                        <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-base font-medium text-blue-700 ring-1 ring-inset ring-mono-primary">Lubricants</span>
+                        <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-base font-medium text-indigo-700 ring-1 ring-inset ring-mono-primary">Safety protective gears</span>
+                        <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-base font-medium text-purple-700 ring-1 ring-inset ring-mono-primary">Galley utensils</span>
+                        <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-base font-medium text-pink-700 ring-1 ring-inset ring-mono-primary">Cargo lashing materials</span>
+                        <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-base font-medium text-blue-700 ring-1 ring-inset ring-mono-primary">Hand & General tools</span>
+                        <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-base font-medium text-indigo-700 ring-1 ring-inset ring-mono-primary">Food Provision</span>
+                        <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-base font-medium text-purple-700 ring-1 ring-inset ring-mono-primary">Cabin store & Cleaning</span>
+                        <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-base font-medium text-pink-700 ring-1 ring-inset ring-mono-primary">Loose lifting Gears</span>
+                        <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-base font-medium text-pink-700 ring-1 ring-inset ring-mono-primary">Mooring Ropes</span>
+
+                    </div>
+                
+                    </div>
+                    
+                    <div class="flex flex-col space-y-2">
+                
+                        <label class="text-sm text-mono-primary">Products</label>
+                    
+                        <textarea type="text" name="Email" id="Email" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder="List your products"></textarea>                        
+                
+                    </div>
+
+
+                    <!--/Profile Details-->
+
+                    <div class="h-10"></div>
+
+                    <div class="flext w-full">
+    
+                        <button class="bg-primary hover:bg-primary-40 text-mono-secondary font-bold text-base px-10 py-2.5 shadow-sm hover:shadow-md">Register</button>
+    
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+
+                <!--/Service Provider Registration-->
 
 
             </div>
