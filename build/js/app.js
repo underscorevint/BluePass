@@ -42,42 +42,26 @@ $(document).ready(function () {
       
 
 
-      $('#ship-owner-registration').on( "click", function() {
+      $('.registration-picker').on( "click", function(index) {
 
-        
+        var indexnew = '#' + $(this).attr("id") + '-form';
 
-        $('.registration-form').removeClass('activated');
+      //  alert (indexnew);
+
+        $('.registration-picker').removeClass('activated');
         $(this).addClass('activated');
+
+        $('.registration-picker').removeClass('bg-primary');
+        $(this).addClass('bg-primary');
 
 
         $('.registration-form').addClass('hidden');
-        $('#ship-owner-registration-form').removeClass('hidden');
+        $(indexnew).removeClass('hidden');
 
       });
 
 
-      $('#partner-registration').on( "click", function() {
 
-        $(this).addClass('activated');
-        $('.registration-form').removeClass('activated');
-        $(this).addClass('activated');
-
-
-        $('.registration-form').addClass('hidden');
-        $('#partner-registration-form').removeClass('hidden');
-        
-      });
-
-      $('#service-provider-registration').on( "click", function() {
-
-
-        $('.registration-form').removeClass('activated');
-        $(this).addClass('activated');
-
-        $('.registration-form').addClass('hidden');
-        $('#service-provider-registration-form').removeClass('hidden');
-        
-      });
 
 
       

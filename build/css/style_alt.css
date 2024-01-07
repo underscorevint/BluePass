@@ -4,8 +4,8 @@ input[type='text'] {
   border-width: theme(borderWidth.2);
 }
 
-#ship-owner-registration.activated{
- background-color: theme('backgroundColor.primary');
+.registration-picker.activated{
+ background-color: theme('backgroundColor.primary') !important;
 }
 
 #service-provider-registration{
