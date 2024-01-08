@@ -95,12 +95,19 @@ $(document).ready(function () {
 
       });
 
-      //Service link click
+      //Product link click
       $('.product-link').on("click", function (e) {
 
         window.open('search-results.html','_self'); return false;
 
       });
+
+        //Partners link click
+        $('.partner-details-link').on("click", function (e) {
+
+          window.open('partner-details.html','_self'); return false;
+  
+        });
       
       
 
