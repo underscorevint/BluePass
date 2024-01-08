@@ -75,221 +75,126 @@
   </header>
 
 
-<!-- Nav menu, show/hide based on menu open state. -->
+  <!-- Nav menu, show/hide based on menu open state. -->
     
-<div id="navmenu" class="hidden" role="dialog" aria-modal="true" >
-  <!-- Background backdrop, show/hide based on slide-over state. -->
-  
-  <div id="menu-overlay" class="fixed inset-0 z-50"></div>
-
-  <div class="fixed inset-y-0 left-0 z-50 h-svh w-[32rem] overflow-y-auto bg-mono-secondary px-10 py-10 shadow-lg">
+  <div id="navmenu" class="hidden" role="dialog" aria-modal="true" >
+    <!-- Background backdrop, show/hide based on slide-over state. -->
     
-    <div class="flex items-center justify-between mx-auto">
+    <div id="menu-overlay" class="fixed inset-0 z-50"></div>
+
+    <div class="fixed inset-y-0 left-0 z-50 h-svh w-[32rem] overflow-y-auto bg-mono-secondary px-10 py-10 shadow-lg">
       
-      <a href="#" class="-m-1.5 p-1.5">
-        <span class="sr-only">BluePass</span>
-        <img class="h-6 w-auto hover:fill-primary" src="./img/mark-sign.svg?color=text-mono-secondary&shade=600" alt="">
-      </a>
+      <div class="flex items-center justify-between mx-auto">
+        
+        <a href="#" class="-m-1.5 p-1.5">
+          <span class="sr-only">BluePass</span>
+          <img class="h-6 w-auto hover:fill-primary" src="./img/mark-sign.svg?color=text-mono-secondary&shade=600" alt="">
+        </a>
 
-      <button id="close-menu-icon" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
-        <span class="sr-only">Close menu</span>
-        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
-    </div>
-
-    <div class="mt-6 flow-root">
-
-      <div class="flex flex-col space-y-2 py-4 divide-y">
-
-        <a href="#" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary nav-menu-item">Home</a>
-  
-        <a href="partners.html" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary nav-menu-item">Partners</a>
-  
-        <a href="" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary nav-menu-item">Services</a>
-  
-        <a href="#upcoming-events-section" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary nav-menu-item">Upcoming Events</a>
-  
-        <a href="#news-section" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary nav-menu-item">News</a>
-  
-        <a href="#memberships-section" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary nav-menu-item">Memberships</a>
-  
-            <!--<a hre="" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary">Discounts</a>-->
-  
-        <a href="#faq-section" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary nav-menu-item">FAQ</a>
-  
-        <a href="about_us.html" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary nav-menu-item">About Us</a>
-  
-        <a href="" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary nav-menu-item">Feedback</a>
-      
+        <button id="close-menu-icon" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+          <span class="sr-only">Close menu</span>
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
       </div>
 
+      <div class="mt-6 flow-root">
+
+        <div class="flex flex-col space-y-2 py-4 divide-y">
+
+          <a href="#" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary nav-menu-item">Home</a>
+    
+          <a href="partners.html" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary nav-menu-item">Partners</a>
+    
+          <a href="" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary nav-menu-item">Services</a>
+    
+          <a href="#upcoming-events-section" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary nav-menu-item">Upcoming Events</a>
+    
+          <a href="#news-section" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary nav-menu-item">News</a>
+    
+          <a href="#memberships-section" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary nav-menu-item">Memberships</a>
+    
+              <!--<a hre="" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary">Discounts</a>-->
+    
+          <a href="#faq-section" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary nav-menu-item">FAQ</a>
+    
+          <a href="about_us.html" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary nav-menu-item">About Us</a>
+    
+          <a href="" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary nav-menu-item">Feedback</a>
+        
+        </div>
+
+      </div>
     </div>
   </div>
-</div>
 
-<!-- /Navigation menu -->
+  <!-- /Navigation menu -->
 
-<div class="h-20"></div>
+  <div class="py-6 px-6 mt-32 w-full">
 
-<!-- Partners section -->
+    <div class="relative">
+      <img src="./img/search-icon.svg" class="h-6 absolute right-4 top-1/2 -mt-3" id="search-btn"/>
 
-<section class="p-6 py-20">
+      <select class="absolute placeholder:text-gray right-16 top-3 text-base font-normal">
+        <option>Search all</option>
+        <option>Products</option>
+        <option>Services</option>
+        <option>Providers</option>     
+      </select>
 
-  
-  <button class="back-btn">
-    <img src="./img/back-icon.svg" class="h-6 w-6" />
-  </button>
-
-  <div class="h-4"></div>
-
-
-  <h3 class="text-mono-primary text-2xl font-bold">Search Results</h3>
-
-  <div class="h-6"></div>
-
-  <div class="flex flex-row gap-6">
-
-    <!--Content Box-->
-
-    <!--Pusher-->
-    <div class="block sm:w-0 md:w-56 xl:w-auto flex-none xl:flex-1"></div>
-
-    <div class="flex-1 flex-col space-y-6">
-      
-      <p class="text-mono-primary text-base font-semibold">Social Media</p>
-
-      <div class="bg-mono-primary h-[2px] my-4"></div>
-
-      <div class="relative border">
-
-        <div class="flex flex-row">
-          <p class="text-sm">Username</p>
-          <div class="h-2"></div>
-   
-        </div>
-  
-        <div class="h-4"></div>
-
-      </div>
-
-      
-
-    </div>
-
-
-    <div class="flex-1 flex-col space-y-6">
-
-      <p class="text-mono-primary text-base font-semibold">Press</p>
-
-      <div class="bg-mono-primary h-[2px] my-4"></div>
-      
-      <!--Press Article block -->
-      <div class="flex flex-col space-y-4">
-
-        <!--Article Image-->
-        <div class="bg-pale-70 h-auto">
-
-          <img src="./img/image-placeholder.jpg" class="object-contain" />
-
-        </div>
-        <!--/Article Image-->
-
-        <p class="text-mono-primary text-base font-semibold">UAE launches ‘Blue Pass’ project to bolster maritime business cluster</p>
-        
-        <div class="flex flex-row">
-
-          <div class="flex flex-auto flex-row space-x-2">
-
-
-              <img src="./img/external-link-icon.svg" class="h-4" />
-              <a href="" class="text-link">www.seatrade-maritime.com</a>
-            
-
-          
-          </div>
-
-          <div class="flex-none text-sm text-right text-gray">12/12/2023</div>
-          
-
-        </div>
-
-      </div>
-      <!--/Press Article block -->
-
-      <div class="h-[1px] bg-mono-primary"></div>
-
-      <!--Press Article block -->
-      <div class="flex flex-col space-y-4">
-
-        <!--Article Image-->
-        <div class="bg-pale-70 h-auto">
-          
-          <img src="./img/article-focus.jpg" class="object-contain" />
-        
-        </div>
-        
-        <!--/Article Image-->
-
-        <p class="text-mono-primary text-base font-semibold">MOEI signs partnership with six key industry entities for ‘Blue Pass’ project</p>
-        
-        <div class="flex flex-row">
-
-          <div class="flex flex-auto flex-row space-x-2">
-
-            <img src="./img/external-link-icon.svg" class="h-4" />
-            <a href="" class="text-link">www.focus.hidubai.com</a>
-          
-          </div>
-
-          <div class="flex-none text-sm text-right text-gray">12/12/2023</div>
-          
-
-        </div>
-
-      </div>
-      <!--/Press Article block -->
-
-      <div class="h-[1px] bg-mono-primary"></div>
-
-      <!--Press Article block -->
-      <div class="flex flex-col space-y-4">
-
-        <!--Article Image-->
-        <div class="bg-pale-70 h-auto">
-
-          <img src="./img/article-emirates.jpg" class="object-contain" />
-
-        </div>
-        <!--/Article Image-->
-
-        <p class="text-mono-primary text-base font-semibold">Blue Pass Partnership: Enhancing the UAE Maritime Sector</p>
-        
-        <div class="flex flex-row">
-
-          <div class="flex flex-auto flex-row space-x-2">
-
-            <img src="./img/external-link-icon.svg" class="h-4" />
-            <a href="" class="text-link">www.7emirates.co</a>
-          
-          </div>
-
-          <div class="flex-none text-sm text-right text-gray">12/12/2023</div>
-          
-
-        </div>
-
-      </div>
-      <!--/Press Article block -->
-
+      <input id="search-input" type="text" class="bg-mono-secondary py-3 px-6 w-full border-[1px] rounded-full placeholder:text-gray pr-32" placeholder="Type anything to search...">
+    
     </div>
 
   </div>
 
-</section>
+  <!--Tags cloud-->
+  <section class="py-6 px-6">
 
-<!-- /Partners section-->
+    <h3 class="text-base font-semibold">Categories</h3>
+
+    <div class="space-y-1">
+
+      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-base font-medium text-gray-600 ring-1 ring-inset ring-mono-primary">Marine Agency</span>
+      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-base font-medium text-red-700 ring-1 ring-inset ring-mono-primary">Transportation & Logistics</span>
+      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-base font-medium text-yellow-800 ring-1 ring-inset ring-mono-primary">Firefight Equipment</span>
+      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-base font-medium text-green-700 ring-1 ring-inset ring-mono-primary">Life saving appliances</span>
+      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-base font-medium text-blue-700 ring-1 ring-inset ring-mono-primary">Lubricants</span>
+      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-base font-medium text-indigo-700 ring-1 ring-inset ring-mono-primary">Safety protective gears</span>
+      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-base font-medium text-purple-700 ring-1 ring-inset ring-mono-primary">Galley utensils</span>
+      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-base font-medium text-pink-700 ring-1 ring-inset ring-mono-primary">Cargo lashing materials</span>
+      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-base font-medium text-blue-700 ring-1 ring-inset ring-mono-primary">Hand & General tools</span>
+      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-base font-medium text-indigo-700 ring-1 ring-inset ring-mono-primary">Food Provision</span>
+      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-base font-medium text-purple-700 ring-1 ring-inset ring-mono-primary">Cabin store & Cleaning</span>
+      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-base font-medium text-pink-700 ring-1 ring-inset ring-mono-primary">Loose lifting Gears</span>
+      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-base font-medium text-pink-700 ring-1 ring-inset ring-mono-primary">Mooring Ropes</span>
+    
+    </div>
+
+  </section>
+  <!--/Tags cloud-->
+
+  <!--Search results-->
+  <section class="px-6 py-6">
+    
+    <h2 class="text-2xl font-semibold my-6">Search results (120)</h2>
+
+    <div>
+      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-base font-medium text-purple-700 ring-1 ring-inset ring-mono-primary">Products</span>
+      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-base font-medium text-pink-700 ring-1 ring-inset ring-mono-primary">Services</span>
+      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-base font-medium text-pink-700 ring-1 ring-inset ring-mono-primary">Providers</span>
+    </div>
+    
+    <div class="space-y-1">
+
+
+      
+    </div>
+  </section>
+  <!--/Tags cloud-->
+
+
 
 
 
