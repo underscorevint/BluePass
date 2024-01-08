@@ -80,6 +80,28 @@ $(document).ready(function () {
           $('#global-search-panel').removeClass('hidden');
 
       });
+
+      //Service provider link click
+      $('.service-provider-link').on("click", function (e) {
+
+        window.open('search-results.html','_self'); return false;
+
+      });
+
+      //Service link click
+      $('.service-link').on("click", function (e) {
+
+        window.open('search-results.html','_self'); return false;
+
+      });
+
+      //Service link click
+      $('.product-link').on("click", function (e) {
+
+        window.open('search-results.html','_self'); return false;
+
+      });
+      
       
 
       PartnersAnimation();
