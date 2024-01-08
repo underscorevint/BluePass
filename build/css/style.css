@@ -975,6 +975,10 @@ video {
   width: 100%;
 }
 
+.w-144 {
+  width: 36rem;
+}
+
 .max-w-full {
   max-width: 100%;
 }
@@ -1059,6 +1063,10 @@ video {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-20 {
+  gap: 5rem;
 }
 
 .gap-x-12 {
