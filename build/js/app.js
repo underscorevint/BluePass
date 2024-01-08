@@ -58,8 +58,8 @@ $(document).ready(function () {
         $('.registration-picker').removeClass('activated');
         $(this).addClass('activated');
 
-        $('.registration-picker').removeClass('bg-primary');
-        $(this).addClass('bg-primary');
+        $('.registration-picker').removeClass('bg-dark-vanilla');
+        $(this).addClass('bg-dark-vanilla');
 
 
         $('.registration-form').addClass('hidden');
@@ -78,7 +78,7 @@ $(document).ready(function () {
       $('#global-search-btn').on("click", function (e) {
 
           $('#global-search-panel').removeClass('hidden');
-          
+
       });
       
 

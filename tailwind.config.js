@@ -4,14 +4,15 @@ module.exports = {
   content: {
     relative: true,
     files: ["./build/*.{html,js}", ],
-    transform: (content) => content.replace(/taos:/g, ''),
+
+//    transform: (content) => content.replace(/taos:/g, ''),
     },
 
-    safelist: [
-      '!duration-[0ms]',
-      '!delay-[0ms]',
-      'html.js :where([class*="taos:"]:not(.taos-init))'
-    ],
+ //   safelist: [
+ //     '!duration-[0ms]',
+ //     '!delay-[0ms]',
+ //     'html.js :where([class*="taos:"]:not(.taos-init))'
+ //   ],
 
  // plugins: [ require('taos/plugin.js') ],
 
@@ -40,6 +41,7 @@ module.exports = {
       'pale-90': '#ECEADF',
       'secondary': '#E54D4D',      
       'link': '#0000EE',
+      'dark-vanilla': '#C6C09F',
       'orange': '#ff7849',
       'green': '#13ce66',
       'yellow': '#ffc82c',
