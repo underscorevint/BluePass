@@ -6,13 +6,20 @@ $(document).ready(function () {
       $( '#menu-icon' ).on( "click", function() {
         $( '#navmenu' ).removeClass('hidden');
       });
-
+      
+      //Cross icon closes the nav menu
       $( '#close-menu-icon' ).on( "click", function() {
         $( '#navmenu' ).addClass('hidden');
       });
 
+      //Click on the overlay closes the nave menu
       $( '#menu-overlay' ).on( "click", function() {
         $( '#navmenu' ).addClass('hidden');
+      });
+
+      //Click on the overlay closes the search results panel
+      $( '#global-search-overlay' ).on( "click", function() {
+         $( '#global-search-panel' ).addClass('hidden');
       });
 
    
@@ -24,24 +31,24 @@ $(document).ready(function () {
         window.open('create_account.html','_self'); return false;
       });
 
-
+      //Makes the active tag actice on click
       $('.active-tag').on( "click", function() {
         $(this).toggleClass('bg-primary');$(this).toggleClass('text-mono-secondary');
       });
       
-
+      //Click on the arrow back icon
       $('.back-btn').on( "click", function() {
         //e.preventDefault();
         window.history.back();
       });
 
-
+      //Closes navpanel on external link click
       $('.nav-menu-item.external').on( "click", function() {
         $( '#navmenu' ).addClass('hidden');
       });
       
 
-
+      //Pegistration page selector
       $('.registration-picker').on( "click", function(index) {
 
         var indexnew = '#' + $(this).attr("id") + '-form';
@@ -60,12 +67,20 @@ $(document).ready(function () {
 
       });
 
+      //Global Search panel click
+      $('#global-search').on("keypress", function (e) {
+        if (e.which == 13) {
+          $('#global-search-panel').removeClass('hidden');
+        }
+      });
 
+      //Global Search panel click
+      $('#global-search-btn').on("click", function (e) {
 
-
-
+          $('#global-search-panel').removeClass('hidden');
+          
+      });
       
-
 
       PartnersAnimation();
 

@@ -137,8 +137,18 @@ By joining the BluePass initiative, your company will access various benefits th
   
   <div class="absolute py-4 px-4 mt-32 w-full z-40">
 
-    <div class="w-full bg-mono-secondary rounded-full shadow-md overflow-hidden py-1">
-      <input type="text" class="py-2.5 px-4 w-full border-none" placeholder="Start typing for search">
+    <div class="relative">
+      <img src="./img/search-icon.svg" class="h-6 absolute right-4 top-1/2 -mt-3" id="global-search-btn"/>
+
+      <select class="absolute placeholder:text-gray right-16 top-3 text-base font-normal">
+        <option>Search all</option>
+        <option>Products</option>
+        <option>Services</option>
+        <option>Providers</option>     
+      </select>
+
+      <input id="global-search" type="text" class="bg-mono-secondary py-3 px-6 w-full border-[1px] shadow-md rounded-full placeholder:text-gray pr-32" placeholder="Type anything to search...">
+    
     </div>
 
   </div>
@@ -147,14 +157,155 @@ By joining the BluePass initiative, your company will access various benefits th
 
   <!-- Search results panel-->
 
-  <div id="search-result-panel" class="hidden">
+  <div id="global-search-panel" class="hidden">
 
-    <div id="menu-overlay" class="fixed inset-0 z-50"></div>
+    <div id="global-search-overlay" class="fixed inset-0 z-40"></div>
     
-    <div class="absolute py-4 px-4 mt-32 w-full z-40">
+    <div class="absolute py-4 px-4 mt-[11rem] w-full z-50">
 
-      <div class="w-full bg-mono-secondary rounded-full shadow-md overflow-hidden py-1">
-        <input type="text" class="py-2.5 px-4 w-full border-none" placeholder="Start typing for search">
+      <div class="w-full bg-mono-secondary rounded-md shadow-md overflow-hidden py-1">
+
+        <div class="grid grid-cols-3 divide-x gap-6">
+
+          <div class="px-4 py-4">
+
+            <h4 class="font-semibold text-base">Products</h4>
+
+            <div class="h-2"></div>
+
+           <!--Products list-->
+
+           <div class="flex flex-col space-y-2">
+
+
+            <div class="flex-1 text-base">Product</div>
+
+            <div class="flex-1 text-base">Product</div>
+
+            <div class="flex-1 text-base">Product</div>
+
+            <div class="flex-1 text-base">Product</div>
+
+            <div class="flex-1 text-base">Product</div>
+
+
+           </div>
+
+           <!--/Products list-->
+
+          </div>
+
+          <div class="px-4 py-4">
+
+            <h4 class="font-semibold text-base">Services</h4>
+
+            <div class="h-2"></div>
+
+           <!--Products list-->
+
+           <div class="flex flex-col space-y-2">
+
+
+            <div class="flex-1 text-base">Service Name</div>
+
+            <div class="flex-1 text-base">Service Name</div>
+
+            <div class="flex-1 text-base">Service Name</div>
+
+            <div class="flex-1 text-base">Service Name</div>
+
+            <div class="flex-1 text-base">Service Name</div>
+
+
+           </div>
+           
+           <!--/Products list-->
+            
+          </div>
+
+          <div class="px-4 py-4">
+
+            <h4 class="font-semibold text-base">Providers</h4>
+
+            <div class="h-2"></div>
+
+            <!--Providers list-->
+ 
+            <div class="flex flex-col space-y-2">
+ 
+ 
+              <div class="space-y-4">
+
+                <div class="flex flex-row space-x-4">
+                  
+                  <img src="./img/partner-1-box.png" class="h-12 max-w-full"/>
+        
+                  <div class="flex flex-col space-y-2">
+        
+                    <p class="text-base font-normal text-mono-primary py-1">Anchor Marine</p>
+
+                    
+                  </div>
+        
+                </div>
+          
+        
+        
+                <div class="flex flex-row space-x-4">
+                  
+                  <img src="./img/partner-2-box.png" class="h-12 max-w-full" />
+        
+                  <div class="flex flex-col space-y-2">
+        
+                    <p class="text-base font-normal text-mono-primary py-1">Marine Easy</p>
+
+                    
+                  </div>
+        
+                </div>
+        
+        
+        
+                <div class="flex flex-row space-x-4">
+                  
+                  <img src="./img/partner-3-box.png" class="h-12 max-w-full" />
+        
+                  <div class="flex flex-col space-y-2">
+        
+                    <p class="text-base font-normal text-mono-primary py-1">Mire</p>
+
+        
+                  </div>
+        
+                </div>
+        
+        
+        
+                <div class="flex flex-row space-x-4">
+                  
+                  <img src="./img/partner-4-box.png" class="h-12 max-w-full" />
+        
+                  <div class="flex flex-col space-y-2">
+        
+                    <p class="text-base font-normal text-mono-primary py-1">Nautical</p>
+
+        
+                  </div>
+        
+                </div>
+                
+        
+              </div>
+ 
+ 
+            </div>
+            
+            <!--/Providers list-->
+            
+          </div>
+
+        </div>
+
       </div>
 
     </div>
