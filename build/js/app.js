@@ -27,6 +27,7 @@ $(document).ready(function () {
         window.open('login.html','_self'); return false;
       });
 
+      //Makes the active tag actice on click
       $('.create-account-btn').on( "click", function() {
         window.open('create_account.html','_self'); return false;
       });
@@ -102,12 +103,19 @@ $(document).ready(function () {
 
       });
 
-        //Partners link click
-        $('.partner-details-link').on("click", function (e) {
+      //Partners link click
+      $('.partner-details-link').on("click", function (e) {
 
-          window.open('partner-details.html','_self'); return false;
-  
-        });
+        window.open('partner-details.html','_self'); return false;
+
+      });
+
+      //Partners page link click
+      $('.partners-link').on("click", function (e) {
+
+        window.open('partners.html','_self'); return false;
+
+      });
       
       
 
