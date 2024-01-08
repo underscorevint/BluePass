@@ -1652,9 +1652,18 @@ video {
   color: rgb(132 146 166 / var(--tw-text-opacity));
 }
 
+.hover\:border-0:hover {
+  border-width: 0px;
+}
+
 .hover\:border-primary:hover {
   --tw-border-opacity: 1;
   border-color: rgb(38 89 217 / var(--tw-border-opacity));
+}
+
+.hover\:border-b-primary:hover {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(38 89 217 / var(--tw-border-opacity));
 }
 
 .hover\:bg-mono-secondary:hover {
