@@ -119,6 +119,7 @@ $(document).ready(function () {
       
       
 
+
       PartnersAnimation();
 
       BluePassAnimation();
@@ -221,6 +222,7 @@ function PartnersAnimation() {
   }); 
 
 }
+
 
 
 
