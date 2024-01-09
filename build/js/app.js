@@ -56,11 +56,9 @@ $(document).ready(function () {
 
       //  alert (indexnew);
 
-        $('.registration-picker').removeClass('activated');
-        $(this).addClass('activated');
+        $('.registration-picker').addClass('bg-pale-90').removeClass('bg-pale-70');
 
-        $('.registration-picker').removeClass('bg-dark-vanilla');
-        $(this).addClass('bg-dark-vanilla');
+        $(this).removeClass('bg-pale-90').addClass('bg-pale-70');
 
 
         $('.registration-form').addClass('hidden');
