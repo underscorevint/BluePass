@@ -1,3 +1,9 @@
+@layer base {
+  html {
+    font-family: "Alexandria", system-ui, sans-serif;
+  }
+}
+
 #hero-image-waves-lg {
   animation-duration: 3s;
   animation-name: waves-lg-animation;
