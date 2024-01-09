@@ -940,6 +940,10 @@ video {
   height: 100svh;
 }
 
+.h-64 {
+  height: 16rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -1024,6 +1028,11 @@ video {
 
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-max {
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 
 .flex-1 {
@@ -1613,6 +1622,22 @@ video {
 
 .pr-16 {
   padding-right: 4rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
+}
+
+.pt-11 {
+  padding-top: 2.75rem;
 }
 
 .text-left {
