@@ -46,7 +46,12 @@
       <div class="flex">
         <button id="menu-icon" type="button" class="mr-4 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
           <span class="sr-only">Open main menu</span>
-          <img class="h-auto w-6 hover:fill-primary" src="./img/menu-icon.svg?color=text-mono-secondary" alt="">
+
+          <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-auto w-6">
+            <path d="M3 65L3 57L93 57L93 65L3 65Z" fill="#0E204D"/>
+            <path d="M3 39L3 31L93 31L93 39L3 39Z" fill="#0E204D"/>
+          </svg>
+
         </button>
       </div>
 
@@ -109,15 +114,15 @@
     
           <a href="" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary nav-menu-item">Services</a>
     
-          <a href="#upcoming-events-section" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary nav-menu-item">Upcoming Events</a>
+          <a href="index.html#upcoming-events-section" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary nav-menu-item">Upcoming Events</a>
     
-          <a href="#news-section" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary nav-menu-item">News</a>
+          <a href="index.html#news-section" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary nav-menu-item">News</a>
     
-          <a href="#memberships-section" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary nav-menu-item">Memberships</a>
+          <a href="index.html#memberships-section" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary nav-menu-item">Memberships</a>
     
               <!--<a hre="" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary">Discounts</a>-->
     
-          <a href="#faq-section" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary nav-menu-item">FAQ</a>
+          <a href="index.html#faq-section" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary nav-menu-item">FAQ</a>
     
           <a href="about_us.html" class="text-lg py-2 font-semibold text-mono-primary hover:text-primary nav-menu-item">About Us</a>
     
@@ -131,181 +136,259 @@
 
   <!-- /Navigation menu -->
 
+<section class="relative mt-32 px-6">
 
-  <!-- Search -->
+    
+<h3 class="text-mono-primary text-2xl font-bold">Services (110+)</h3>
 
-  <div class="py-6 px-6 mt-32 w-full">
+
+<div class="h-6"></div>
+
+<!--Left Col-->
+
+
 
     <div class="relative">
-      <img src="./img/search-icon.svg" class="h-6 absolute right-4 top-1/2 -mt-3" id="search-btn"/>
 
-      <!--
-      <select class="absolute placeholder:text-gray right-16 top-3 text-base font-normal">
-        <option>Search all</option>
-        <option>Products</option>
-        <option>Services</option>
-        <option>Providers</option>     
-      </select>
-      -->
+      <img src="./img/search-icon.svg" class="absolute w-6 right-4 top-1/2 -my-3" />
+      <input type="text" class="py-2.5 px-4 w-full border pr-12 border-gray" placeholder="Find service provider" />
 
-      <input id="search-input" type="text" class="bg-mono-secondary py-3 px-6 w-full border-[1px] border-gray placeholder:text-gray pr-32" placeholder="Type anything to search...">
+    </div>
+
+
+    <div class="h-4"></div>
+
+
+    <div class="space-y-1">
+
+      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-sm font-medium text-gray-600 ring-1 ring-inset ring-mono-primary cursor-pointer">Marine Agency</span>
+      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-sm font-medium text-red-700 ring-1 ring-inset ring-mono-primary cursor-pointer">Transportation & Logistics</span>
+      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-sm font-medium text-yellow-800 ring-1 ring-inset ring-mono-primary cursor-pointer">Firefight Equipment</span>
+      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-sm font-medium text-green-700 ring-1 ring-inset ring-mono-primary cursor-pointer">Life saving appliances</span>
+      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-sm font-medium text-blue-700 ring-1 ring-inset ring-mono-primary cursor-pointer">Lubricants</span>
+      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-sm font-medium text-indigo-700 ring-1 ring-inset ring-mono-primary cursor-pointer">Safety protective gears</span>
+      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-sm font-medium text-purple-700 ring-1 ring-inset ring-mono-primary cursor-pointer">Galley utensils</span>
+      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-sm font-medium text-pink-700 ring-1 ring-inset ring-mono-primary cursor-pointer">Cargo lashing materials</span>
+      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-sm font-medium text-blue-700 ring-1 ring-inset ring-mono-primary cursor-pointer">Hand & General tools</span>
+      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-sm font-medium text-indigo-700 ring-1 ring-inset ring-mono-primary cursor-pointer">Food Provision</span>
+      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-sm font-medium text-purple-700 ring-1 ring-inset ring-mono-primary cursor-pointer">Cabin store & Cleaning</span>
+      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-sm font-medium text-pink-700 ring-1 ring-inset ring-mono-primary cursor-pointer">Loose lifting Gears</span>
+      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-sm font-medium text-pink-700 ring-1 ring-inset ring-mono-primary cursor-pointer">Mooring Ropes</span>
     
+    </div>
+
+
+    <div class="h-4"></div>
+
+
+    <div class="flex flex-row space-x-6">
+
+      <div>
+      
+        <select class="px-4 py-2.5 border border-gray w-48">
+
+          <option>Pick location</option>
+          <option>Abu Dhabi</option>
+
+        </select>
+
+      </div>    
+
+      <div>
+
+        <select class="px-4 py-2.5 border border-gray w-48">
+
+          <option>Has certification</option>
+          <option>Certified</option>
+          <option>Not certified</option>
+
+        </select>
+      
+      </div>
+
+      <div>
+
+        <select class="px-4 py-2.5 border border-gray w-48">
+
+          <option>Company size</option>
+          <option><10</option>
+          <option>10-50</option>
+          <option>50-100</option>
+          <option>500+</option>
+
+        </select>
+      
+      </div>
+
+    </div>
+
+
+
+<div class="h-6"></div>
+
+<div class="flex flex-row space-x-6">
+
+
+  <div class="flex-none w-56">
+
+    <div class="divide-y">
+
+      <div class="flex flex-col">
+
+        <a href="" class="text-base font-semibold py-4">Parts</a>
+
+    </div>
+    
+      <div class="flex flex-col">
+
+        <a href="" class="text-base font-semibold py-4">Harbour Services</a>
+
+      </div>
+
+      <div class="flex flex-col">
+
+        <a href="" class="text-base font-semibold py-4">Cleaning</a>
+
+      </div>
+
+      <div class="flex flex-col">
+
+        <a href="" class="text-base font-semibold py-4">Safety</a>
+
+      </div>
+
+      <div class="flex flex-col">
+
+        <a href="" class="text-base font-semibold py-4">Supplies</a>
+
+      </div>
+
     </div>
 
   </div>
 
-  <!-- /Search -->
+  <!--/Left Col-->
 
-  <!--Tags cloud-->
-  <section class="py-6 px-6">
+  <!--Right Col-->
 
-    <h3 class="text-base font-semibold">Categories</h3>
+  <div class="flex-1">
 
-    <div class="h-2"></div>
+    <!--/Partners Block-->
 
-    <div class="space-y-1">
+    <div class="grid grid-cols-4 xl:grid-cols-6 gap-6 pl-12">
 
-      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-sm font-medium text-gray-600 ring-1 ring-inset ring-mono-primary">Marine Agency</span>
-      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-sm font-medium text-red-700 ring-1 ring-inset ring-mono-primary">Transportation & Logistics</span>
-      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-sm font-medium text-yellow-800 ring-1 ring-inset ring-mono-primary">Firefight Equipment</span>
-      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-sm font-medium text-green-700 ring-1 ring-inset ring-mono-primary">Life saving appliances</span>
-      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-sm font-medium text-blue-700 ring-1 ring-inset ring-mono-primary">Lubricants</span>
-      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-sm font-medium text-indigo-700 ring-1 ring-inset ring-mono-primary">Safety protective gears</span>
-      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-sm font-medium text-purple-700 ring-1 ring-inset ring-mono-primary">Galley utensils</span>
-      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-sm font-medium text-pink-700 ring-1 ring-inset ring-mono-primary">Cargo lashing materials</span>
-      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-sm font-medium text-blue-700 ring-1 ring-inset ring-mono-primary">Hand & General tools</span>
-      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-sm font-medium text-indigo-700 ring-1 ring-inset ring-mono-primary">Food Provision</span>
-      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-sm font-medium text-purple-700 ring-1 ring-inset ring-mono-primary">Cabin store & Cleaning</span>
-      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-sm font-medium text-pink-700 ring-1 ring-inset ring-mono-primary">Loose lifting Gears</span>
-      <span class="active-tag inline-flex items-center rounded-full bg-pale px-4 py-1 text-sm font-medium text-pink-700 ring-1 ring-inset ring-mono-primary">Mooring Ropes</span>
-    
-    </div>
 
-  </section>
-  <!--/Tags cloud-->
+      <div  class="partner-details-link bg-[#fff] pb-4 text-center cursor-pointer">
 
-  <!--Search results-->
-  <section class="px-6">
-    
-    <h2 class="text-2xl font-semibold mt-6">Search results (120)</h2>
 
-    <div class="h-4"></div>
+        <img src="./img/partner-11.jpg" class="max-w-full m-auto"/>
 
-    <!--Tabs-->
-    <div class="text-base font-medium text-center text-gray border-b border-gray dark:text-gray-400 dark:border-gray-700">
-  
-      <ul class="flex flex-wrap -mb-px space-x-6">
-        
-          <li class="me-2">
-              <a href="" class="inline-block py-2.5 text-mono-primary border-b-2 border-transparent rounded-t-lg hover:text-gray hover:border-gray dark:hover:text-gray-300">Products</a>
-          </li>
-          <li class="me-2">
-              <a href="" class="inline-block py-2.5 text-mono-primary border-b-2 border-transparent rounded-t-lg hover:text-gray hover:border-gray dark:text-blue-500 dark:border-blue-500" aria-current="page">Services</a>
-          </li>
-          <li class="me-2">
-              <a href="" class="inline-block py-2.5 text-mono-primary border-b-2 border-primary rounded-t-lg active dark:text-blue-500 dark:border-blue-500">Providers</a>
-          </li>
 
-  
-      </ul>
-    
-    </div>
-    <!--/Tabs-->
-    
-    <div class="h-4"></div>
-
-    <div >
-
-      <!--Providers list-->
+      </div>
       
-      <div class="flex flex-col space-y-2 divide-y">
-      
-      
-      
-
-        <div class="flex flex-row space-x-4 py-4 service-provider-link">
-          
-          <img src="./img/partner-1-box.png" class="h-20 max-w-full"/>
-
-          <div class="flex flex-col space-y-2">
-
-            <p class="text-base font-semibold text-mono-primary py-1">Anchor Marine</p>
-            <span classs="text-sm text-gray-600">Marine Agency</span>
-            
-          </div>
-
-        </div>
-  
+      <div class="partner-details-link bg-[#fff] pb-4 text-center cursor-pointer">
 
 
-        <div class="flex flex-row space-x-4 py-4 service-provider-link">
-          
-          <img src="./img/partner-2-box.png" class="h-20 max-w-full" />
-
-          <div class="flex flex-col space-y-2">
-
-            <p class="text-base font-semibold text-mono-primary py-1">Marine Easy</p>
-            <span classs="text-sm text-gray-600">Food provision</span>
-            
-          </div>
-
-        </div>
-
-
-
-        <div class="flex flex-row space-x-4 py-4 service-provider-link">
-          
-          <img src="./img/partner-3-box.png" class="h-20 max-w-full" />
-
-          <div class="flex flex-col space-y-2">
-
-            <p class="text-base font-semibold text-mono-primary py-1">Mire</p>
-            <span classs="text-sm text-gray-600">Marine Agency</span>
-
-          </div>
-
-        </div>
-
-
-
-        <div class="flex flex-row space-x-4 py-4 service-provider-link">
-          
-          <img src="./img/partner-4-box.png" class="h-20 max-w-full" />
-
-          <div class="flex flex-col space-y-2">
-
-            <p class="text-base font-semibold text-mono-primary py-1">Nautical</p>
-            <span classs="text-sm text-gray-600">Marine Agency</span>
-
-          </div>
-          
-
-        </div>
+        <img src="./img/partner-12.jpg" class="max-w-full m-auto"/>
 
 
       </div>
 
-      <!--/Providers list-->
+      <div class="partner-details-link bg-[#fff] pb-4 text-center cursor-pointer">
+
+        
+        <img src="./img/partner-13.jpg" class="max-w-full m-auto"/>
+      
+      </div>
+      
+      <div class="partner-details-link bg-[#fff] pb-4 text-center cursor-pointer">
+
+
+        <img src="./img/partner-14.jpg" class="max-w-full m-auto"/>
+
+      </div>
+
+      <div  class="partner-details-link bg-[#fff] pb-4 text-center cursor-pointer">
+
+
+        <img src="./img/partner-21.jpg" class="max-w-full m-auto"/>
+
+
+      </div>
+      
+      <div class="partner-details-link bg-[#fff] pb-4 text-center cursor-pointer">
+
+
+        <img src="./img/partner-22.jpg" class="max-w-full m-auto"/>
+
+
+      </div>
+
+      <div class="partner-details-link bg-[#fff] pb-4 text-center cursor-pointer">
+
+        
+        <img src="./img/partner-23.jpg" class="max-w-full m-auto"/>
 
       
+      </div>
+      
+      <div class="partner-details-link bg-[#fff] pb-4 text-center cursor-pointer">
+
+
+        <img src="./img/partner-24.jpg" class="max-w-full m-auto"/>
+
+
+      </div>
+
+
+
+      <div  class="partner-details-link bg-[#fff] pb-4 text-center cursor-pointer">
+
+
+        <img src="./img/partner-31.jpg" class="max-w-full m-auto"/>
+
+
+      </div>
+      
+      <div class="partner-details-link bg-[#fff] pb-4 text-center cursor-pointer">
+
+
+        <img src="./img/partner-32.jpg" class="max-w-full m-auto"/>
+
+
+      </div>
+
+      <div class="partner-details-link bg-[#fff] pb-4 text-center cursor-pointer">
+
+        
+        <img src="./img/partner-33.jpg" class="max-w-full m-auto"/>
+    
+      
+      </div>
+      
+      <div class="partner-details-link bg-[#fff] pb-4 text-center cursor-pointer">
+
+
+        <img src="./img/partner-34.jpg" class="max-w-full m-auto"/>
+
+
+      </div>
+
+
+
+      </div>
+
+      <!--/Partners Block-->
+
     </div>
-  </section>
-  <!--/Search results cloud-->
-
-
-
-
-
-
-
-
-
-
-<!--
-  <div class="w-full absolute isolate bg-mono-secondary n-svh inset-x-0 top-0 z-100">
 
   </div>
--->
+  
+</section>
+
+
+<div class="h-10"></div>
+
 
 <!-- Footer -->
 

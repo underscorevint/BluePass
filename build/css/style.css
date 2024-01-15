@@ -952,10 +952,6 @@ video {
   width: 32rem;
 }
 
-.w-144 {
-  width: 36rem;
-}
-
 .w-24 {
   width: 6rem;
 }
@@ -1006,6 +1002,18 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-144 {
+  width: 36rem;
+}
+
+.w-32 {
+  width: 8rem;
+}
+
+.w-56 {
+  width: 14rem;
 }
 
 .max-w-full {
@@ -1568,6 +1576,10 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
 }
 
 .text-left {
