@@ -22,8 +22,7 @@ By joining the BluePass initiative, your company will access various benefits th
 
   <script src="./js/app.js" type="text/javascript"></script>
   
-  <script src="./js/contactus.js"></script>
-
+  <script type="module" src="./js/contactus.js"></script>
 
  <!--<script>document.documentElement.classList.add('js')</script>-->
 
@@ -387,7 +386,7 @@ By joining the BluePass initiative, your company will access various benefits th
 
   <!-- Hero Image -->
 
-  <div class="min-h-128 sm:ml-0 md:ml-6 relative sm:w-full sm:h-auto lg:h-svh bg-[url('../img/hero-image-top-right.png')] bg-contain bg-right-top bg-no-repeat overflow-hidden">
+  <div class="sm:ml-0 md:ml-6 relative sm:w-full sm:h-auto lg:h-svh bg-[url('../img/hero-image-top-right.png')] bg-contain bg-right-top bg-no-repeat overflow-hidden">
 
     <div id="hero-image-waves-sm" class="absolute bottom-[64px] left-0 w-[101%] h-6 bg-[url('../img/hero-image-waves-sm.jpg')] bg-center bg-repeat-x" ></div>
 
@@ -1037,7 +1036,7 @@ By joining the BluePass initiative, your company will access various benefits th
         
         <div class="bg-[#fff] basis-1/4 cursor-pointer">
 
-          <img src="./img/Seamaster_logo.jpg" class="h-48 max-w-full m-auto  grayscale hover:grayscale-0"/>
+          <img src="./img/Seamaster_logo.jpg" class="h-48 max-w-full m-auto  "/>
 
         </div>
 
@@ -1354,7 +1353,7 @@ By joining the BluePass initiative, your company will access various benefits th
           </select></div>
 
 
-        <!--F/ilter-->
+        F/ilter-->
 
       -->
     </div>
@@ -1471,7 +1470,7 @@ By joining the BluePass initiative, your company will access various benefits th
   </div>
 
 </div>
-
+-->
 <!-- /Banner section-->
 
 
@@ -1535,7 +1534,7 @@ By joining the BluePass initiative, your company will access various benefits th
 
           <div class="h-1"></div>
   
-          <button class="text-mono-secondary bg-primary hover:bg-primary-40 font-semibold py-2 px-4 w-40 text-sm">Submit</button>
+          <button class="text-mono-secondary bg-primary hover:bg-primary-40 font-semibold py-2 px-4 w-40 text-sm" onclick="sendMail()">Submit</button>
         
 
         </div>
