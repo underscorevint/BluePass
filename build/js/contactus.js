@@ -1,4 +1,4 @@
-var nodemailer = require('./nodemailer');
+var nodemailer = require('./node_modules/nodemailer');
 
 app.post("/send_email", function (req, response){
   var sender_name = req.body.sender_name;
