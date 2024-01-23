@@ -27,12 +27,12 @@ By joining the BluePass initiative, your company will access various benefits th
 
 </head>
 
-<body class="min-h-screen bg-pale dark:bg-mono-primary">
+<body class="min-h-screen bg-pale dark:bg-mono-primary sm:w-auto">
 
   <!--Left pusher-->
   <div class="">
 
-  <header class="absolute inset-x-0 top-0 z-20">
+  <header class="absolute inset-x-0 top-0 z-20 sm:w-auto">
 
     <div class="bg-primary text-center text-mono-secondary px-3 py-1">
 
@@ -41,7 +41,7 @@ By joining the BluePass initiative, your company will access various benefits th
     </div>
 
 
-    <nav class="flex items-center justify-between px-6" aria-label="Global">
+    <nav class="flex items-center justify-between px-6 sm:w-auto" aria-label="Global">
 
       <div class="flex">
         <button id="menu-icon" type="button" class="mr-4 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
@@ -81,11 +81,11 @@ By joining the BluePass initiative, your company will access various benefits th
 
   <!-- Nav menu, show/hide based on menu open state. -->
     
-  <div id="navmenu" class="hidden" role="dialog" aria-modal="true" >
+  <div id="navmenu" class="hidden sm:w-auto" role="dialog" aria-modal="true" >
     
-    <div id="menu-overlay" class="fixed inset-0 z-50"></div>
+    <div id="menu-overlay" class="fixed inset-0 z-50 sm:w-auto"></div>
 
-    <div class="fixed inset-y-0 left-0 z-50 h-svh w-[32rem] overflow-y-auto bg-mono-secondary px-10 py-10 shadow-lg">
+    <div class="fixed inset-y-0 left-0 z-50 h-svh lg:w-[32rem] sm:w-auto overflow-y-auto bg-mono-secondary px-10 py-10 shadow-lg">
       
       <div class="flex items-center justify-between mx-auto">
         
@@ -139,7 +139,7 @@ By joining the BluePass initiative, your company will access various benefits th
 
   <!-- Search panel-->
   
-  <div class="absolute py-4 px-4 mt-32 w-full z-40">
+  <div class="absolute py-4 px-4 mt-32 lg:w-full sm:w-auto z-40">
 
     <div class="relative">
       <img src="./img/search-icon.svg" class="h-6 absolute right-4 top-1/2 -mt-3" id="global-search-btn"/>
@@ -382,7 +382,8 @@ By joining the BluePass initiative, your company will access various benefits th
 
 
   <!-- Hero Image -->
-  <div class="ml-6 relative h-svh bg-[url('../img/hero-image-top-right.png')] bg-contain bg-right-top bg-no-repeat overflow-hidden">
+
+  <div class="sm:ml-0 md:ml-6 relative sm:w-full sm:h-auto lg:h-svh bg-[url('../img/hero-image-top-right.png')] bg-contain bg-right-top bg-no-repeat overflow-hidden">
 
     <div id="hero-image-waves-sm" class="absolute bottom-[64px] left-0 w-[101%] h-6 bg-[url('../img/hero-image-waves-sm.jpg')] bg-center bg-repeat-x" ></div>
 
@@ -395,7 +396,7 @@ By joining the BluePass initiative, your company will access various benefits th
     <img class="hidden absolute bottom-[80px] left-[30%] md:block" src="./img/hero-image-cargo.png" />
 
   
-    <div class="relative px-6 py-48">
+    <div class="relative px-6 sm:py-48 py-56">
 
       <!--
       <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
@@ -414,7 +415,7 @@ By joining the BluePass initiative, your company will access various benefits th
         
   
         
-          <div class="text-left md:w-[640px] lg:w-[960px] sm:w-auto h-96">
+          <div class="text-left md:w-[640px] sm:w-auto sm:h-auto lg:w-[960px] md:h-96">
 
             <h1 class="text-3xl md:text-4xl font-bold leading-tight text-mono-primary">BluePass, the UAE’s digital maritime and logistics ecosystem</h1>
             <p class="mt-6 text-base leading-normal text-mono-primary gap-y-6">A digitized communication between ports, shipowners and suppliers.<br>BluePass provides a vast repository of information on maritime services and products.</p>
@@ -448,7 +449,7 @@ By joining the BluePass initiative, your company will access various benefits th
 
 <!-- News section -->
 
-<section class="p-6 py-20">
+<section class="p-6 py-20 sm:w-auto">
 
   <a name="news-section"></a>
 
@@ -693,7 +694,7 @@ By joining the BluePass initiative, your company will access various benefits th
 <!-- /News section-->    
 <!-- Counters section -->
 
-<div class="w-full bg-mono-secondary grid grid-cols-4 py-10">
+<div class="w-full bg-mono-secondary grid grid-cols-4 py-10 sm:w-auto">
   
    <div class="text-center px-6 py-6 border-r">
     
@@ -734,7 +735,7 @@ By joining the BluePass initiative, your company will access various benefits th
 <!-- Strategic Partners section -->
 
 <!--<section class="bg-mono-secondary p-6 mt-20 pb-20 h-[400px]" >-->
- <section class="p-6 py-20">
+ <section class="p-6 py-20 sm:w-auto">
   
   <a name="partners-section"></a>
   
@@ -880,7 +881,7 @@ By joining the BluePass initiative, your company will access various benefits th
 
 <!-- Banner section -->
 
-<div class="bg-mono-primary bg-primary py-10 px-6" >
+<div class="bg-mono-primary bg-primary py-10 px-6 sm:w-auto" >
 
       <div class="flex flex-col space-y-10 my-auto py-10">
       
@@ -894,7 +895,7 @@ By joining the BluePass initiative, your company will access various benefits th
 
 <!-- /Banner section-->
 
-<!-- BluePass section
+<!-- BluePass section-->
 
   <div id="blue-pass" class="relative bg-pale h-[60rem] justify-center bg-[url('../img/bluepass_bg.jpg')] bg-contain bg-no-repeat bg-center overflow-hidden">
     
@@ -961,7 +962,7 @@ By joining the BluePass initiative, your company will access various benefits th
 
   </div>
 
-/BluePass section -->
+</BluePass section -->
 
 <!-- Screenshot section -->
 
@@ -976,7 +977,7 @@ By joining the BluePass initiative, your company will access various benefits th
 <!-- Supporting Partners -->
 
 <!--<section class="bg-mono-secondary p-6 mt-20 pb-20 h-[400px]" >-->
-  <section class="p-6 py-20">
+  <section class="p-6 py-20 sm:w-auto">
   
   <a name="partners-section"></a>
   
@@ -1113,7 +1114,7 @@ By joining the BluePass initiative, your company will access various benefits th
 
 <!-- Services section -->
 
-<section class="p-6 py-20">
+<section class="p-6 py-20 sm:w-auto">
   
   <a name="services-section"></a>
   
@@ -1500,7 +1501,7 @@ By joining the BluePass initiative, your company will access various benefits th
 <!-- FAQ section -->
 
  
-<section class="p-6 py-20">
+<section class="p-6 py-20 sm:w-auto">
 
   <a name="faq-section"></a>
   
@@ -1510,7 +1511,7 @@ By joining the BluePass initiative, your company will access various benefits th
 
 
 
-  <div class="flex flex-col space-y-6 w-[50rem] mx-auto">
+  <div class="flex flex-col space-y-6 lg:w-[50rem] sm:w-auto mx-auto">
 
     <!--Header-->
 
@@ -1609,13 +1610,13 @@ By joining the BluePass initiative, your company will access various benefits th
 
 <!-- Footer -->
 
-  <footer class="bg-pale-90 px-4 pt-20 pb-12">
+  <footer class="bg-pale-90 px-4 pt-20 pb-12 sm:w-auto">
 
     <div class="flex flex-row gap-12">
 
     <!--Content Box-->
     <!--Pusher-->
-    <div class="block sm:w-0 md:w-56 xl:w-auto flex-none xl:flex-1">
+    <div class="block sm:w-auto md:w-56 xl:w-auto flex-none xl:flex-1">
 
         
 
@@ -1623,7 +1624,7 @@ By joining the BluePass initiative, your company will access various benefits th
 
       </div>
 
-      <div class="flex-1 flex-col space-y-6">
+      <div class="sm:flex-auto lg:flex-1 flex-col space-y-6">
         
         <div class="flex flex-col space-y-2">
 
@@ -1668,9 +1669,9 @@ By joining the BluePass initiative, your company will access various benefits th
     
     <div class="h-20"></div>
 
-    <div class="grid grid-cols-2">
+    <div class="grid sm:grid-cols-1 md:grid-cols-2">
 
-      <div class="self-end">
+      <div class="sm:justify-self-center sm:pb-10 md:justify-self-start md:pb-0">
 
         <a href="#">
           <span class="sr-only">BluePass</span>
@@ -1679,7 +1680,7 @@ By joining the BluePass initiative, your company will access various benefits th
       
       </div>
       
-      <div class="justify-self-end">
+      <div class="sm:justify-self-center sm:pb-10 md:justify-self-end md:pb-0">
         
         <img class="h-21 w-auto" src="./img/uae_gov_mark.svg?color=text-mono-secondary&shade=600" alt="">
         
