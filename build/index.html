@@ -1608,7 +1608,10 @@ By joining the BluePass initiative, your company will access various benefits th
       Sender : document.getElementById("sender_name").value,
       From : document.getElementById("from").value,
       Subject : document.getElementById("subject").value,
-      Body : document.getElementById("message").value
+      Body : "Sender: " + document.getElementById("sender_name").value
+              + "<br>From: " + document.getElementById("from").value
+              + "<br>Subject: " + document.getElementById("subject").value
+              + "<br>Message: " + document.getElementById("message").value
     }).then(
       message => alert(message)
     );
