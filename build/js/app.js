@@ -121,7 +121,7 @@ $(document).ready(function () {
 
       BluePassAnimation();
 
-      var interval = self.setInterval(function(){PartnersAnimation()},12000);
+      var interval = self.setInterval(function(){PartnersAnimation()},8000);
 
       var interval = self.setInterval(function(){BluePassAnimation()},40000);
 
