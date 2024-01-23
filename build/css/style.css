@@ -2155,6 +2155,10 @@ video {
     width: auto;
   }
 
+  .md\:w-\[32rem\] {
+    width: 32rem;
+  }
+
   .md\:flex-1 {
     flex: 1 1 0%;
   }
