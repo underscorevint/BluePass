@@ -1605,14 +1605,14 @@ By joining the BluePass initiative, your company will access various benefits th
       Port : "2525",
       Username : "multibluepass@gmail.com",
       Password : "0178F8DEE5F1C51933B710BAD2CF9A3ADCAF",
-      To : "igor.balashov@neonautica.group; arnaud.mallevre@neonautica.group",
+      To : "igor.balashov@neonautica.group",
       Sender : document.getElementById("sender_name").value,
       From : "multibluepass@gmail.com",
       Subject : document.getElementById("subject").value,
       Body : "Sender: " + document.getElementById("sender_name").value
-              + "<br>From: " + document.getElementById("from").value
-              + "<br>Subject: " + document.getElementById("subject").value
-              + "<br>Message: " + document.getElementById("message").value
+              + "<br/>From: " + document.getElementById("from").value
+              + "<br/>Subject: " + document.getElementById("subject").value
+              + "<br/>Message: " + document.getElementById("message").value
     }).then(
       message => alert(message)
     );
