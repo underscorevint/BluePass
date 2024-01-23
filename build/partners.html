@@ -301,67 +301,77 @@
 
 <!-- Footer -->
 
-<footer class="bg-pale-90 px-4 pt-20 pb-12 sm:w-auto">
+<form onsubmit="SendEmail();" method="post">
 
-  <div class="flex flex-col md:flex-row gap-12">
+  <footer class="bg-pale-90 px-4 pt-20 pb-12 sm:w-auto">
+    <a name="feedback"></a>
+    <div class="flex flex-col md:flex-row gap-12">
 
-  <!--Content Box-->
-  
-  <div class="block sm:w-auto md:w-56 xl:w-auto flex-none xl:flex-1">
-
-      <h3 class="text-mono-primary text-xl font-bold">Contact Us</h3>
-
-    </div>
-  
-    <div class="sm:flex-auto lg:flex-1 flex-col space-y-6">
-      
-      <div class="flex flex-col space-y-2">
-
-        <p class="text-sm">Your name</p>
-        <input class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>
-
-      </div>
-      
-      <div class="flex flex-col space-y-2">
-
-        <p class="text-sm">Email</p>
-        <input type="text" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>
-
-      </div>
-
-    </div>
-
-
-    <div class="flex-1 flex-col space-y-6">
-      
-      <div class="flex flex-col space-y-2">
-
-        <p class="text-sm">Subject</p>
-        <input class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>
-
-      </div>
-
-      <div class="flex flex-col space-y-2">
-
-        <p class="text-sm">Message</p>
-        <textarea class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""></textarea>
-
-      </div>
-
-      <div class="h-1"></div>
-
-      <button class="text-mono-secondary bg-primary hover:bg-primary-40 font-semibold py-2 px-4 w-40 text-sm">Submit</button>
+    <!--Content Box-->
     
-    </div>
+    
 
-  </div>
+    <div class="block sm:w-auto md:w-56 xl:w-auto flex-none xl:flex-1">
+
+        <h3 class="text-mono-primary text-xl font-bold">Contact Us</h3>
+
+      </div>
+
+      
+    
+        <div class="sm:flex-auto lg:flex-1 flex-col space-y-6">
+          
+          <div class="flex flex-col space-y-2">
+
+            <label for="sender_name" class="text-sm">Your name</label>
+            <input type="text" name="sender_name" id="sender_name" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>
+
+          </div>
+          
+          <div class="flex flex-col space-y-2">
+
+            <label for="email" class="text-sm">Email</label>
+            <input type="email" id="from" name="from" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="flex-1 flex-col space-y-6">
+          
+          <div class="flex flex-col space-y-2">
+
+            <label for="subject" class="text-sm">Subject</label>
+            <input type="text" id="subject" name="subject" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>
+
+          </div>
+
+          <div class="flex flex-col space-y-2">
+
+            <label for="message" class="text-sm">Message</label>
+            <textarea type="text" id="message" name="message" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""></textarea>
+
+          </div>
+
+          <div class="h-1"></div>
   
-  <div class="h-20"></div>
+          <button class="text-mono-secondary bg-primary hover:bg-primary-40 font-semibold py-2 px-4 w-40 text-sm" onclick="sendMail()">Submit</button>
+        
 
-  <div class="block grid grid-cols-none md:grid-cols-2">
+        </div>
+      
 
-    <div class="align-bottom">
- <a href="#">
+
+    </div>
+      <div class="h-20"></div>
+
+    <div class="grid grid-cols-2">
+
+      <div class="self-end">
+
+        <a href="#">
           <span class="sr-only">BluePass</span>
           <img class="h-8 w-auto hover:text-primary" src="./img/mark.svg?color=text-mono-secondary&shade=600" alt="">
         </a>
@@ -398,8 +408,39 @@
       </div>
     
     </div>
+
+ 
+    
+  </footer>
+
+</form>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<script>
+  function SendEmail(){
   
-</footer>
+    Email.send({
+      Host : "smtp.elasticemail.com",
+      Port : "2525",
+      Username : "multibluepass@gmail.com",
+      Password : "0178F8DEE5F1C51933B710BAD2CF9A3ADCAF",
+      To : "igor.balashov@neonautica.group",
+      Sender : document.getElementById("sender_name").value,
+      From : "multibluepass@gmail.com",
+      Subject : document.getElementById("subject").value,
+      Body : "Sender: " + document.getElementById("sender_name").value
+              + "<br/>From: " + document.getElementById("from").value
+              + "<br/>Subject: " + document.getElementById("subject").value
+              + "<br/>Message: " + document.getElementById("message").value
+    }).then(
+      message => alert(message)
+    );
+  }
+
+  
+
+</script>
 
 <!--/Footer -->
 

@@ -291,9 +291,9 @@
   </div>
 -->
 
-!-- Footer -->
+<!-- Footer -->
 
-<form onsubmit="SendEmail(); reset(); return false" method="post">
+<form onsubmit="SendEmail();" method="post">
 
   <footer class="bg-pale-90 px-4 pt-20 pb-12 sm:w-auto">
     <a name="feedback"></a>
@@ -422,9 +422,9 @@
       From : "multibluepass@gmail.com",
       Subject : document.getElementById("subject").value,
       Body : "Sender: " + document.getElementById("sender_name").value
-              + "<br>From: " + document.getElementById("from").value
-              + "<br>Subject: " + document.getElementById("subject").value
-              + "<br>Message: " + document.getElementById("message").value
+              + "<br/>From: " + document.getElementById("from").value
+              + "<br/>Subject: " + document.getElementById("subject").value
+              + "<br/>Message: " + document.getElementById("message").value
     }).then(
       message => alert(message)
     );
