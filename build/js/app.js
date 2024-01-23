@@ -205,8 +205,6 @@ function PartnersAnimation() {
 
      setTimeout(function() {
 
-
-
         row.removeClass("hidden").delay(4000).queue(function(next){
             row.addClass("hidden");
            next();
