@@ -1601,10 +1601,12 @@ By joining the BluePass initiative, your company will access various benefits th
   function SendEmail(){
   
     Email.send({
-      SecureToken : "gkkf pteb buxn ceiu",
+      Host : "smtp.elasticmail.com",
+      Username : "multibluepass@gmail.com",
+      Password : "0178F8DEE5F1C51933B710BAD2CF9A3ADCAF",
       To : "igor.balashov@neonautica.group",
-      From : "multibluepass@gmail.com",
       Sender : document.getElementById("sender_name").value,
+      From : "multibluepass@gmail.com",
       Subject : document.getElementById("subject").value,
       Body : document.getElementById("message").value
     }).then(
