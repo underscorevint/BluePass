@@ -1481,13 +1481,15 @@ By joining the BluePass initiative, your company will access various benefits th
 
 <!-- Footer -->
 
+<form onsubmit="SendEmail(); reset(); return false" class="">
+
   <footer class="bg-pale-90 px-4 pt-20 pb-12 sm:w-auto">
     <a name="feedback"></a>
     <div class="flex flex-col md:flex-row gap-12">
 
     <!--Content Box-->
     
-    <form onsubmit="SendEmail(); reset(); return false" class="flex w-full space-x-6">
+    
 
     <div class="block sm:w-auto md:w-56 xl:w-auto flex-none xl:flex-1">
 
@@ -1540,32 +1542,7 @@ By joining the BluePass initiative, your company will access various benefits th
 
         </div>
       
-      </form>
 
-      <script src="./js/smtp.js"></script>
-
-      <script>
-        function SendEmail(){
-
-
-          
-          Email.send({
-            Host : "smtp.gmail.com",
-            Username : "username(gmail_id)",
-            Password : "password",
-            To : "to_email@gmail.com",
-            Sender : document.getElementById("sender_name").value,
-            From : document.getElementById("from").value,
-            Subject : document.getElementById("subject").value,
-            Body : document.getElementById("message").value
-          }).then(
-            message => alert("Success")
-          );
-        }
-
-        
-
-      </script>
 
     </div>
       <div class="h-20"></div>
@@ -1615,6 +1592,33 @@ By joining the BluePass initiative, your company will access various benefits th
  
     
   </footer>
+
+</form>
+
+<script src="./js/smtp.js"></script>
+
+<script>
+  function SendEmail(){
+
+
+    
+    Email.send({
+      Host : "smtp.gmail.com",
+      Username : "username(gmail_id)",
+      Password : "password",
+      To : "to_email@gmail.com",
+      Sender : document.getElementById("sender_name").value,
+      From : document.getElementById("from").value,
+      Subject : document.getElementById("subject").value,
+      Body : document.getElementById("message").value
+    }).then(
+      message => alert("Success")
+    );
+  }
+
+  
+
+</script>
 
 <!--/Footer -->
 
