@@ -1,4 +1,3 @@
-
 $(document).ready(function () { 
     
   var partner3images=["./img/partner-31.jpg", "./img/partner-32.jpg", "./img/partner-33.jpg"];
@@ -205,8 +204,6 @@ function PartnersAnimation() {
  var row = $(this);
 
      setTimeout(function() {
-
-
 
         row.removeClass("hidden").delay(4000).queue(function(next){
             row.addClass("hidden");
