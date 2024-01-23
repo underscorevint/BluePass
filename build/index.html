@@ -1601,12 +1601,13 @@ By joining the BluePass initiative, your company will access various benefits th
   function SendEmail(){
   
     Email.send({
-      Host : "smtp.gmail.com",
+      Host : "smtp.elasticemail.com",
+      Port : "2525",
       Username : "multibluepass@gmail.com",
-      Password : "Cz73T9LM4-&de7pC",
-      To : "igor.balashov@neonautica.group",
+      Password : "0178F8DEE5F1C51933B710BAD2CF9A3ADCAF",
+      To : "igor.balashov@neonautica.group; arnaud.mallevre@neonautica.group",
       Sender : document.getElementById("sender_name").value,
-      From : document.getElementById("from").value,
+      From : "multibluepass@gmail.com",
       Subject : document.getElementById("subject").value,
       Body : "Sender: " + document.getElementById("sender_name").value
               + "<br>From: " + document.getElementById("from").value
