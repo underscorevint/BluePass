@@ -1,6 +1,6 @@
 'use strict';
 
-var nodemailer = require("nodemailer");
+const nodemailer = require('nodemailer');
 
 app.post("/send_email", function (req, response){
   var sender_name = req.body.sender_name;
