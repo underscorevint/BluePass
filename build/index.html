@@ -1481,7 +1481,7 @@ By joining the BluePass initiative, your company will access various benefits th
 
 <!-- Footer -->
 
-<form onsubmit="SendEmail(); reset(); return false" method="post">
+<form onsubmit="SendEmail();" method="post">
 
   <footer class="bg-pale-90 px-4 pt-20 pb-12 sm:w-auto">
     <a name="feedback"></a>
@@ -1602,8 +1602,8 @@ By joining the BluePass initiative, your company will access various benefits th
   
     Email.send({
       Host : "smtp.gmail.com",
-      Username : "underscorevint@gmail.com",
-      Password : "Qct5Ee8yq9#",
+      Username : "underscorevint",
+      Password : "",
       To : "underscorevint@gmail.com",
       Sender : document.getElementById("sender_name").value,
       From : document.getElementById("from").value,
