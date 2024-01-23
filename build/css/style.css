@@ -823,6 +823,14 @@ video {
   margin-top: 4rem;
 }
 
+.mt-\[8rem\] {
+  margin-top: 8rem;
+}
+
+.mt-\[9rem\] {
+  margin-top: 9rem;
+}
+
 .block {
   display: block;
 }
@@ -1572,6 +1580,11 @@ video {
   padding-right: 5rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -2086,6 +2099,10 @@ video {
     margin-top: 8rem;
   }
 
+  .md\:mt-\[11rem\] {
+    margin-top: 11rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -2150,12 +2167,22 @@ video {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
 
   .md\:flex-col {
     flex-direction: column;
+  }
+
+  .md\:divide-x > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-x-reverse: 0;
+    border-right-width: calc(1px * var(--tw-divide-x-reverse));
+    border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
   .md\:self-start {
@@ -2182,6 +2209,11 @@ video {
   .md\:py-52 {
     padding-top: 13rem;
     padding-bottom: 13rem;
+  }
+
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .md\:pb-0 {
