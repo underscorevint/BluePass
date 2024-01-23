@@ -2224,6 +2224,11 @@ video {
     padding-right: 1rem;
   }
 
+  .md\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
   .md\:pb-0 {
     padding-bottom: 0px;
   }
