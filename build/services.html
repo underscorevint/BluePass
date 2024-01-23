@@ -41,17 +41,16 @@
     </div>
 
 
-    <nav class="flex items-center justify-between px-6" aria-label="Global">
+    <nav class="flex items-center justify-between px-6 w-full my-2 md:my-2" aria-label="Global">
 
       <div class="flex">
-        <button id="menu-icon" type="button" class="mr-4 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+        <button id="menu-icon" type="button" class="mr-4 inline-flex items-center justify-center rounded-md p-2.5 px-0 text-gray-700">
           <span class="sr-only">Open main menu</span>
-
+          
           <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-auto w-6">
-            <path d="M3 65L3 57L93 57L93 65L3 65Z" fill="#0E204D"/>
-            <path d="M3 39L3 31L93 31L93 39L3 39Z" fill="#0E204D"/>
+            <path d="M3 65L3 57L93 57L93 65L3 65Z M3 39L3 31L93 31L93 39L3 39Z" fill="#0E204D" class="h-auto w-6 hover:fill-primary"/>
           </svg>
-
+        
         </button>
       </div>
 
@@ -65,12 +64,12 @@
       </div>
   
 
-      <div class="flex gap-x-12">
+      <div class="hidden md:flex gap-x-12">
         <img class="h-auto w-48" src="./img/uae_gov_mark.svg?color=text-mono-secondary" alt="">
       </div>
 
       <div class="flex flex-1 justify-end">
-        <button type="button" class="login-btn bg-transparent text-mono-primary border border-mono-primary hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Login</button>
+        <button type="button" class="login-btn bg-transparent text-mono-primary hover:text-mono-secondary border border-mono-primary hover:bg-primary focus:ring-4 focus:ring-blue-300 font-medium text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Login</button>
       </div>
       
     </nav>
