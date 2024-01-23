@@ -309,88 +309,86 @@
 
 <!-- Footer -->
 
-  <footer class="bg-pale-90 px-4 pt-20 pb-12">
+<footer class="bg-pale-90 px-4 pt-20 pb-12 sm:w-auto">
 
-    <div class="flex flex-row gap-6">
+  <div class="flex flex-col md:flex-row gap-12">
 
-    <!--Content Box-->
-    <!--Pusher-->
-    <div class="block sm:w-0 md:w-56 xl:w-auto flex-none xl:flex-1">
+  <!--Content Box-->
+  
+  <div class="block sm:w-auto md:w-56 xl:w-auto flex-none xl:flex-1">
 
+      <h3 class="text-mono-primary text-xl font-bold">Contact Us</h3>
 
-        <h3 class="text-mono-primary text-xl font-bold">Contact Us</h3>
-
-      </div>
-
-      <div class="flex-1 flex-col space-y-6">
-        
-        <div class="flex flex-col space-y-2">
-
-          <p class="text-sm">Your name</p>
-          <input class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder="Enter your name"/>
-
-        </div>
-        
-        <div class="flex flex-col space-y-2">
-
-          <p class="text-sm">Email</p>
-          <input type="text" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder="i.e. johndow@domain.com"/>
-
-        </div>
-
-      </div>
-
-
-      <div class="flex-1 flex-col space-y-6">
-        
-        <div class="flex flex-col space-y-2">
-
-          <p class="text-sm">Subject</p>
-          <input class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder="Subject"/>
-
-        </div>
-
-        <div class="flex flex-col space-y-2">
-
-          <p class="text-sm">Message</p>
-          <textarea class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder="Your message"></textarea>
-
-        </div>
-
-        <div class="h-1"></div>
- 
-        <button class="text-mono-secondary bg-primary hover:bg-primary-40 font-semibold py-2 px-4 w-40 text-sm">Submit</button>
+    </div>
+  
+    <div class="sm:flex-auto lg:flex-1 flex-col space-y-6">
       
+      <div class="flex flex-col space-y-2">
+
+        <p class="text-sm">Your name</p>
+        <input class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder="Enter your name"/>
+
+      </div>
+      
+      <div class="flex flex-col space-y-2">
+
+        <p class="text-sm">Email</p>
+        <input type="text" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder="i.e. johndow@domain.com"/>
+
       </div>
 
     </div>
-    
-    <div class="h-20"></div>
 
-    <div class="grid grid-cols-2">
 
-      <div class="self-end">
-
-        <a href="#">
-          <span class="sr-only">BluePass</span>
-          <img class="h-8 w-auto hover:text-primary" src="./img/mark.svg?color=text-mono-secondary&shade=600" alt="">
-        </a>
+    <div class="flex-1 flex-col space-y-6">
       
+      <div class="flex flex-col space-y-2">
+
+        <p class="text-sm">Subject</p>
+        <input class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder="Subject"/>
+
       </div>
-      
-      <div class="justify-self-end">
-        
-        <img class="h-21 w-auto" src="./img/uae_gov_mark.svg?color=text-mono-secondary&shade=600" alt="">
-        
+
+      <div class="flex flex-col space-y-2">
+
+        <p class="text-sm">Message</p>
+        <textarea class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder="Your message"></textarea>
+
       </div>
+
+      <div class="h-1"></div>
+
+      <button class="text-mono-secondary bg-primary hover:bg-primary-40 font-semibold py-2 px-4 w-40 text-sm">Submit</button>
     
     </div>
 
-    <div class="bg-pale-70 h-1 my-6"></div>
+  </div>
+  
+  <div class="h-20"></div>
+
+  <div class="block grid grid-cols-none md:grid-cols-2">
+
+    <div class="align-bottom">
+
+      <a href="#">
+        <span class="m-auto block text-base text-gray-500 md:text-left text-center text-mono-primary">Powered by</span>
+        <span class="sr-only">BluePass</span>
+        <img class="h-32 md:h-24 w-auto m-auto md:m-0 hover:text-primary" src="./img/neonautica-logo.svg" alt="">
+      </a>
     
-    <span class="block text-sm text-gray-500 text-left md:text-left sm:text-center text-mono-primary">© 2023 <a href="https://bluepass.com/" class="hover:underline">BluePass</a>. All Rights Reserved.</span>
+    </div>
     
-  </footer>
+    <div class="p-0 md:pt-24">
+      
+      <span class="m-auto block text-sm text-gray-500 md:text-right text-center text-mono-primary">© Copyright 2024</span>
+      
+    </div>
+  
+  </div>
+
+  <div class="bg-pale-70 h-1 my-6"></div>
+  
+</footer>
 
 <!--/Footer -->
 
