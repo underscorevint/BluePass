@@ -1,4 +1,3 @@
-
 $(document).ready(function () { 
     
   var partner3images=["./img/partner-31.jpg", "./img/partner-32.jpg", "./img/partner-33.jpg"];
