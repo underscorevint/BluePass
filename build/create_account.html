@@ -126,7 +126,8 @@
 
                 <div class="h-10"></div>
 
-                
+                <form onsubmit="PartnerRegistrationl();" method="post">
+
                 <!--Partner Registration-->
 
                 <div class="registration-form flex flex-col hidden space-y-6" id="partner-registration-form">
@@ -137,7 +138,7 @@
 
                     <div class="flex flex-col space-y-2">
 
-                        <p class="text-sm">Company name</p>
+                        <label for="partner-company-name" class="text-sm">Company name</label>
                         <input type="text" name="partner-company-name" id="partner-company-name" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray focus:border-primary" placeholder=""/>
   
                     </div>
@@ -145,24 +146,24 @@
 
                     <div class="flex flex-col space-y-2">
 
-                        <p class="text-sm">Contact Email</p>
-                        <input type="text" name="partner-contact-email" id="partner-contact-email" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray" placeholder=""/>
+                        <label for="partner_contact_email" class="text-sm">Contact Email</label>
+                        <input type="email" name="partner_contact_email" id="partner_contact_email" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray" placeholder=""/>
   
                     </div>
 
 
                     <div class="flex flex-col space-y-2">
 
-                      <p class="text-sm">Contact Email Verification</p>
-                      <input type="text" name="partner-contact-email" id="partner-contact-email" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray" placeholder=""/>
+                      <label for="partner_contact_email_check" class="text-sm">Contact Email Verification</label>
+                      <input type="email" name="partner_contact_email_check" id="partner_contact_email_check" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray" placeholder=""/>
 
                     </div>
                     
 
                     <div class="flex flex-col space-y-2">
             
-                      <p class="text-sm">Comments</p>
-                      <textarea type="text" name="Password" id="Password" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray focus:border-primary" placeholder=""></textarea>
+                      <label for="partners_comments" class="text-sm">Comments</label>
+                      <textarea type="text" name="partner_comments" id="partners_comments" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray focus:border-primary" placeholder=""></textarea>
             
                     </div>
                     
@@ -196,9 +197,11 @@
 
                 </div>
                 
+                </form>
                 
                 <!--/Partner Registation-->
 
+                <form onsubmit="ShipOwnerRegistrationl();" method="post">
 
                 <!--Ship Owner Registation-->
 
@@ -212,23 +215,23 @@
 
                     <div class="flex flex-col space-y-2">
 
-                        <p class="text-sm text-mono-primary">Ship Owner Company Name</p>
-                        <input type="text" name="Company Name" id="shipowner-company" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>
+                        <label for="shipowner_company_name" class="text-sm text-mono-primary">Ship Owner Company Name</label>
+                        <input type="text" name="shipowner_company_name" id="shipowner_company_name" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>
 
                     </div>
 
 
                     <div class="flex flex-col space-y-2">
 
-                        <p class="text-sm text-mono-primary">Email</p>
-                        <input type="text" name="Email" id="Email" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
+                        <label for="shipowner_company_email" class="text-sm text-mono-primary">Email</label>
+                        <input type="email" name="shipowner_company_email" id="shipowner_company_email" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
 
                     </div>
 
 
                     <div class="flex flex-col space-y-2">
 
-                        <p class="text-sm text-mono-primary">Contact Details</p>
+                        <label for="shipowner_contact" class="text-sm text-mono-primary">Contact Details</label>
 
                         <select class="border border-mono-primary text-base px-4 py-2 border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary">
                             <option>Address</option>
@@ -236,28 +239,28 @@
                             <option>Email</option>
                         </select>
 
-                        <input type="text" name="Contacts" id="contacts" class="border border-mono-primary text-base px-4 py-2 border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
+                        <input type="text" name="shipowner_contact" id="shipowner_contact" class="border border-mono-primary text-base px-4 py-2 border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
 
                     </div>
 
 
                     <div class="flex flex-col space-y-2">
 
-                        <p class="text-sm text-mono-primary">Procurement contact (optional)</p>
-                        <input type="text" name="procurement-contact" id="procurement-contact" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
+                        <label for="procurement_contact" class="text-sm text-mono-primary">Procurement contact (optional)</label>
+                        <input type="text" name="procurement_contact" id="procurement_contact" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
 
                     </div>
 
                     <div class="flex flex-col space-y-2">
 
-                        <p class="text-sm text-mono-primary">Fleet Manager (optional)</p>
-                        <input type="text" name="Email" id="Email" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
+                        <label for="fleet_manager" class="text-sm text-mono-primary">Fleet Manager (optional)</label>
+                        <input type="text" name="fleet_manager" id="fleet_manager" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
 
                     </div>
 
                     <div class="flex flex-col space-y-2">
 
-                        <p class="text-sm text-mono-primary">DPA (optional)</p>
+                        <label class="text-sm text-mono-primary">DPA (optional)</label>
                         <input type="text" name="dpa" id="dpa" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
 
                     </div>
@@ -273,29 +276,29 @@
                 
                     <div class="flex flex-col space-y-2">
                 
-                        <label class="text-sm text-mono-primary">Vessel Name</label>
-                        <input type="text" name="vessel-name" id="vessel-name" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
+                        <label for="vessel_name" class="text-sm text-mono-primary">Vessel Name</label>
+                        <input type="text" name="vessel_name" id="vessel_name" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
                 
                     </div>
                 
                     <div class="flex flex-col space-y-2">
                 
-                        <label class="text-sm text-mono-primary">IMO number</label>
-                        <input type="text" name="imo-number" id="imo-number" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
+                        <label for="imo_number" class="text-sm text-mono-primary">IMO number</label>
+                        <input type="text" name="imo_number" id="imo_number" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
                 
                     </div>
                 
                     <div class="flex flex-col space-y-2">
                 
-                        <label class="text-sm text-mono-primary">Captain Name</label>
-                        <input type="text" name="captain-name" id="captain-name" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
+                        <label for="captain_name" class="text-sm text-mono-primary">Captain Name</label>
+                        <input type="text" name="captain_name" id="captain_name" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
                 
                     </div>
                 
                     <div class="flex flex-col space-y-2">
                 
-                        <label class="text-sm text-mono-primary">Cheff Engineer</label>
-                        <input type="text" name="cheff-engineer-name" id="cheff-engineer-name" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
+                        <label for="cheff_engineer" class="text-sm text-mono-primary">Cheff Engineer</label>
+                        <input type="text" name="cheff_engineer" id="cheff_engineer" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
                 
                     </div>
                 
@@ -315,29 +318,29 @@
                     
                         <div class="flex flex-col space-y-2">
                     
-                            <label class="text-sm text-mono-primary">Ship particulars (Including IMO number)</label>
-                            <input type="text" name="ship-particulars" id="ship-particulars" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
+                            <label for="ship_particulars" class="text-sm text-mono-primary">Ship particulars (Including IMO number)</label>
+                            <input type="text" name="ship_particulars" id="ship_particulars" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
                     
                         </div>
                     
                         <div class="flex flex-col space-y-2">
                     
-                            <p class="text-sm text-mono-primary">User Name (email)</p>
-                            <input type="text" name="user-name-email" id="user-name-email" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
+                            <label for="main_user_email" class="text-sm text-mono-primary">Main User Email</label>
+                            <input type="text" name="main_user_email" id="main_user_email" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
                     
                         </div>
                     
                         <div class="flex flex-col space-y-2">
                     
-                            <p class="text-sm text-mono-primary">Full Name</p>
-                            <input type="text" name="main-user-full-name" id="main-user-full-name" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
+                            <label for="main_user_fullname" class="text-sm text-mono-primary">Full Name</label>
+                            <input type="text" name="main_user_fullname" id="main_user_fullname" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
                     
                         </div>
                     
                         <div class="flex flex-col space-y-2">
                     
-                            <label class="text-sm text-mono-primary">Phone</label>
-                            <input type="text" name="main-user-phone-number" id="Email" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
+                            <label for="main_user_phone" class="text-sm text-mono-primary">Phone</label>
+                            <input type="text" name="main_user_phone" id="main_user_phone" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
                     
                         </div>
 
@@ -357,14 +360,14 @@
                 
                         <div class="flex flex-col space-y-2">
                 
-                            <p class="text-sm text-mono-primary">Password</p>
+                            <label class="text-sm text-mono-primary">Password</label>
                             <input type="text" name="Password" id="Password" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
                 
                         </div>
                 
                         <div class="flex flex-col space-y-2">
                 
-                            <p class="text-sm text-mono-primary">Repeat password</p>
+                            <label class="text-sm text-mono-primary">Repeat password</label>
                             <input type="password" name="repeat-password" id="repeat-password" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
                 
                         </div>
@@ -387,12 +390,18 @@
                     </div>
                 
                 </div>
+
+                </form>
                 
                 
                 
                 <!--/Ship Owner Registation-->
 
+
+
                 <!--Service Provider Registration-->
+
+                <form onsubmit="ServiceProviderRegistrationl();" method="post">
 
                 <div id="service-provider-registration-form" class="registration-form hidden space-y-6">
 
@@ -403,77 +412,78 @@
 
                     <div class="flex flex-col space-y-2">
 
-                    <p class="text-sm text-mono-primary">Company Name</p>
-                    <input type="text" name="partner-company-name" id="partner-company-name" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>
-                
-                    </div>
-                
-                    <div class="flex flex-col space-y-2">
-
-                    <p class="text-sm text-mono-primary">Logo</p>
-                    <input type="text" name="partner-company-name" id="partner-company-name" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>
+                    <label for="service_provider_company_name" class="text-sm text-mono-primary">Company Name</label>
+                    <input type="text" name="service_provider_company_name" id="service_provider_company_name" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>
                 
                     </div>
 
+                    <!--Hidden for now-->
+                    <div class="hidden flex flex-col space-y-2">
+
+                    <label for="service_provicer_logo" class="text-sm text-mono-primary">Logo</label>
+                    <input type="text" name="service_provicer_logo" id="service_provicer_logo" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>
+                
+                    </div>
+
                 
                     <div class="flex flex-col space-y-2">
                 
-                    <p class="text-sm text-mono-primary">Contact Details</p>
+                        <label for="service_provider_contact" class="text-sm text-mono-primary">Contact Details</label>
 
-                    <select class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary">
-                        <option>Adress</option>
-                        <option>Phone</option>
-                        <option>Email</option>
-                    </select>
+                        <select class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary">
+                            <option>Adress</option>
+                            <option>Phone</option>
+                            <option>Email</option>
+                        </select>
 
-                    <input type="text" name="Contacts" id="contacts" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
+                        <input type="text" name="service_provider_contact" id="service_provider_contact" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
 
                     </div>
                 
                 
                     <div class="flex flex-col space-y-2">
                 
-                    <p class="text-sm text-mono-primary">Trading License</p>
-                    <input type="text" name="trading-licence" id="trading-licence" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
-                
+                        <label for="service_provider_trading_licence" class="text-sm text-mono-primary">Trading License</label>
+                        <input type="text" name="service_provider_trading_licence" id="service_provider_trading_licence" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
+                    
                     </div>
                 
                     <!--Hidden for now-->
                     <div class="hidden flex flex-col space-y-2">
                 
-                    <label class="text-sm text-mono-primary">Credentials</label>
-                    <select class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary">
-                        <option>ISO</option>
-                        <option>ICV</option>
-                        <option>DOC</option>
-                        <option>ADNOC</option>
-                        <option>NOC</option>
-                        <option>other certification</option>
-                    </select>
-                    <input type="text" name="Email" id="Email" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
-                
+                        <label class="text-sm text-mono-primary">Credentials</label>
+                        <select class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary">
+                            <option>ISO</option>
+                            <option>ICV</option>
+                            <option>DOC</option>
+                            <option>ADNOC</option>
+                            <option>NOC</option>
+                            <option>other certification</option>
+                        </select>
+                        <input type="text" name="Email" id="Email" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
+                    
                     </div>
                 
                     <div class="flex flex-col space-y-2">
                 
-                    <label class="text-sm text-mono-primary">Company size</label>
+                        <label for="service_provider_dpa" class="text-sm text-mono-primary">Company size</label>
 
-                    <select type="text" name="dpa" id="dpa" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary">
+                        <select type="text" name="service_provider_dpa" id="service_provider_dpa" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary">
 
-                        <option><10</option>
-                        <option>10-50</option>
-                        <option>50-100</option>
-                        <option>500+</option>
-                        
-                    </select>                      
+                            <option><10</option>
+                            <option>10-50</option>
+                            <option>50-100</option>
+                            <option>500+</option>
+                            
+                        </select>                      
                 
                     </div>
 
                     <div class="flex flex-col space-y-2">
                 
-                    <label class="text-sm text-mono-primary">Coverage</label>
-                    <input type="text" name="dpa" id="dpa" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
-                
+                        <label for="service_provider_coverage" class="text-sm text-mono-primary">Coverage</label>
+                        <input type="text" name="service_provider_coverage" id="service_provider_coverage" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
+                    
                     </div>
 
                     <!--/Company Details-->
@@ -487,38 +497,38 @@
                 
                     <div class="flex flex-col space-y-2">
                 
-                    <p class="text-sm text-mono-primary">User name - email</p>
-                    <input type="text" name="user-name-email" id="user-name-email" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
+                    <label for="service_provider_user_email" class="text-sm text-mono-primary">User name - email</label>
+                    <input type="email" name="service_provider_user_email" id="service_provider_user_email" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
                 
                     </div>
                 
                     <div class="flex flex-col space-y-2">
                 
-                        <p class="text-sm text-mono-primary">Full name</p>
-                        <input type="text" name="main-user-full-name" id="main-user-full-name" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
+                        <label for="service_provider_user-fullname" class="text-sm text-mono-primary">Full name</label>
+                        <input type="text" name="service_provider_user-fullname" id="service_provider_user-fullname" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
                 
                     </div>
 
                     <div class="flex flex-col space-y-2">
                 
-                        <p class="text-sm text-mono-primary">Phone</p>
-                        <input type="text" name="Email" id="Email" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
+                        <label for="service_provider_phone" class="text-sm text-mono-primary">Phone</label>
+                        <input type="text" name="service_provider_phone" id="service_provider_phone" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
                     
                     </div>
                     
                     <!--Hidden for now-->
                     <div class="hidden flex flex-col space-y-2">
                 
-                        <p class="text-sm text-mono-primary">Password</p>
-                        <input type="password" name="service-provider-password" id="service-provider-password" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
+                        <label for="service_provider_password" class="text-sm text-mono-primary">Password</label>
+                        <input type="password" name="service_provider_password" id="service_provider_password" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
                 
                     </div>
 
                     <!--Hidden for now-->
                     <div class="hidden flex flex-col space-y-2">
               
-                        <p class="text-sm">Repeat password</p>
-                        <input type="password" name="repeat-service-provider-password" id="repeat-service-provider-password" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray focus:border-primary" placeholder=""/>
+                        <label for="service_provider_repeat_password" class="text-sm">Repeat password</label>
+                        <input type="password" name="service_provider_repeat_password" id="service_provider_repeat_password" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray focus:border-primary" placeholder=""/>
               
                     </div>
                 
@@ -535,8 +545,8 @@
                 
                     <div class="flex flex-col space-y-2">
                 
-                        <p class="text-sm text-mono-primary">Agent</p>
-                        <input type="text" name="user-name-email" id="user-name-email" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
+                        <label for="service_provider_agent" class="text-sm text-mono-primary">Agent</label>
+                        <input type="text" name="service_provider_agent" id="service_provider_agent" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""/>                        
                 
                     </div>
                 
@@ -567,9 +577,9 @@
                     
                     <div class="flex flex-col space-y-2">
                 
-                        <label class="text-sm text-mono-primary">Products</label>
+                        <label for="service_provider_products" class="text-sm text-mono-primary">Products</label>
                     
-                        <textarea type="text" name="Email" id="Email" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""></textarea>                        
+                        <textarea type="text" name="service_provider_products" id="service_provider_products" class="text-base px-4 py-2 border border-gray hover:border-primary placeholder:text-gray placeholder:font-normal focus:border-primary" placeholder=""></textarea>                        
                 
                     </div>
 
@@ -594,10 +604,127 @@
 
             </div>
 
-
+            </form>
 
                 <!--/Service Provider Registration-->
 
+
+                <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+                <script>
+
+    
+
+                function PartnerRegistrationl(){
+                    
+                    Email.send({
+                        Host : "smtp.elasticemail.com",
+                        Port : "2525",
+                        Username : "multibluepass@gmail.com",
+                        Password : "0178F8DEE5F1C51933B710BAD2CF9A3ADCAF",
+                        To : "igor.balashov@neonautica.group",
+                        From : "multibluepass@gmail.com",
+                        Subject : "Partner Registration",
+
+                        PartnerCompanyName : document.getElementById("partner_company_name").value,
+                        PartnerContactEmail : document.getElementById("partner_contact_email").value,
+
+                        Body : "Partner Company Name: " + document.getElementById("partner_company_name").value
+                                + "<br/>Partner Contact Email: " + document.getElementById("partner_contact_email").value
+                                + "<br/>Subject: Partner Registration"
+                                + "<br/>Comments: " + document.getElementById("partner_comments").value
+                    }).then(
+                        message => alert(message)
+                    );
+                }
+
+                function ShipOwnerRegistrationl(){
+                
+                    Email.send({
+                        Host : "smtp.elasticemail.com",
+                        Port : "2525",
+                        Username : "multibluepass@gmail.com",
+                        Password : "0178F8DEE5F1C51933B710BAD2CF9A3ADCAF",
+                        To : "igor.balashov@neonautica.group",
+                        From : "multibluepass@gmail.com",
+                        Subject : "Ship Owner Registration",
+
+                        ShipownerCompanyName : document.getElementById("shipowner_company_name").value,
+                        ShipownerCompanyEmail : document.getElementById("shipowner_company_email").value,
+                        ShipownerContact : document.getElementById("shipowner_contact").value,
+                        ProcurementContact : document.getElementById("procurement_contact").value,
+                        FleetManager : document.getElementById("fleet_manager").value,
+                        VesselName : document.getElementById("vessel_name").value,
+                        ImoNumber : document.getElementById("imo_number").value,
+                        CaptainName : document.getElementById("captain_name").value,
+                        CheffEngineer : document.getElementById("cheff_engineer").value,
+                        ShipParticulars : document.getElementById("ship_particulars").value,
+                        MainUserEmail : document.getElementById("main_user_email").value,
+                        MainUserFullname : document.getElementById("main_user_fullname").value,
+                        MainUserPhone : document.getElementById("main_user_phone").value,
+
+                        Body : "Shipowner Company Name: " + document.getElementById("shipowner_company_name").value
+                                + "<br/>Shipowner Company Email: " + document.getElementById("shipowner_company_email").value
+                                + "<br/>Shipowner Contact: " + document.getElementById("shipowner_contact").value
+                                + "<br/>Procurement Contact: " + document.getElementById("procurement_contact").value
+                                + "<br/>Fleet Manager: " + document.getElementById("fleet_manager").value
+                                + "<br/>Vessel Name: " + document.getElementById("vessel_name").value
+                                + "<br/>IMO Number: " + document.getElementById("imo_number").value
+                                + "<br/>Captain Name: " + document.getElementById("captain_name").value
+                                + "<br/>Cheff Engineer: " + document.getElementById("cheff_engineer").value
+                                + "<br/>Ship Particulars: " + document.getElementById("ship_particulars").value
+                                + "<br/>Main User Email: " + document.getElementById("main_user_email").value
+                                + "<br/>Main User Fullname: " + document.getElementById("main_user_fullname").value
+                                + "<br/>Main User Phone: " + document.getElementById("main_user_phone").value
+                    }).then(
+                        message => alert(message)
+                    );
+                }
+                
+                function ServiceProviderRegistrationl(){
+
+                    Email.send({
+                        Host : "smtp.elasticemail.com",
+                        Port : "2525",
+                        Username : "multibluepass@gmail.com",
+                        Password : "0178F8DEE5F1C51933B710BAD2CF9A3ADCAF",
+                        To : "igor.balashov@neonautica.group",
+                        From : "multibluepass@gmail.com",
+                        Subject : "Service Provider Registration",
+
+                        ServiceProviderCompanyName : document.getElementById("service_provider_company_name").value,
+                        ServiceProviderContact : document.getElementById("service_provider_contact").value,
+                        ServiceProviderTradingLicence : document.getElementById("service_provider_trading_licence").value,
+                        ServiceProviderDpa : document.getElementById("service_provider_dpa").value,
+                        ServiceProviderCoverage : document.getElementById("service_provider_coverage").value,
+                        ServiceProviderUserEmail : document.getElementById("service_provider_user_email").value,
+                        ServiceProviderUserFullname : document.getElementById("service_provider_user-fullname").value,
+                        ServiceProviderPhone : document.getElementById("service_provider_phone").value,
+                        ServiceProviderAgent : document.getElementById("service_provider_agent").value,
+                        ServiceProviderProducts : document.getElementById("service_provider_products").value,
+
+                        Body : "Service Provider Company Name: " + document.getElementById("service_provider_company_name").value
+                                + "<br/>Service Provider Contact: " + document.getElementById("service_provider_contact").value
+                                + "<br/>Service Provider Trading Licence: " + document.getElementById("service_provider_trading_licence").value
+                                + "<br/>Service Provider DPA: " + document.getElementById("service_provider_dpa").value
+                                + "<br/>Service Provider Coverage: " + document.getElementById("service_provider_coverage").value
+                                + "<br/>Service Provider User Email: " + document.getElementById("service_provider_user_email").value
+                                + "<br/>Service Provider User Fullname: " + document.getElementById("service_provider_user-fullname").value
+                                + "<br/>Service Provider Phone: " + document.getElementById("service_provider_phone").value
+                                + "<br/>Service Provider Agent: " + document.getElementById("service_provider_agent").value
+                                + "<br/>Service Provider Products: " + document.getElementById("service_provider_products").value
+                    }).then(
+                        message => alert(message)
+                    );
+                  }
+
+
+
+
+                </script>
+                  
+                
+                
 
             </div>
 

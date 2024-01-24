@@ -1537,7 +1537,7 @@ By joining the BluePass initiative, your company will access various benefits th
 
           <div class="h-1"></div>
   
-          <button class="text-mono-secondary bg-primary hover:bg-primary-40 font-semibold py-2 px-4 w-40 text-sm" onclick="sendMail()">Submit</button>
+          <button class="text-mono-secondary bg-primary hover:bg-primary-40 font-semibold py-2 px-4 w-40 text-sm">Submit</button>
         
 
         </div>
@@ -1598,6 +1598,7 @@ By joining the BluePass initiative, your company will access various benefits th
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 
 <script>
+
   function SendEmail(){
   
     Email.send({
@@ -1605,7 +1606,7 @@ By joining the BluePass initiative, your company will access various benefits th
       Port : "2525",
       Username : "multibluepass@gmail.com",
       Password : "0178F8DEE5F1C51933B710BAD2CF9A3ADCAF",
-      To : "igor.balashov@neonautica.group",
+      To : "igor.balashov@neonautica.group; arnaud.mallevre@neonautica.group",
       Sender : document.getElementById("sender_name").value,
       From : "multibluepass@gmail.com",
       Subject : document.getElementById("subject").value,
